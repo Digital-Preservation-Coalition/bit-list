@@ -1,0 +1,17 @@
+<div class="container">
+  <header class="d-flex flex-wrap justify-content-center mb-4 py-3 border-bottom">
+    <a href="{{ '/' | relative_url }}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <span class="fs-4">{{ site.title }}</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      {% for link in site.navigation %}
+      <li class="nav-item">
+        <a href="{{ link.url | relative_url }}" {% if page.url == link.url %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %}>
+           {{link.text}}</a></li>
+      {% endfor %}
+    </ul>
+
+
+  </header>
+</div>

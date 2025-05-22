@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base href="{{ '/' | relative_url }}">
+    <title>{{ page.title | liquify }}</title>
+    <link href="{{ "/resources/feed.xml" | relative_url }}" rel="alternate" type="application/atom+xml">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" crossorigin="anonymous" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.23.0/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
+    {% if site.author %}
+      <meta name="author" content="{{ site.author }}">
+    {% endif %}
+    {% if site.description %}
+      <meta name="description" content="{{ site.description }}">
+    {% endif %}
+    <link href="{{ '/_pagefind/pagefind-ui.css' | relative_url }}" rel="stylesheet">
+  </head>
+  <body>
+
+  <style>
+    body {
+            font-family: Open Sans, Arial, sans-serif;
+        }
+    .bg-skill-level-0 {
+      background-color: #880000;
+    }
+    .bg-skill-level-1 {
+      background-color: #aa0000;
+    }
+    .bg-skill-level-2 {
+      background-color: #cc0000;
+    }
+    .bg-skill-level-3 {
+      background-color: #dd0000;
+    }
+    .bg-skill-level-4 {
+      background-color: #ee0000;
+    }
+    .bg-skill-level-5 {
+      background-color: #ff0000;
+    }
+  </style>
+
+    {% include navigation.html %}
+
+
+    <div class="container-sm my-3 my-lg-5"{% if page.collection == "resources" %}data-pagefind-body{% endif %}>
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+
+      <hr>
+
+<p>
+  <a href="{{ site.source_prefix }}{{ page.path }}">View on GitHub</a>.
+</p>
+
+      <p>
+        This <b>THING!</b> is hosted and maintained by the <a href="https://www.dpconline.org">Digital Preservation Coaltion</a> and was originally developed as part of the Start to Preserve stream of <a href="https://ipres2024.pubpub.org/">iPRES 2024</a>.
+      </p>
+<p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons By License Logo"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""></a></p>
+    </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      $(document).ready( function () {
+          $('#mainTable').DataTable();
+      });
+    </script>
+    
+  </body>
+</html>

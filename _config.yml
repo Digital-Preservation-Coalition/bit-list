@@ -1,0 +1,86 @@
+title: Digital Preservation Bit List
+description: Digital Preservation Bit List
+
+editor_url: https://digital-preservation-coalition.github.io/bit-list
+editable: true
+baseurl: "/bit-list/"
+source_prefix: https://github.com/Digital-Preservation-Coalition/bit-list/blob/main/
+
+markdown: kramdown
+
+# markdown: CommonMarkGhPages
+#commonmark:
+#  options: ["FOOTNOTES"]
+#  extensions: ["strikethrough", "autolink", "table"]
+
+# Using Jekyll Collections to manage the contents in an idiomatic way:
+# See https://jekyllrb.com/docs/collections/
+#collections:
+#  resources:
+#    output: true
+#  skills:
+#    output: true
+#  roles:
+#    output: true
+
+# Set defaults for some properties:
+# See https://jekyllrb.com/docs/configuration/front-matter-defaults/
+defaults:
+  - scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+#  - scope:
+#      path: ""
+#      type: resources # Using the collections name to do the mapping
+#    values:
+#      layout: "resource"
+#  - scope:
+#      path: ""
+#      type: skills # Using the collections name to do the mapping
+#    values:
+#      layout: "skills"
+#  - scope:
+#      path: ""
+#      type: roles # Using the collections name to do the mapping
+#    values:
+#      layout: "roles"
+
+navigation:
+- text: Resources
+  url: /resources/
+- text: Skills
+  url: /skills/
+- text: Roles
+  url: /roles/
+- text: Search
+  url: /search/
+
+
+# Manage includes/excludes:
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+include:
+ - _pagefind
+
+#feed:
+#  collections:
+#    resources:
+#      path: "/resources/feed.xml"
+
+#theme: jekyll-theme-bootstrap5
+paginate: 3
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
