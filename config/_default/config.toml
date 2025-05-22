@@ -1,0 +1,53 @@
+baseURL = '/'
+title = "The Bit List"
+author = "Digital Preservation Coalition"
+copyright = "Maintained by the <a class=\"text-muted\" href=\"https://dpconline.org/\">Digital Preservation Coalition</a>."
+
+timeZone = 'Europe/London'
+
+# Multilingual
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+theme = 'hugo-bootstrap-theme'
+themesdir = 'node_modules/@filipecarneiro'
+
+disableHugoGeneratorInject = true
+enableRobotsTXT = true
+#enableGitInfo = true
+enableEmoji = true
+#sectionPagesMenu = "main"
+#googleAnalytics = "UA-1511XXXX-X"
+
+# 
+mainSections = ['species', 'posts']
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = 'series'
+  author = "authors"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[permalinks]
+#  post = "/post/:title/"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.99.1"
+    max = ""
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"

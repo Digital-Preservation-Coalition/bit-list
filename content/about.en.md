@@ -1,5 +1,5 @@
 ---
-title: Welcome to the DigiPres Learning Resources Portal!
+title: About
 ---
 The aim of this new community resource is to help digital preservation practitioners, educators, and students find training and development opportunities and content. It was first developed as part of the [iPRES 2024](https://ipres2024.pubpub.org/) Start to Preserve stream and is maintained by the [Digital Preservation Coalition](https://www.dpconline.org).
 
@@ -13,3 +13,5 @@ The resource portal will continue to be updated and improved in line with feedba
 If you would like to edit or contribute to the resource, this can be done via the <a href="{{ site.editor_url }}/admin/" class="alert-link">content management system</a>. 
 You will need to be logged in to a GitHub account to make any edits or additions. All entries will then be approved by an admin before appearing online.
 </div>
+
+

@@ -12,8 +12,8 @@ local_backend: true
 # How to talk to the Git datafile store:
 backend:
   name: github
-  repo: Digital-Preservation-Coalition/learning
-  branch: main
+  repo: Digital-Preservation-Coalition/bit-list
+  branch: hugo
   squash_merges: true
   # This enables contribution from non-repo-owners, but only works on GitHub:
   # https://decapcms.org/docs/open-authoring/
@@ -30,12 +30,18 @@ publish_mode: editorial_workflow
 # Not needed at present.
 #site_url: /learning/
 
+# Multi-language support
+i18n:
+  structure: multiple_files
+  locales: [en, de, fr]
+  default_locale: en
+
 # Defining the different collections of items:
 collections:
 
 - name: species
   label: Bit-List Species
-  folder: species
+  folder: content/species
   create: true
   path: '{{slug}}/index'
   media_folder: ''
@@ -49,6 +55,7 @@ collections:
   - label: 'Image'
     name: 'image'
     widget: 'image'
+    required: false
 
 - name: resources
   label: Learning Resources
