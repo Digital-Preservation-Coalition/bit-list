@@ -1,10 +1,6 @@
-{{ $img := printf "images/status/%s.png" .status }}
-{{ with resources.Get $img }}
-  {{ with .Resize "200x"}}
-    <img src="{{ .RelPermalink }}" alt="{{ T $.status }}" width="{{ .Width }}" height="{{ .Height }}" class="float-right" style="float: right;">
-  {{ end }}
-{{ end }}
+{{ .Store.Set "imageSize" "200x" }}
+{{ partial "status-img" . }}
 
 <p>
-{{ .description }}
+{{ .Params.description }}
 </p>
