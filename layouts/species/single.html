@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<div class="container py-3">
+
+  <h1>{{ .Title }}</h1>
+
+  {{ partial "species-summary" .Params }}
+
+  <h2>Raw Metadata</h2>
+  <pre>
+  {{ .Params | jsonify (dict "indent" "  ") }}
+  </pre>
+
+  <h2>Discussion</h2>
+  <details open class="m-2">
+    <summary>{{ T "contents" }}</summary>
+    {{ .TableOfContents }}
+  </details>
+
+  {{ .Content }}
+</div>
+
+{{ end }}
