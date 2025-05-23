@@ -4,10 +4,3 @@
   weight = 10
   [en.params]
     languageISO = "EN"
-
-[pt]
-  languageName = "French"
-  languageCode = "fr-FR"
-  weight = 20
-  [pt.params]
-    languageISO = "FR"

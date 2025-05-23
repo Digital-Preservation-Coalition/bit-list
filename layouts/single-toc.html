@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<div class="container py-3">
+
+  <h1>{{ .Title }}</h1>
+  
+  <details open class="m-2">
+    <summary>{{ T "contents" }}</summary>
+    {{ .TableOfContents }}
+  </details>
+
+  {{ .Content }}
+</div>
+
+{{ end }}

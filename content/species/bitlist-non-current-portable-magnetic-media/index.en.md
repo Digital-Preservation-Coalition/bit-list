@@ -1,9 +1,12 @@
 ---
 title: Non-current Portable Magnetic Media
 description: "Materials saved to floppy disks, tape, portable hard disks or other numerous magnetic storage devices where the media is out of warranty and reader devices may no longer be supported or integrated easily into hardware infrastructure: typically, more than five years old."
-digital-genus: portable-media
+categories: [ "portable-media" ]
+status: "critically-endangered"
 decision: consensus
+tags: []
 year-added: 2019
+last-updated: 2023-01-01
 evaluations:
 - year: 2023
   status: critically-endangered

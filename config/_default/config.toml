@@ -23,17 +23,17 @@ enableEmoji = true
 mainSections = ['species', 'posts']
 
 [frontmatter]
-  date = ["date", "publishDate", "lastmod"]
-  lastmod = ["lastmod", ":fileModTime", ":default"]
+  date = ["date", "publishDate", "lastmod", "last-updated" ]
+  lastmod = ["lastmod", "last-updated", ":fileModTime", ":default"]
 
 [taxonomies]
-  tag = "tags"
+  tag = "tag"
   category = "categories"
   series = 'series'
-  author = "authors"
+  author = 'authors'
 
 [sitemap]
-  changefreq = "weekly"
+  changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
 
