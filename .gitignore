@@ -6,6 +6,8 @@ _site/
 .bundle/
 vendor/
 
+_includes
+_layouts
 _pagefind
 
 # Hugo

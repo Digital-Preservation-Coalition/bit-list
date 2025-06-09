@@ -33,7 +33,7 @@ publish_mode: editorial_workflow
 # Multi-language support
 i18n:
   structure: multiple_files
-  locales: [en, de, fr]
+  locales: [en]
   default_locale: en
 
 # Defining the different collections of items:
@@ -56,6 +56,46 @@ collections:
     name: 'image'
     widget: 'image'
     required: false
+  - label: "Genus"
+    name: categories
+    widget: "select"
+    options: [
+      "portable-media",
+      "sound-and-vision",
+      "cloud"
+    ]
+    required: true
+
+- name: status
+  label: Status
+  folder: content/status
+  create: false
+  path: '{{slug}}'
+  media_folder: '/assets/images/status'
+  public_folder: '/images/status'
+  i18n: true
+  fields:
+  - label: ID
+    name: id
+    widget: string
+    required: true
+    i18n: duplicate
+  - label: Title
+    name: title
+    widget: string
+    required: true
+    i18n: true
+  - label: Description
+    name: description
+    widget: string
+    required: true
+    i18n: true
+  - label: 'Image'
+    name: 'image'
+    widget: 'image'
+    required: false
+    i18n: duplicate
+
 
 - name: resources
   label: Learning Resources
