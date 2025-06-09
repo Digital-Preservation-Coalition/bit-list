@@ -64,10 +64,18 @@ collections:
       "sound-and-vision",
       "cloud"
     ]
+    multiple: true
     required: true
+  - label: "Status"
+    name: status
+    widget: relation
+    collection: "statuses"
+    value_field: "{{slug}}"
+    search_fields: [ 'title' ] 
 
-- name: status
-  label: Status
+
+- name: statuses
+  label: Statuses
   folder: content/status
   create: false
   path: '{{slug}}'
