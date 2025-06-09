@@ -9,3 +9,8 @@ genus = "Genus"
 portable-media = "Portable Media"
 
 critically-endangered = "Critically Endangered"
+
+
+imminence-1y = "Action is recommended within three years, detailed assessment within one year."
+significance-10 = "The loss of tools, data or services within this group would impact on people and sectors around the world."
+effort-major = "It would require a major effort to prevent or reduce losses in this group, possibly requiring the development of new preservation tools or techniques."

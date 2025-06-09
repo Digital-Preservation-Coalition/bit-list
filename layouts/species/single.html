@@ -6,7 +6,13 @@
 
   {{ partial "species-summary" . }}
 
-  <h2>Raw Metadata</h2>
+
+  {{ $alias := index (.Params.aliases) 0 }}
+  {{ with $alias }}
+  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">View The Current Live Page On The DPC Website</a>
+  {{ end }}
+  
+  <h2>Metadata</h2>
   <pretty-json data-pagefind-filter="{{- range .Params.categories -}}{{ T "genus" }}:{{ T . }} {{- end -}}">
   {{ .Params | jsonify (dict "indent" "  ") }}
   </pretty-json>

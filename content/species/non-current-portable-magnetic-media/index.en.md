@@ -1,35 +1,32 @@
 ---
 title: Non-current Portable Magnetic Media
 description: "Materials saved to floppy disks, tape, portable hard disks or other numerous magnetic storage devices where the media is out of warranty and reader devices may no longer be supported or integrated easily into hardware infrastructure: typically, more than five years old."
+examples: "Floppy disks; tape; certain kinds of portable hard disks, zip drives."
 categories: [ "portable-media" ]
 status: "critically-endangered"
+previous-status: "critically-endangered"
 threat: hardware-obsolescence
 decision: consensus
 tags: ["technological-obsolescence"]
 year-added: 2019
 last-updated: 2023-01-01
-evaluations:
+imminence: 1y
+effort: major
+impact: 5
+significance: 10
+trends:
 - year: 2023
-  status: critically-endangered
   trend: no-change
-  imminence: 1y
-  loss: inevitable
-  impact: 5
-  significance: 10
 - year: 2024
-  status: critically-endangered
-  change: none
   trend: no-change
-imminence-comment: "Action is recommended within three years, detailed assessment within one year."
-significance-comment: "The loss of tools, data or services within this group would impact on people and sectors around the world."
-effort-comment: "It would require a major effort to prevent or reduce losses in this group, possibly requiring the development of new preservation tools or techniques."
-examples: "Floppy disks; tape; certain kinds of portable hard disks, zip drives."
 status-at-risk:
   status: practically-extinct
   reason: "Poor storage; inability to access readers; no replication; encryption; aggressive compression; uncertainty over IPR or the presence of orphaned works."
 status-in-care:
  status: endangered
  reason: "Active management; dependable access to readers; strong documentation; documentation independent from the media."
+aliases:
+- /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-portable-magnetic-media
 ---
 ## 2023 Review
 
