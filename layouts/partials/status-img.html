@@ -2,6 +2,6 @@
 {{ $imageSize := .Store.Get "imageSize" | default "100x"}}
 {{ with resources.Get $img }}
   {{ with .Resize $imageSize }}
-    <img src="{{ .RelPermalink }}" alt="{{ T $.Params.status }}" width="{{ .Width }}" height="{{ .Height }}" class="float-right" style="float: right;">
+    <img src="{{ .RelPermalink }}" alt="{{ T $.Params.status }}" width="{{ .Width }}" height="{{ .Height }}" class="float-right" style="float: right;" data-pagefind-filter="status:{{ T $.Params.status }}">
   {{ end }}
 {{ end }}

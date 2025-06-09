@@ -8,7 +8,7 @@ layout: single-toc
 A free-to-access and open resource for digital preservation advocacy, the DPC's _Global Bit List of Endangered Digital Species_ (or _Bit List_ for short) is a community-sourced list of at-risk digital materials which is revised every two years. Entries to the list are nominated by the community, who are at the forefront of digital preservation efforts, and reviewed by international organizations which represent global expertise in the preservation of the listed digital species.
 
 {{< figure 
-  src="/images/bit-list-logo.svg"
+  src="../../images/bit-list-logo.svg"
   alt="A floppy disk and a clipboard."
   class="text-center"
 >}}

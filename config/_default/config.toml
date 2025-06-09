@@ -27,8 +27,9 @@ mainSections = ['species', 'posts']
   lastmod = ["lastmod", "last-updated", ":fileModTime", ":default"]
 
 [taxonomies]
-  tag = "tag"
+  tags = "tags"
   category = "categories"
+  status = "status"
   series = 'series'
   author = 'authors'
 

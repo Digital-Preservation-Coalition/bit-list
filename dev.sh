@@ -1,6 +1,8 @@
 #!/bin/sh
-bundle exec jekyll build -c _config.yml,_config-edit.yml
+hugo
 
-npx pagefind --site _site/ --output-path _pagefind
+npx pagefind --site public --output-path static/pagefind
 
-bundle exec jekyll server --livereload -c _config.yml,_config-edit.yml
+npx decap-server 2>/dev/null &
+
+hugo server -w --disableFastRender

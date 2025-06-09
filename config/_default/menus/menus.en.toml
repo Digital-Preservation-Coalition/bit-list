@@ -1,17 +1,17 @@
 [[main]]
 name = "Home"
-url = ""
+pageRef = "/index"
 weight = 10
 
 [[main]]
 name = "About"
-url = "about"
+pageRef = "/about"
 weight = 20
 title = "About the Bit List"
 
 [[main]]
 name = "Search"
-url = "search"
+pageRef = "/search"
 weight = 25
 title = "Search"
 
@@ -23,32 +23,32 @@ weight = 40
 [[main]]
 identifier = "species"
 name = "Species"
-url = "species"
+pageRef = "/species"
 weight = 10
 parent = "browse"
 
 [[main]]
 name = "All"
-url = "post"
+pageRef = "/post"
 weight = 100
 parent = "browse"
 
 [[main]]
 name = "Hugo"
-url = "tags/hugo"
+pageRef = "/tags/hugo"
 weight = 20
 parent = "browse"
 
 [[main]]
 name = "Bootstrap"
-url = "tags/bootstrap"
+pageRef = "/tags/bootstrap"
 weight = 30
 parent = "browse"
 
 [[main]]
 identifier = "docs"
 name = "Docs"
-url = "page"
+pageRef = "/page"
 weight = 50
 parent = "browse"
 

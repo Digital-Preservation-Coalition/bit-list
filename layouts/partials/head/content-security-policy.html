@@ -1,2 +1,8 @@
 <!-- https://report-uri.com/home/generate -->
 <meta http-equiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+<!-- Also using this hook to add additional resources -->
+{{ $js := resources.Get "js/pretty-json.js" }}
+{{ with $js }}
+  {{ $js := . | minify | fingerprint "sha512" -}}
+  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
+{{ end }}
