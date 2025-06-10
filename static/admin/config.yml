@@ -46,16 +46,20 @@ collections:
   path: '{{slug}}/index'
   media_folder: ''
   public_folder: ''
+  i18n: true
   fields:
   - label: Title
     name: title
     widget: string
     required: true
     hint: "The full name of this species of digital preservation threat."
+    i18n: true
   - label: 'Image'
     name: 'image'
     widget: 'image'
     required: false
+    hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
+    i18n: duplicate
   - label: "Genus"
     name: categories
     multiple: true
@@ -63,7 +67,16 @@ collections:
     widget: relation
     collection: "genus"
     value_field: "{{slug}}"
-    search_fields: [ 'title' ] 
+    search_fields: [ 'title' ]
+    hint: "??? These classifications were called Digital Species before. Is Genus a better name?"
+    i18n: duplicate
+  - label: 'Threat'
+    name: 'threat'
+    widget: 'select'
+    options: ['social-media-cloud', 'hardware-obsolescence']
+    required: true 
+    i18n: duplicate
+    hint: "??? This is the new threat classification, but not sure how to handle it yet."
   - label: "Status"
     name: status
     multiple: false
@@ -72,11 +85,154 @@ collections:
     collection: "statuses"
     value_field: "{{slug}}"
     search_fields: [ 'title' ] 
+    i18n: duplicate
+  - label: "Previous Status"
+    name: previous-status
+    multiple: false
+    required: false
+    widget: relation
+    collection: "statuses"
+    value_field: "{{slug}}"
+    search_fields: [ 'title' ]
+    i18n: duplicate
+  - label: Decision
+    name: decision
+    widget: string
+    required: true
+    default: "consensus"
+    i18n: duplicate
+    hint: "??? What does this field mean? 'consensus' or?"
+  - label: "Imminence of Action"
+    name: imminence
+    widget: "select"
+    options:
+      - { label: "(5) Act immediately within 6 months", value: 5 }
+      - { label: "(4) Around 12 months", value: 4 }
+      - { label: "(3) Less than 3 years", value: 3 }
+      - { label: "(2) Within 5 years", value: 2 }
+      - { label: "(1) More than 5 years", value: 1 }
+    hint: "??? If you had one of these, how quickly would you need to act to save it?"
+  - label: "Inevitability of Loss/Effort to Preserve"
+    name: effort
+    widget: "select"
+    options:
+      - { label: "(5) Inevitable", value: 5 }
+      - { label: "(4) Loss seems likely", value: 4 }
+      - { label: "(3) Major effort to fix", value: 3 }
+      - { label: "(2) Small effort to fix", value: 2 }
+      - { label: "(1) Entirely avoidable", value: 1 }
+    hint: "??? Can it reasonably be avoided?"
+  - label: "Impact"
+    name: impact
+    widget: "select"
+    options:
+      - { label: "(10) Globally traumatic, destabilizing impact to a large group of people", value: 10 }
+      - { label: "(9) Internationally traumatic, destabilizing impact to a large group of people", value: 9 }
+      - { label: "(8) Nationally traumatic, destabilizing impact to a large group of people", value: 8 }
+      - { label: "(7) Locally traumatic, destabilizing impact to a large group of people", value: 7 }
+      - { label: "(6) Impact to a large group of people", value: 6 }
+      - { label: "(5) Impact to a smaller group of people", value: 5 }
+      - { label: "(4) Inconvenient", value: 4 }
+      - { label: "(3) Inconvenient, but quickly recoverable", value: 3 }
+      - { label: "(2) Inconvenient to a smaller group of people, but quickly recoverable", value: 2 }
+      - { label: "(1) Briefly inconvenient", value: 1 }
+    hint: "??? What is the extent to which the loss of the digital material would be felt?"
+  - label: "Significance"
+    name: significance
+    widget: "select"
+    options:
+      - { label: "(10) Unique, irreplaceable, invaluable, of global interest and importance to a large group of people", value: 10 }
+      - { label: "(9) Unique, irreplaceable, invaluable, of international interest and importance to a large group of people", value: 9 }
+      - { label: "(8) Unique, irreplaceable, invaluable, of national interest and importance to a large group of people", value: 8 }
+      - { label: "(7) Unique, irreplaceable, invaluable, of community/local interest and importance to a large group of people", value: 7 }
+      - { label: "(6) Irreplaceable, invaluable, of interest and importance to a large group of people", value: 6 }
+      - { label: "(5) Invaluable and significant to a smaller group of people", value: 5 }
+      - { label: "(4) Of some value and significance to a smaller group of people", value: 4 }
+      - { label: "(3) Of some value or significance to a smaller group of people", value: 3 }
+      - { label: "(2) Derivative and easily reproducible", value: 2 }
+      - { label: "(1) Limited significance", value: 1 }
+    hint: "??? What is the significance, value and/or 'uniqueness' of the digital material?"
+  - label: Trends
+    name: trends
+    widget: list
+    minimize_collapsed: false
+    summary: '{{fields.year}} - {{fields.trend}}'
+    fields:
+    - { label: "Year", name: "year", widget: "number", value_type: "int" }
+    - { label: "Trend", name: "trend", widget: "select", options: ['material-improvement', 'no-change', 'towards-greater-risk'] }
+    required: false
+  - label: Status in the Presence of Aggravating Conditions
+    name: status-at-risk
+    widget: "object"
+    fields:
+    - label: "Status"
+      name: status
+      multiple: false
+      required: true
+      widget: relation
+      collection: "statuses"
+      value_field: "{{slug}}"
+      search_fields: [ 'title' ] 
+      i18n: duplicate
+    - label: Reasons
+      name: reasons
+      widget: "text"
+  - label: Status in the Presence of Good Practice
+    name: status-in-care
+    widget: "object"
+    fields:
+    - label: "Status"
+      name: status
+      multiple: false
+      required: true
+      widget: relation
+      collection: "statuses"
+      value_field: "{{slug}}"
+      search_fields: [ 'title' ] 
+      i18n: duplicate
+    - label: Reasons
+      name: reasons
+      widget: "text"
+
+
+# -------------
+  - label: Year Added
+    name: year-added
+    widget: "number"
+    value_type: "int"
+    min: 2000
+    max: 3000
+    required: true
+    i18n: duplicate
+    hint: "The first year this entry was published."
+  - label: "First Published"
+    name: "published"
+    widget: "datetime"
+    date_format: "YYYY-MM-DD"
+    hint: "??? Date this entry was first published - use full date rather than year above?"
+    i18n: duplicate
+  - label: "Updated"
+    name: "last-updated"
+    widget: "datetime"
+    date_format: "YYYY-MM-DD"
+    hint: "Date this entry was last updated."
+    i18n: duplicate
+  - label: Alias URLs
+    name: aliases
+    widget: list
+    minimize_collapsed: true
+    fields:
+    - { label: "Alias", name: "alias", widget: "string" }
+    required: false
+    hint: "Other URLs for this site that should resolve to this item."
+  - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
 
 - name: statuses
   label: Statuses
   folder: content/status
   create: false
+  delete: false
+  hide: false
   path: '{{slug}}'
   media_folder: '/assets/images/status'
   public_folder: '/images/status'
@@ -101,7 +257,9 @@ collections:
 - name: genus
   label: Genus
   folder: content/genus
-  create: true
+  create: false
+  delete: false
+  hide: false
   path: '{{slug}}'
   media_folder: '/assets/images/genus'
   public_folder: '/images/genus'
@@ -123,443 +281,17 @@ collections:
     required: false
     i18n: duplicate
 
-- name: resources
-  label: Learning Resources
-  label_singular: 'Learning Resource'
-  folder: _resources
-  create: true
-  path: '{{slug}}/index'
-  media_folder: ''
-  public_folder: ''
-  fields:
-  - label: "Resource Name"
-    name: title
-    widget: string
-    required: true
-    hint: "The name of the resource."
-  - label: Link
-    name: resource_url
-    widget: string
-    required: true
-    hint: "A hyperlink to more information about the resource."
-  - label: "Type of Resource"
-    name: resource-type
-    widget: "select"
-    options: [
-      "Article",
-      "Book/eBook",
-      "Conference",
-      "Conference Proceedings",
-      "Degree Program",
-      "Event Recording",
-      "Group/Network",
-      "In Person Training",
-      "Journal",
-      "Knowledge Base",
-      "Mailing List",
-      "Online Training - Instructor Led",
-      "Online Training - Self Directed",
-      "Report",
-      "Scholarship/Grant",
-      "Toolkit",
-      "Training Content" 
-    ]
-    required: true
-    hint: "What type of resource is being described."
-  - label: "Provider"
-    name: provider
-    widget: string
-    required: true
-    hint: "Name of the organization or individual who provides the course."
-  - label: "Creator(s)"
-    name: creators
-    widget: list
-    required: false
-    fields:
-    - { label: "Creator", name: creator, widget: string, required: false }
-    hint: "Name(s) of the organizations and/or individuals who created the resource."
-  - label: "Release Year"
-    name: release-year
-    widget: "number"
-    value_type: "int"
-    min: 1900
-    required: false
-    hint: "Year the resource was released/published."
-  - label: "Description"
-    name: "body"
-    widget: "markdown"
-    required: true
-    hint: "A short text description of resource."
-  - label: "Learning Objectives"
-    name: learning-objectives
-    widget: list
-    required: false
-    fields:
-    - { label: "Learning Objective", name: learning-objective, widget: string, required: false }
-    hint: "A list of learning objectives related to the resource."
-  - label: "Related Skills"
-    label_singular: "Skill"
-    name: skill-levels
-    widget: list
-    # There must be at least one entry for skill level:
-    min: 1
-    max: 10
-    # Show skill and level in collapsed view of each entry:
-    summary: '{{fields.skill}} - level {{fields.level}}'
-    fields:
-        - { label: "Skill", name: "skill", widget: "relation", collection: "skills", search_fields: ["title"], value_field: "title", display_fields: ["title"], options_length: 100 }
-        - label: "Level"
-          name: "level"
-          widget: "select"
-          options:
-          - { label: "0. Awareness", value: "0" }
-          - { label: "1. Understanding", value: "1" }
-          - { label: "2. Basic Application", value: "2" }
-          - { label: "3. Advanced Application", value: "3" }
-          - { label: "4. Expert", value: "4" }
-    hint: "A related skill element and level from the [DPC DP Competency Framework](https://www.dpconline.org/digipres/prof-development/dp-competency)."
-  - label: "Related Roles"
-    label_singular: "Related Role"
-    name: roles
-    widget: list
-    fields:
-        - { label: "Role", name: "role", widget: "relation", collection: "roles", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-    hint: "Specific roles for whom this resource might be useful."
-  - label: "Country"
-    name: country
-    widget: select
-    options: [
-      "Afghanistan",
-      "Albania",
-      "Algeria",
-      "Andorra",
-      "Angola",
-      "Antigua and Barbuda",
-      "Argentina",
-      "Armenia",
-      "Australia",
-      "Austria",
-      "Azerbaijan",
-      "The Bahamas",
-      "Bahrain",
-      "Bangladesh",
-      "Barbados",
-      "Belarus",
-      "Belgium",
-      "Belize",
-      "Benin",
-      "Bhutan",
-      "Bolivia",
-      "Bosnia and Herzegovina",
-      "Botswana",
-      "Brazil",
-      "Brunei",
-      "Bulgaria",
-      "Burkina Faso",
-      "Burundi",
-      "Cabo Verde",
-      "Cambodia",
-      "Cameroon",
-      "Canada",
-      "Central African Republic",
-      "Chad",
-      "Chile",
-      "China",
-      "Colombia",
-      "Comoros",
-      "Congo, Democratic Republic of the",
-      "Congo, Republic of the",
-      "Costa Rica",
-      "Côte d’Ivoire",
-      "Croatia",
-      "Cuba",
-      "Cyprus",
-      "Czech Republic",
-      "Denmark",
-      "Djibouti",
-      "Dominica",
-      "Dominican Republic",
-      "East Timor (Timor-Leste)",
-      "Ecuador",
-      "Egypt",
-      "El Salvador",
-      "Equatorial Guinea",
-      "Eritrea",
-      "Estonia",
-      "Eswatini",
-      "Ethiopia",
-      "Fiji",
-      "Finland",
-      "France",
-      "Gabon",
-      "The Gambia",
-      "Georgia",
-      "Germany",
-      "Ghana",
-      "Greece",
-      "Grenada",
-      "Guatemala",
-      "Guinea",
-      "Guinea-Bissau",
-      "Guyana",
-      "Haiti",
-      "Honduras",
-      "Hungary",
-      "Iceland",
-      "India",
-      "Indonesia",
-      "Iran",
-      "Iraq",
-      "Ireland",
-      "Israel",
-      "Italy",
-      "Jamaica",
-      "Japan",
-      "Jordan",
-      "Kazakhstan",
-      "Kenya",
-      "Kiribati",
-      "Korea, North",
-      "Korea, South",
-      "Kosovo",
-      "Kuwait",
-      "Kyrgyzstan",
-      "Laos",
-      "Latvia",
-      "Lebanon",
-      "Lesotho",
-      "Liberia",
-      "Libya",
-      "Liechtenstein",
-      "Lithuania",
-      "Luxembourg",
-      "Madagascar",
-      "Malawi",
-      "Malaysia",
-      "Maldives",
-      "Mali",
-      "Malta",
-      "Marshall Islands",
-      "Mauritania",
-      "Mauritius",
-      "Mexico",
-      "Micronesia, Federated States of",
-      "Moldova",
-      "Monaco",
-      "Mongolia",
-      "Montenegro",
-      "Morocco",
-      "Mozambique",
-      "Myanmar (Burma)",
-      "Namibia",
-      "Nauru",
-      "Nepal",
-      "Netherlands",
-      "New Zealand",
-      "Nicaragua",
-      "Niger",
-      "Nigeria",
-      "North Macedonia",
-      "Norway",
-      "Oman",
-      "Pakistan",
-      "Palau",
-      "Palestine",
-      "Panama",
-      "Papua New Guinea",
-      "Paraguay",
-      "Peru",
-      "Philippines",
-      "Poland",
-      "Portugal",
-      "Qatar",
-      "Romania",
-      "Russia",
-      "Rwanda",
-      "Saint Kitts and Nevis",
-      "Saint Lucia",
-      "Saint Vincent and the Grenadines",
-      "Samoa",
-      "San Marino",
-      "Sao Tome and Principe",
-      "Saudi Arabia",
-      "Senegal",
-      "Serbia",
-      "Seychelles",
-      "Sierra Leone",
-      "Singapore",
-      "Slovakia",
-      "Slovenia",
-      "Solomon Islands",
-      "Somalia",
-      "South Africa",
-      "Spain",
-      "Sri Lanka",
-      "Sudan",
-      "Sudan, South",
-      "Suriname",
-      "Sweden",
-      "Switzerland",
-      "Syria",
-      "Taiwan",
-      "Tajikistan",
-      "Tanzania",
-      "Thailand",
-      "Togo",
-      "Tonga",
-      "Trinidad and Tobago",
-      "Tunisia",
-      "Turkey",
-      "Turkmenistan",
-      "Tuvalu",
-      "Uganda",
-      "Ukraine",
-      "United Arab Emirates",
-      "United Kingdom",
-      "United States",
-      "Uruguay",
-      "Uzbekistan",
-      "Vanuatu",
-      "Vatican City",
-      "Venezuela",
-      "Vietnam",
-      "Yemen",
-      "Zambia",
-      "Zimbabwe"
-    ]
-    required: false
-    hint: "Country where this resource was produced/released."
-  - label: "Language"
-    name: language
-    widget: string
-    required: false
-    hint: "The language the resource is presented in."
-  - label: "Free or Paid"
-    name: free-or-paid
-    widget: select
-    options: [
-      "Free",
-      "Paid"
-    ]
-    required: true
-    hint: "Is the resource available to access for free or does in need to be paid for?"
-  - label: "Cost"
-    name: cost
-    widget: string
-    required: false
-    hint: "If paid, how much does it cost to access the resource?"
-  - label: "Qualifications"
-    name: qualifications
-    widget: string
-    required: false
-    hint: "Description of any qualification or credits gained upon completion."
-  - label: "Open Access"
-    name: open-access
-    widget: select
-    options: [
-      "Yes",
-      "No",
-      "Unsure"
-    ]
-    required: false
-    hint: "Is the resource available for reuse under an open license?"
-  - label: "Licence"
-    name: licence
-    widget: string
-    required: false
-    hint: "License the resource is released under (if specified)."
-  - label: "Part of Series"
-    name: series
-    widget: string
-    required: false
-    hint: "Information on if this resource is part of a series."
-  - label: "Related Resources"
-    label_singular: "Related Resource"
-    name: related-items
-    widget: list
-    fields:
-        - { label: "Resource", name: "resource", widget: "relation", collection: "resources", search_fields: ["title"], value_field: "title", display_fields: ["title"] }
-    required: false
-    hint: "Links to information on related resources."
-  - label: "Resource Materials"
-    name: files
-    widget: file
-    required: false
-    media_library:
-      config:
-        multiple: true
-    hint: "Content relating to the resource (e.g. training presentations, worksheets, reading lists etc.)."
-  - label: "Logo"
-    name: "logo"
-    widget: "image"
-    required: false
-  - label: "Entry Created"
-    name: "created"
-    widget: "datetime"
-    date_format: "YYYY-MM-DD"
-    hint: "Date this entry was created."
-  - label: "Entry Updated"
-    name: "updated"
-    widget: "datetime"
-    date_format: "YYYY-MM-DD"
-    hint: "Date this entry was last updated."
-
-- name: skills
-  label: Skills
-  label_singular: Skill
-  folder: _skills
+- name: pages
+  label: 'Information Pages'
+  folder: content
   create: false
   delete: false
-  hide: true
+  hide: false
+  path: '{{slug}}'
+  media_folder: '/assets/images/'
+  public_folder: '/images/'
+  i18n: true
   fields:
-  - label: Title
-    name: title
-    widget: string
-  - label: "Competency Area"
-    name: "competency-area"
-    widget: "select"
-    options: [
-      "Governance, Resourcing, and Management", 
-      "Communications and Advocacy", 
-      "Information Technology", 
-      "Legal and Social Responsibilities", 
-      "Digital Preservation Domain Specific"
-    ]
-  - label: "Description"
-    name: "body"
-    widget: "markdown"
-    required: false
-
-- name: roles
-  label: Roles
-  label_singular: Role
-  folder: _roles
-  create: false
-  delete: false
-  hide: true
-  fields:
-  - label: Name
-    name: title
-    widget: string
-  - label: "Description"
-    name: "body"
-    widget: "markdown" 
-    required: false
-  - label: "Alternative Names"
-    name: alternative-names
-    widget: list
-    fields:
-    - { label: Name, name: name, widget: string }
-
-- name: 'pages'
-  label: 'Other Pages'
-  editor:
-    preview: false
-  files:
-    - label: 'Homepage'
-      name: 'index'
-      file: 'index.md'
-      preview_path: /
-      fields:
-        - { label: 'Title', name: 'title', widget: 'string', default: 'Welcome' }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
+    - { label: 'Title', name: 'title', widget: 'string', default: 'Welcome' }
+    - { label: 'Layout', name: 'layout', widget: 'select', options: ['single', 'single-toc', 'search'], required: false, i18n: duplicate }
+    - { label: 'Body', name: 'body', widget: 'markdown' }

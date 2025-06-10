@@ -8,10 +8,8 @@ previous-status: "critically-endangered"
 threat: hardware-obsolescence
 decision: consensus
 tags: ["technological-obsolescence"]
-year-added: 2019
-last-updated: 2023-01-01
-imminence: 1y
-effort: major
+imminence: 4
+effort: 3
 impact: 5
 significance: 10
 trends:
@@ -21,10 +19,13 @@ trends:
   trend: no-change
 status-at-risk:
   status: practically-extinct
-  reason: "Poor storage; inability to access readers; no replication; encryption; aggressive compression; uncertainty over IPR or the presence of orphaned works."
+  reasons: "Poor storage; inability to access readers; no replication; encryption; aggressive compression; uncertainty over IPR or the presence of orphaned works."
 status-in-care:
  status: endangered
- reason: "Active management; dependable access to readers; strong documentation; documentation independent from the media."
+ reasons: "Active management; dependable access to readers; strong documentation; documentation independent from the media."
+year-added: 2019
+published: 2019-01-01
+last-updated: 2023-01-01
 aliases:
 - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-portable-magnetic-media
 ---
