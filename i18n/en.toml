@@ -8,7 +8,10 @@ search-tbl = "Search the Bit List"
 genus = "Genus"
 portable-media = "Portable Media"
 
+practically-extinct = "Practically Extinct"
 critically-endangered = "Critically Endangered"
+endangered = "Endangered"
+vulnerable = "Vulnerable"
 
 
 imminence-1y = "Action is recommended within three years, detailed assessment within one year."

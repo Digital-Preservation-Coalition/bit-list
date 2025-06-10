@@ -83,7 +83,7 @@ collections:
     collection: "genus"
     value_field: "{{slug}}"
     search_fields: [ 'title' ]
-    hint: "??? These classifications were called Digital Species before. Is Genus a better name?"
+    hint: "??? These classifications were called Digital Species before. Is Genus a better name? Or just use categories?"
     i18n: duplicate
   - label: 'Threat'
     name: 'threat'
