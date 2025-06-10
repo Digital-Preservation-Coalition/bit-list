@@ -3,7 +3,7 @@
 <div class="container py-3" data-pagefind-body >
 
   <div class="species-header p-1 clearfix">
-    <h1>{{ .Title }}</h1>
+    <h1 data-pagefind-filter="status:{{ T .Params.status }}">{{ .Title }}</h1>
   
     {{ partial "species-summary" . }}
 
@@ -14,8 +14,8 @@
   <div class="species-factsheet container p-3 text-center">
     <div class="row">
       <div class="col-12 col-sm-4 text-dark bg-primary-subtle border border-primary-subtle p-1">
-        <div class="h-50 d-flex justify-content-center align-items-center">{{ .Params.categories }}</div>
-        <div class="h-50"><h3>Added to list</h3><p>{{ index .Params "year-added" }}</p></div>
+        <div class="h-50 d-flex justify-content-center align-items-center"><h3>{{ .Params.categories }}</h3></div>
+        <div class="h-50 d-flex justify-content-center align-items-center"><h3>Added to list: {{ index .Params "year-added" }}</h3></div>
       </div>
     </div>
     <div class="row">
@@ -30,19 +30,25 @@
         Effort {{ .Params.effort }}
       </div>
     </div>
-    <div class="row pt-3 gx-3">
-      <div class="col-12 col-sm-6 pb-1">
+    <div class="row pt-4 gx-3">
+      <div class="col-12 col-sm-6 pb-2">
         {{ with index .Params "status-at-risk"}}
-        <div class="p-3 text-dark bg-danger-subtle border border-danger rounded-3 h-100">
-        <h3><i>{{ T .status }}</i> in the Presence of Aggravating Conditions</h3>
+        <div class="p-3 text-dark bg-danger-subtle border border-danger rounded-3 h-100 ">
+          <div class="bg-white p-2 m-1 rounded-3 border border-danger float-end">
+            {{ page.Store.Set "imageSize" "100x" }}{{ partial "status-img" . }}
+          </div>
+        <h3 class="mt-2">{{ T .status }}</i> in the Presence of Aggravating Conditions</h3>
         <p>{{ .reasons }}</p>
         </div>
         {{ end }}
         </div>
-      <div class="col-12 col-sm-6 pb-1">
+      <div class="col-12 col-sm-6 pb-2">
         {{ with index .Params "status-in-care"}}
         <div class="p-3 text-dark bg-success-subtle border border-success rounded-3 h-100">
-        <h3><i>{{ T .status }}</i> in the Presence of Good Practice</h3>
+          <div class="bg-white p-2 m-1 rounded-3 border border-success float-end">
+          {{ page.Store.Set "imageSize" "100x" }}{{ partial "status-img" . }}
+          </div>
+        <h3 class="mt-2"><i>{{ T .status }}</i> in the Presence of Good Practice</h3>
         {{ .reasons }}
         </div>
         {{ end }}
