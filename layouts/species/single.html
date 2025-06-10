@@ -5,12 +5,6 @@
   <h1>{{ .Title }}</h1>
 
   {{ partial "species-summary" . }}
-
-
-  {{ $alias := index (.Params.aliases) 0 }}
-  {{ with $alias }}
-  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">View The Current Live Page On The DPC Website</a>
-  {{ end }}
   
   <h2>Metadata</h2>
   <pretty-json data-pagefind-filter="{{- range .Params.categories -}}{{ T "genus" }}:{{ T . }} {{- end -}}">
@@ -24,6 +18,13 @@
   </details>
 
   {{ .Content }}
+
+  {{ with index (.Params.aliases) 0 }}
+  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
+    Click Here To Open The Current Live Page For This Entry On The DPC Website
+  </a>
+  {{ end }}
+
 </div>
 
 {{ end }}

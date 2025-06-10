@@ -58,21 +58,20 @@ collections:
     required: false
   - label: "Genus"
     name: categories
-    widget: "select"
-    options: [
-      "portable-media",
-      "sound-and-vision",
-      "cloud"
-    ]
     multiple: true
     required: true
+    widget: relation
+    collection: "genus"
+    value_field: "{{slug}}"
+    search_fields: [ 'title' ] 
   - label: "Status"
     name: status
+    multiple: false
+    required: true
     widget: relation
     collection: "statuses"
     value_field: "{{slug}}"
     search_fields: [ 'title' ] 
-
 
 - name: statuses
   label: Statuses
@@ -83,11 +82,6 @@ collections:
   public_folder: '/images/status'
   i18n: true
   fields:
-  - label: ID
-    name: id
-    widget: string
-    required: true
-    i18n: duplicate
   - label: Title
     name: title
     widget: string
@@ -104,6 +98,30 @@ collections:
     required: false
     i18n: duplicate
 
+- name: genus
+  label: Genus
+  folder: content/genus
+  create: true
+  path: '{{slug}}'
+  media_folder: '/assets/images/genus'
+  public_folder: '/images/genus'
+  i18n: true
+  fields:
+  - label: Title
+    name: title
+    widget: string
+    required: true
+    i18n: true
+  - label: Description
+    name: description
+    widget: string
+    required: false
+    i18n: true
+  - label: 'Image'
+    name: 'image'
+    widget: 'image'
+    required: false
+    i18n: duplicate
 
 - name: resources
   label: Learning Resources

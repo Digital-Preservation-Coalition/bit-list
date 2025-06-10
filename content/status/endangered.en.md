@@ -1,5 +1,4 @@
 ---
-id: endangered
 title: Endangered
 description: Digital materials are listed Endangered when they face material
   technical challenges to preservation or responsibility for care is poorly
