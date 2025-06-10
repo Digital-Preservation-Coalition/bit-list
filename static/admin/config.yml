@@ -9,6 +9,9 @@
 # If working locally, use the default proxy server port
 local_backend: true
 
+# A handy link back to the homepage:
+site_url: /
+
 # How to talk to the Git datafile store:
 backend:
   name: github
@@ -52,7 +55,19 @@ collections:
     name: title
     widget: string
     required: true
-    hint: "The full name of this species of digital preservation threat."
+    hint: "The full name of this species of digital preservation threat ??? this is a species under threat, not a threat????"
+    i18n: true
+  - label: Description
+    name: description
+    widget: text
+    required: true
+    hint: "A brief description of this species."
+    i18n: true
+  - label: Examples
+    name: examples
+    widget: string
+    required: true
+    hint: "Examples of this species."
     i18n: true
   - label: 'Image'
     name: 'image'
@@ -225,7 +240,11 @@ collections:
     - { label: "Alias", name: "alias", widget: "string" }
     required: false
     hint: "Other URLs for this site that should resolve to this item."
-  - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+  - label: 'Body'
+    name: 'body'
+    widget: 'markdown'
+    i18n: true
+    hint: '??? Currently, these sections are just free-text and loose headings - but this is perhaps a bad idea?'
 
 - name: statuses
   label: Statuses
