@@ -7,17 +7,21 @@
 <div class="container py-3" data-pagefind-body>
 
   <div class="species-header p-1 clearfix" data-pagefind-filter="status:{{ $status.Params.title }}">
-    <h1>{{ .Title }}</h1>
-  
-    {{ partial "species-summary" . }}
+    
+    <div class="float-end p-2">
+    {{ .Store.Set "imageSize" "200x" }}{{ partial "status-img" .Params }}
+    </div>
 
+    <h1>{{ .Title }}</h1>  
+    <p>{{ .Params.description }}</p>
+  
     <h2>Examples</h2>
     <p>{{ .Params.examples }}</p>
   </div>
 
-  <div class="species-factsheet container p-3 text-center">
-    <div class="row">
-      <div class="col-12 col-sm-4 text-dark bg-primary-subtle border border-primary-subtle p-1">
+  <div class="species-factsheet container p-3 pt-2 text-center overflow-hidden">
+  <div class="row">
+      <div class="col-6 col-sm-4 text-dark bg-primary-subtle border-start border-top border-primary p-2">
         <div class="d-flex justify-content-center align-items-center">
           <h3 data-pagefind-filter="genus:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
         </div>
@@ -35,17 +39,41 @@
           <h3>Added to list: {{ index .Params "year-added" }}</h3>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-6 col-sm-4 text-light bg-danger">
-        Imminence {{ .Params.imminence }}
+      <div class="col-6 col-sm-4 text-dark border-top border-primary p-0">
+        {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger-subtle" ) }}
+        {{ range first 2 .Params.trends }}
+        <div class="h-50 {{ index $tc .trend }} d-flex justify-content-center align-items-center">
+          <div>
+            <h3>Trend in {{ .year }}</h3>
+            <div>{{.trend}}</div>
+          </div>
+        </div>
+        {{ end }}
       </div>
-      <div class="col-6 col-sm-4 text-light bg-dark">
-        <div class="h-50">Significance {{ .Params.significance }}</div>
-        <div class="h-50">Impact {{ .Params.impact }}</div>
+      <div class="col-6 col-sm-4 p-0">
+        <div class="h-50 d-flex justify-content-center align-items-center text-white bg-primary">
+        {{ T .Params.decision }}
+        </div>
+        <div class="h-50 d-flex justify-content-center align-items-center text-white bg-danger">
+          <div>
+            <h3>Previously</h3>
+            {{ index .Params "previous-status" }}
+          </div>
+        </div>
       </div>
-      <div class="col-6 col-sm-4 text-light bg-primary">
-        Effort {{ .Params.effort }}
+      <div class="col-6 col-sm-4 text-light bg-danger pt-2">
+        <h3>Imminence</h3>
+        <p>{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
+        <h3>Impact</h3>
+        <p>{{ T ( printf "impact-%d" .Params.impact ) }}</p>
+      </div>
+      <div class="col-6 col-sm-4 text-light bg-dark pt-2">
+        <h3>Significance</h3>
+        <p>{{ T ( printf "significance-%d" .Params.significance ) }}</p>
+      </div>
+      <div class="col-6 col-sm-4 text-light bg-primary pt-2">
+        <h3>Effort</h3>
+        <p>{{ T ( printf "effort-%d" .Params.effort ) }}</p>
       </div>
     </div>
 
@@ -57,7 +85,7 @@
             {{ page.Store.Set "imageSize" "100x" }}{{ partial "status-img" . }}
           </div>
           {{ $status := page.GetPage ( printf "status/%s" .status ) }}
-        <h3 class="mt-2">{{ $status.Params.title }}</i> in the Presence of Aggravating Conditions</h3>
+        <h3 class="mt-2"><i>{{ $status.Params.title }}</i> in the Presence of Aggravating Conditions</h3>
         <p>{{ .reasons }}</p>
         </div>
         {{ end }}
@@ -92,10 +120,20 @@
     </a>
     {{ end }}
 
-    <h2>Raw Metadata</h2>
+    <p>
+    {{ $edit_url := printf "/admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
+    <a href="{{ relURL $edit_url }}" target="_blank" class="btn btn-secondary">Edit This Entry</a>
+    </p>
+
+    <hr>
+    <details>
+    <summary><b>Raw Metadata</b></summary>
     <pretty-json>
     {{ .Params | jsonify (dict "indent" "  ") }}
     </pretty-json>
+    </details>
+    <hr>
+
   </div>
 
 </div>

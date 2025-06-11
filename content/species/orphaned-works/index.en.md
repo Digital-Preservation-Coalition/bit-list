@@ -9,9 +9,9 @@ threat: social-media-cloud
 status: endangered
 previous-status: endangered
 decision: consensus
-imminence: 3
+imminence: 4
 effort: 5
-impact: 6
+impact: 9
 significance: 6
 trends:
   - year: 2023
