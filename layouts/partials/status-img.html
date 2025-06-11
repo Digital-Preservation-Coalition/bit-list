@@ -1,7 +1,9 @@
+{{ $status := page.GetPage ( printf "status/%s" .status ) }}
+
 {{ $img := printf "images/status/%s.png" .status }}
 {{ $imageSize := page.Store.Get "imageSize" | default "100x"}}
 {{ with resources.Get $img }}
   {{ with .Resize $imageSize }}
-    <img src="{{ .RelPermalink }}" alt="{{ T $.status }}" width="{{ .Width }}" height="{{ .Height }}">
+    <img src="{{ .RelPermalink }}" alt="{{ $status.Params.title }}" width="{{ .Width }}" height="{{ .Height }}">
   {{ end }}
 {{ end }}

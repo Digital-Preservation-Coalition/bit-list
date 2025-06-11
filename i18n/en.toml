@@ -6,13 +6,7 @@ search = "Search"
 search-tbl = "Search the Bit List"
 
 genus = "Genus"
-portable-media = "Portable Media"
-
-practically-extinct = "Practically Extinct"
-critically-endangered = "Critically Endangered"
-endangered = "Endangered"
-vulnerable = "Vulnerable"
-
+status = "Status"
 
 imminence-1y = "Action is recommended within three years, detailed assessment within one year."
 significance-10 = "The loss of tools, data or services within this group would impact on people and sectors around the world."
