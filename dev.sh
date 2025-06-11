@@ -1,8 +1,8 @@
 #!/bin/sh
-hugo
+hugo --baseURL /bit-list/
 
 npx pagefind --site public --output-path static/pagefind
 
 npx decap-server 2>/dev/null &
 
-hugo server -w --disableFastRender
+hugo server -w --disableFastRender --baseURL //localhost:1313/bit-list/

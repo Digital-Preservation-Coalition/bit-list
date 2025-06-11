@@ -123,8 +123,8 @@
     </p>
 
     <p>
-    {{ $edit_url := printf "/bit-list/admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
-    <a href="{{ relURL $edit_url }}" target="_blank" class="btn btn-secondary">Edit This Entry</a>
+    {{ $edit_url := printf "/admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
+    <a href="{{ $edit_url | absURL }}" target="_blank" class="btn btn-secondary">Edit This Entry</a>
     </p>
 
     <hr>

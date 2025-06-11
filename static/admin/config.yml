@@ -11,6 +11,7 @@ local_backend: true
 
 # A handy link back to the homepage:
 site_url: /bit-list/
+logo_url: /bit-list/images/bit-list-logo.svg
 
 # How to talk to the Git datafile store:
 backend:

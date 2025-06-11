@@ -1,4 +1,4 @@
-baseURL = '/'
+baseURL = '/bit-list/'
 title = "The Bit List"
 author = "Digital Preservation Coalition"
 copyright = "Maintained by the <a class=\"text-muted\" href=\"https://dpconline.org/\">Digital Preservation Coalition</a>."
