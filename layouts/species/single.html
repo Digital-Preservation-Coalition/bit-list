@@ -115,10 +115,12 @@
     {{ .Content }}
 
     {{ with index (.Params.aliases) 0 }}
+    <p>
     <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
       Click Here To Open The Current Live Page For This Entry On The DPC Website
     </a>
     {{ end }}
+    </p>
 
     <p>
     {{ $edit_url := printf "/admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}

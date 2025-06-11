@@ -34,7 +34,7 @@ year-added: 2017
 published: 2017-06-10
 last-updated: 2025-06-10
 aliases:
-  - alias: /digipres/champion-digital-preservation/bit-list/endangered/bitlist-orphaned-works
+  - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-orphaned-works
 ---
 ## 2023 Review
 
