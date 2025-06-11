@@ -6,7 +6,7 @@
 
 <div class="container py-3" data-pagefind-body>
 
-  <div class="species-header p-1 clearfix" data-pagefind-filter="status:{{ $status.Params.title }}">
+  <div class="species-header p-1 clearfix" data-pagefind-filter="{{ T "status" }}:{{ $status.Params.title }}">
     
     <div class="float-end p-2">
     {{ .Store.Set "imageSize" "200x" }}{{ partial "status-img" .Params }}
@@ -23,7 +23,7 @@
   <div class="row">
       <div class="col-6 col-sm-4 text-dark bg-primary-subtle border-start border-top border-primary p-2">
         <div class="d-flex justify-content-center align-items-center">
-          <h3 data-pagefind-filter="genus:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
+          <h3 data-pagefind-filter="{{ T "genus" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
         </div>
         <div class="d-flex justify-content-center align-items-center">
         {{ $path := printf "images/genus/%s.png" $cat_name  }}
@@ -39,7 +39,7 @@
           <h3>Added to list: {{ index .Params "year-added" }}</h3>
         </div>
       </div>
-      <div class="col-6 col-sm-4 text-dark border-top border-primary p-0">
+      <div class="col-6 col-sm-4 text-dark border-top border-end border-primary p-0">
         {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger-subtle" ) }}
         {{ range first 2 .Params.trends }}
         <div class="h-50 {{ index $tc .trend }} d-flex justify-content-center align-items-center">
@@ -114,29 +114,29 @@
 
     {{ .Content }}
 
-    {{ with index (.Params.aliases) 0 }}
-    <p>
-    <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
-      Click Here To Open The Current Live Page For This Entry On The DPC Website
-    </a>
-    {{ end }}
-    </p>
-
-    <p>
-    {{ $edit_url := printf "/admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
-    <a href="{{ $edit_url | absURL }}" target="_blank" class="btn btn-secondary">Edit This Entry</a>
-    </p>
-
-    <hr>
-    <details>
-    <summary><b>Raw Metadata</b></summary>
-    <pretty-json>
-    {{ .Params | jsonify (dict "indent" "  ") }}
-    </pretty-json>
-    </details>
-    <hr>
-
   </div>
+
+  {{ with index (.Params.aliases) 0 }}
+  <p>
+  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
+    Click Here To Open The Current Live Page For This Entry On The DPC Website
+  </a>
+  {{ end }}
+  </p>
+
+  <p>
+  {{ $edit_url := printf "/admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
+  <a href="{{ $edit_url | absURL }}" target="_blank" class="btn btn-secondary">Edit This Entry</a>
+  </p>
+
+  <hr>
+  <details data-pagefind-ignore>
+  <summary><b>Raw Metadata</b></summary>
+  <pretty-json>
+  {{ .Params | jsonify (dict "indent" "  ") }}
+  </pretty-json>
+  </details>
+  <hr>
 
 </div>
 
