@@ -1,17 +1,17 @@
 [[main]]
 name = "Home"
-pageRef = "index"
+pageRef = "/index"
 weight = 10
 
 [[main]]
 name = "About"
-pageRef = "about"
+pageRef = "/about"
 weight = 20
 title = "About the Bit List"
 
 [[main]]
 name = "Search"
-pageRef = "search"
+pageRef = "/search"
 weight = 25
 title = "Search"
 
@@ -23,7 +23,7 @@ weight = 40
 [[main]]
 identifier = "species"
 name = "Species"
-pageRef = "species"
+pageRef = "/species"
 weight = 10
 parent = "browse"
 

@@ -1,0 +1,6 @@
+[build]
+  command = "./build-netlify.sh"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.147.8"
