@@ -29,13 +29,13 @@ parent = "browse"
 
 [[main]]
 name = "Categories"
-pageRef = "/category"
+pageRef = "/categories"
 weight = 20
 parent = "browse"
 
 [[main]]
 name = "Threats"
-pageRef = "/tags"
+pageRef = "/threats"
 weight = 30
 parent = "browse"
 
