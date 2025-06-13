@@ -275,6 +275,12 @@ collections:
   public_folder: '/images/category'
   i18n: true
   fields:
+  - label: ID
+    name: id
+    widget: string
+    required: true
+    i18n: duplicate
+    hint: "NOTE: Changing this ID will break all the links to this category."
   - label: Title
     name: title
     widget: string

@@ -1,4 +1,4 @@
 ---
 title: Sound and Vision
-id: sound-vision
+id: sound-and-vision
 ---
