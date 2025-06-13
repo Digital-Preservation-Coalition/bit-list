@@ -9,4 +9,4 @@ npx pagefind --site public --output-path static/pagefind
 
 npx decap-server 2>/dev/null &
 
-hugo server -w --disableFastRender --baseURL //localhost:1313$BASE_URL
+hugo server -w --disableFastRender --printI18nWarnings --baseURL //localhost:1313$BASE_URL

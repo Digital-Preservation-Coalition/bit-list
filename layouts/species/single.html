@@ -9,7 +9,7 @@
   <div class="species-header p-1 clearfix" data-pagefind-filter="{{ T "status" }}:{{ $status.Params.title }}">
     
     <div class="float-end p-2">
-    {{ .Store.Set "imageSize" "200x" }}{{ partial "status-img" .Params }}
+    {{ .Store.Set "imageSize" "150x" }}{{ partial "status-img" .Params }}
     </div>
 
     <h1>{{ .Title }}</h1>  
@@ -20,8 +20,8 @@
   </div>
 
   <div class="species-factsheet container p-3 pt-2 text-center overflow-hidden">
-  <div class="row">
-      <div class="col-6 col-sm-4 text-dark bg-primary-subtle border-start border-top border-primary p-2">
+  <div class="row bg-primary">
+      <div class="col-6 col-sm-4 text-dark bg-primary-subtle p-2">
         <div class="d-flex justify-content-center align-items-center">
           <h3 data-pagefind-filter="{{ T "genus" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
         </div>
@@ -39,10 +39,47 @@
           <h3>Added to list: {{ index .Params "year-added" }}</h3>
         </div>
       </div>
-      <div class="col-6 col-sm-4 text-dark border-top border-end border-primary p-0">
+      <!-- Threats -->
+      <div class="col-6 col-sm-4 text-dark bg-warning pt-2">
+        <h3>Threats<br>
+        {{ .Params.threat }}
+        </h3>
+      </div>
+      <!-- Imminence -->
+      <div class="col-12 col-sm-4 text-light bg-danger pt-2">
+        <h3>Imminence</h3>
+        <p>{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
+      </div>
+    </div>
+    <div class="row p-0">
+      <div class="col-12 col-sm-6 p-0" >
+        {{ with index .Params "status-at-risk"}}
+        <div class="p-3 h-100 text-dark bg-danger" style="--bs-bg-opacity: .1;">
+          {{ $status := page.GetPage ( printf "status/%s" .status ) }}
+        <h3 class="mb-2 text-center">Hazards</h3>
+        <p>{{ .reasons }}</p>
+        </div>
+        {{ end }}
+        </div>
+      <div class="col-12 col-sm-6 p-0">
+        {{ with index .Params "status-in-care"}}
+        <div class="p-3 h-100 text-dark bg-success" style="--bs-bg-opacity: .1;">
+          {{ $status := page.GetPage ( printf "status/%s" .status ) }}
+        <h3 class="mb-2 text-center">Mitigations</h3>
+        <p>{{ .reasons }}</p>
+        </div>
+        {{ end }}
+        </div>
+      <!-- Effort -->
+      <div class="col-12 col-sm-4 text-light bg-primary pt-2">
+        <h3>Effort</h3>
+        <p>{{ T ( printf "effort-%d" .Params.effort ) }}</p>
+      </div>
+      <!-- Trends -->
+      <div class="col-6 col-sm-4 text-dark p-0">
         {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger-subtle" ) }}
         {{ range first 2 .Params.trends }}
-        <div class="h-50 {{ index $tc .trend }} d-flex justify-content-center align-items-center">
+        <div class="h-50 {{ index $tc .trend }} d-flex justify-content-center align-items-center p-1">
           <div>
             <h3>Trend in {{ .year }}</h3>
             <div>{{.trend}}</div>
@@ -50,76 +87,31 @@
         </div>
         {{ end }}
       </div>
+      <!-- Previously -->
       <div class="col-6 col-sm-4 p-0">
-        <div class="h-50 d-flex justify-content-center align-items-center text-white bg-primary">
-        {{ T .Params.decision }}
-        </div>
-        <div class="h-50 d-flex justify-content-center align-items-center text-white bg-danger">
+        <div class="h-100 d-flex justify-content-center align-items-center text-white bg-secondary">
           <div>
             <h3>Previously</h3>
             {{ index .Params "previous-status" }}
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 text-light bg-danger pt-2">
-        <h3>Imminence</h3>
-        <p>{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
-        <h3>Impact</h3>
-        <p>{{ T ( printf "impact-%d" .Params.impact ) }}</p>
-      </div>
-      <div class="col-6 col-sm-4 text-light bg-dark pt-2">
-        <h3>Significance</h3>
-        <p>{{ T ( printf "significance-%d" .Params.significance ) }}</p>
-      </div>
-      <div class="col-6 col-sm-4 text-light bg-primary pt-2">
-        <h3>Effort</h3>
-        <p>{{ T ( printf "effort-%d" .Params.effort ) }}</p>
-      </div>
-    </div>
-
-    <div class="row pt-3 gx-3">
-      <div class="col-12 col-sm-6 pb-2" >
-        {{ with index .Params "status-at-risk"}}
-        <div class="p-3 text-dark bg-danger border border-danger rounded-3 h-100" style="--bs-bg-opacity: .1;">
-          <div class="p-2 m-1 float-end">
-            {{ page.Store.Set "imageSize" "100x" }}{{ partial "status-img" . }}
-          </div>
-          {{ $status := page.GetPage ( printf "status/%s" .status ) }}
-        <h3 class="mt-2"><i>{{ $status.Params.title }}</i> in the Presence of Aggravating Conditions</h3>
-        <p>{{ .reasons }}</p>
-        </div>
-        {{ end }}
-        </div>
-      <div class="col-12 col-sm-6 pb-2">
-        {{ with index .Params "status-in-care"}}
-        <div class="p-3 text-dark bg-success border border-success rounded-3 h-100" style="--bs-bg-opacity: .1;">
-          <div class="p-2 m-1 float-end">
-          {{ page.Store.Set "imageSize" "100x" }}{{ partial "status-img" . }}
-          </div>
-          {{ $status := page.GetPage ( printf "status/%s" .status ) }}
-        <h3 class="mt-2"><i>{{ $status.Params.title }}</i> in the Presence of Good Practice</h3>
-        {{ .reasons }}
-        </div>
-        {{ end }}
-        </div>
     </div>
   </div>
   
-  <div class="species-content p-1">
-    <h2>Discussion</h2>
-    <details open class="m-2">
-      <summary>{{ T "contents" }}</summary>
-      {{ .TableOfContents }}
-    </details>
-
-    {{ .Content }}
-
-  </div>
-
   <p class="float-end">
   {{ $edit_url := printf "admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
   <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-primary">Edit This Entry</a>
   </p>
+
+  <div class="species-content p-1">
+    <details class="m-2">
+  
+      <summary><h2 class="align-middle" style="display: inline-block;">Discussion</h2></summary>
+    
+      {{ .TableOfContents }}
+
+      {{ .Content }}
 
   {{ with index (.Params.aliases) 0 }}
   <p>
@@ -128,6 +120,9 @@
   </a>
   {{ end }}
   </p>
+
+    </details>
+  </div>
 
   <hr>
   <details data-pagefind-ignore>

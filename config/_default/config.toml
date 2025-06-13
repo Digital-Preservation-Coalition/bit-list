@@ -8,6 +8,7 @@ timeZone = 'Europe/London'
 # Multilingual
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+enableMissingTranslationPlaceholders = true
 
 theme = 'hugo-bootstrap-theme'
 themesdir = 'node_modules/@filipecarneiro'
