@@ -238,7 +238,7 @@ collections:
     hint: '??? Currently, these sections are just free-text and loose headings - but this is perhaps a bad idea?'
 
 - name: statuses
-  label: Statuses
+  label: Classifications
   folder: content/status
   create: false
   delete: false
