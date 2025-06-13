@@ -5,9 +5,10 @@ contents = "Contents"
 search = "Search"
 search-tbl = "Search the Bit List"
 
-genus = "Genus"
+category = "Category"
+threats = "Threats"
 status = "Status"
-consensus = "Consensus Decision"
+classification = "Classification"
 
 imminence-5 = "IMM 5"
 imminence-4 = "Action is recommended within three years, detailed assessment within one year."

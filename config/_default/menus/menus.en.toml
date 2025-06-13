@@ -28,28 +28,15 @@ weight = 10
 parent = "browse"
 
 [[main]]
-name = "All"
-pageRef = "post"
-weight = 100
-parent = "browse"
-
-[[main]]
-name = "Hugo"
-pageRef = "/tags/hugo"
+name = "Categories"
+pageRef = "/category"
 weight = 20
 parent = "browse"
 
 [[main]]
-name = "Bootstrap"
-pageRef = "/tags/bootstrap"
+name = "Threats"
+pageRef = "/tags"
 weight = 30
-parent = "browse"
-
-[[main]]
-identifier = "docs"
-name = "Docs"
-pageRef = "/page"
-weight = 50
 parent = "browse"
 
 [[social]]

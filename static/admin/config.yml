@@ -72,24 +72,25 @@ collections:
     required: false
     hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
     i18n: duplicate
-  - label: "Genus"
+  - label: "Category"
     name: categories
     multiple: true
     required: true
     widget: relation
-    collection: "genus"
-    value_field: "{{slug}}"
-    search_fields: [ 'title' ]
-    hint: "??? These classifications were called Digital Species before. Is Genus a better name? Or just use categories?"
+    collection: "categories"
+    value_field: "{{id}}"
+    search_fields: ["title"]
+    displayFields: ["title"]
+    hint: "The category of digital species."
     i18n: duplicate
-  - label: 'Threat'
+  - label: 'Threat(s???)'
     name: 'threat'
     widget: 'select'
     options: ['social-media-cloud', 'hardware-obsolescence']
     required: true 
     i18n: duplicate
     hint: "??? This is the new threat classification, but not sure how to handle it yet."
-  - label: "Status"
+  - label: "Classification"
     name: status
     multiple: false
     required: true
@@ -98,7 +99,7 @@ collections:
     value_field: "{{slug}}"
     search_fields: [ 'title' ] 
     i18n: duplicate
-  - label: "Previous Status"
+  - label: "Previous Classification"
     name: previous-status
     multiple: false
     required: false
@@ -107,13 +108,6 @@ collections:
     value_field: "{{slug}}"
     search_fields: [ 'title' ]
     i18n: duplicate
-  - label: Decision
-    name: decision
-    widget: string
-    required: true
-    default: "consensus"
-    i18n: duplicate
-    hint: "??? What does this field mean? 'consensus' or?"
   - label: "Imminence of Action"
     name: imminence
     widget: "select"
@@ -270,15 +264,15 @@ collections:
     required: false
     i18n: duplicate
 
-- name: genus
-  label: Genus
-  folder: content/genus
+- name: categories
+  label: Categories
+  folder: content/categories
   create: false
   delete: false
   hide: false
-  path: '{{slug}}'
-  media_folder: '/assets/images/genus'
-  public_folder: '/images/genus'
+  path: '{{slug}}/_index'
+  media_folder: '/assets/images/category'
+  public_folder: '/images/category'
   i18n: true
   fields:
   - label: Title

@@ -12,9 +12,11 @@
   </div>
 </section>
 
-<section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Latest Posts</h3>
-  {{ partial "latest-posts" . }}
+<section class="section container my-3 text-center">
+  <h3 class="text-secondary my-3">Call To Action</h3>
+  <p>
+    Tell us what's missing! Tell us what affects you! Etc.
+  </p>
 </section>
 
 <section class="section container my-3">
@@ -25,5 +27,10 @@
 <div class="container py-3">
   {{ .Content }}
 </div>
+
+<section class="section container my-3">
+  <h3 class="text-secondary text-center my-5">Latest Posts</h3>
+  {{ partial "latest-posts" . }}
+</section>
 
 {{ end }}

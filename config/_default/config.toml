@@ -30,7 +30,7 @@ mainSections = ['species', 'posts']
 [taxonomies]
   tag = "tags"
   category = "categories"
-  series = 'series'
+  threat = 'threats'
   author = 'authors'
 
 [sitemap]

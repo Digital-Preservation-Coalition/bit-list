@@ -7,7 +7,7 @@ status: "critically-endangered"
 previous-status: "critically-endangered"
 threat: hardware-obsolescence
 decision: consensus
-tags: ["technological-obsolescence"]
+tags: ["featured"]
 imminence: 4
 effort: 3
 impact: 5

@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 {{ $cat_name := index .Params.categories 0 }}
-{{ $cat := .GetPage ( printf "genus/%s" $cat_name ) }}
+{{ $cat := .GetPage ( printf "categories/%s" $cat_name ) }}
 {{ $status := .GetPage ( printf "status/%s" .Params.status ) }}
 
 <div class="container py-3" data-pagefind-body>
@@ -17,16 +17,17 @@
   
     <h2>Examples</h2>
     <p>{{ .Params.examples }}</p>
+    
   </div>
 
-  <div class="species-factsheet container p-3 pt-2 text-center overflow-hidden">
+<div class="species-factsheet container m-3 mt-1 text-center overflow-hidden border border-primary">
   <div class="row bg-primary">
       <div class="col-6 col-sm-4 text-dark bg-primary-subtle p-2">
         <div class="d-flex justify-content-center align-items-center">
-          <h3 data-pagefind-filter="{{ T "genus" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
+          <h3 data-pagefind-filter="{{ T "category" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
         </div>
         <div class="d-flex justify-content-center align-items-center">
-        {{ $path := printf "images/genus/%s.png" $cat_name  }}
+        {{ $path := printf "images/category/%s.png" $cat_name  }}
         {{ with resources.Get $path }}
           {{ with .Resize "x80" }}
             <a href="{{ $cat.RelPermalink }}" title="{{ $cat.Params.title }}">

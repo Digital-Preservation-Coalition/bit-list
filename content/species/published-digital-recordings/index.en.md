@@ -6,7 +6,7 @@ categories: [ "sound-and-vision", "cloud" ]
 status: endangered
 previous-status: endangered
 threat: social-media-cloud
-tags: ["social-media-cloud"]
+tags: ["featured"]
 decision: consensus
 year-added: 2019
 last-updated: 2024-01-01

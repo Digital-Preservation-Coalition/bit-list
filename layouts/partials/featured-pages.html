@@ -1,9 +1,9 @@
 <div class="row row-cols-1 g-4">
 
     {{ range .Site.Taxonomies.tags.featured }}
-        <div class="col">
+        <div class="col-12 col-sm-6 ">
 
-            <div class="card">
+            <div class="card h-100">
                 <div class="card-body">
                     <h4 class="card-title">
                         <a class="stretched-link text-primary text-decoration-none" href="{{ .RelPermalink }}">
@@ -17,11 +17,9 @@
                             {{ .Summary | truncate 400 }}
                         {{ end }}
                     </p>
-                    <p class="text-text text-muted">
-                        <small>
-                            {{ .Lastmod | time.Format ":date_long" }}
-                        </small>
-                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">{{ .Date | time.Format ":date_long" }}</small>
                 </div>
             </div>
     
