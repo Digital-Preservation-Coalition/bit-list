@@ -6,9 +6,9 @@
 
 <div class="container py-3" data-pagefind-body>
 
-  <div class="species-header p-1 clearfix" data-pagefind-filter="{{ T "status" }}:{{ $status.Params.title }}">
+  <div class="species-header clearfix" data-pagefind-filter="{{ T "status" }}:{{ $status.Params.title }}">
     
-    <div class="float-end p-2">
+    <div class="float-end p-1">
     {{ .Store.Set "imageSize" "150x" }}{{ partial "status-img" .Params }}
     </div>
 
@@ -20,7 +20,7 @@
     
   </div>
 
-<div class="species-factsheet container m-3 mt-1 text-center overflow-hidden border border-primary">
+<div class="species-factsheet container mb-3 text-center overflow-hidden border border-primary">
   <div class="row bg-primary">
       <div class="col-6 col-sm-4 text-dark bg-primary-subtle p-2">
         <div class="d-flex justify-content-center align-items-center">
@@ -100,13 +100,13 @@
     </div>
   </div>
   
-  <p class="float-end">
+  <p class="float-end p-1">
   {{ $edit_url := printf "admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
   <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-primary">Edit This Entry</a>
   </p>
 
-  <div class="species-content p-1">
-    <details class="m-2">
+  <div class="species-discussion">
+    <details class="p-1">
   
       <summary><h2 class="align-middle" style="display: inline-block;">Discussion</h2></summary>
     
