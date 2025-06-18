@@ -6,7 +6,7 @@ examples: Photographs, music recordings, literature.
 categories:
   - orphaned-works
 threat: social-media-cloud
-status: endangered
+classification: endangered
 previous-status: endangered
 decision: consensus
 imminence: 4

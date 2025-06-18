@@ -3,7 +3,7 @@ title: Digital Recordings Published via Cloud-based Music Sharing Platforms
 description: "Music licensed and playable through corporate platforms protected by rights management and subscription revenues and presented as compressed single-track recordings."
 examples: "Spotify, iTunes, Bandcamp, SoundCloud."
 categories: [ "sound-and-vision", "cloud" ]
-status: endangered
+classification: endangered
 previous-status: endangered
 threat: social-media-cloud
 tags: ["featured"]

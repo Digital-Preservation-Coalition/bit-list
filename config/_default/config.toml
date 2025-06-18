@@ -7,7 +7,7 @@ timeZone = 'Europe/London'
 
 # Multilingual
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 
 theme = 'hugo-bootstrap-theme'
@@ -52,3 +52,19 @@ mainSections = ['species', 'posts']
   [[module.mounts]]
     source = "static"
     target = "static"
+
+
+#
+# Add config to generate DecapCMS config etc. via Hugo
+# https://discourse.gohugo.io/t/using-outputformats-to-generate-config-yml-in-a-certain-section/52308
+#
+
+[outputFormats]
+  [outputFormats.AdminConfigYaml]
+    baseName = 'config'
+    isPlainText = true
+    mediaType = 'application/yaml'
+
+[mediaTypes]
+  [mediaTypes.'application/yaml']
+    suffixes = ['yml', 'yaml']

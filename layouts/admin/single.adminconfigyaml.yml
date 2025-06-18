@@ -10,8 +10,8 @@
 local_backend: true
 
 # A handy link back to the homepage:
-site_url: /bit-list/
-logo_url: /bit-list/images/bit-list-logo.svg
+site_url: "{{ site.BaseURL }}"
+logo_url: "{{ site.BaseURL }}images/bit-list-logo.svg"
 
 # How to talk to the Git datafile store:
 backend:
@@ -43,7 +43,7 @@ collections:
   label: Bit-List Species
   folder: content/species
   create: true
-  path: '{{slug}}/index'
+  path: '{{ "{{slug}}" }}/index'
   media_folder: ''
   public_folder: ''
   i18n: true
@@ -75,37 +75,31 @@ collections:
   - label: "Category"
     name: categories
     multiple: true
-    required: true
+    required: false
     widget: relation
     collection: "categories"
-    value_field: "{{id}}"
+    value_field: 'id'
     search_fields: ["title"]
-    displayFields: ["title"]
+    display_fields: ["title"]
     hint: "The category of digital species."
     i18n: duplicate
-  - label: 'Threat(s???)'
-    name: 'threat'
-    widget: 'select'
-    options: ['social-media-cloud', 'hardware-obsolescence']
-    required: true 
-    i18n: duplicate
-    hint: "??? This is the new threat classification, but not sure how to handle it yet."
-  - label: "Classification"
-    name: status
-    multiple: false
-    required: true
+  - label: "Threats"
+    name: threats
+    multiple: true
+    required: false
     widget: relation
-    collection: "statuses"
-    value_field: "{{slug}}"
+    collection: "threats"
+    value_field: 'id'
     search_fields: [ 'title' ] 
+    display_fields: ['title']
     i18n: duplicate
-  - label: "Previous Classification"
-    name: previous-status
+  - label: "Classification"
+    name: classification
     multiple: false
     required: false
     widget: relation
-    collection: "statuses"
-    value_field: "{{slug}}"
+    collection: "classifications"
+    value_field: 'id'
     search_fields: [ 'title' ]
     i18n: duplicate
   - label: "Imminence of Action"
@@ -117,7 +111,7 @@ collections:
       - { label: "(3) Less than 3 years", value: 3 }
       - { label: "(2) Within 5 years", value: 2 }
       - { label: "(1) More than 5 years", value: 1 }
-    hint: "??? If you had one of these, how quickly would you need to act to save it?"
+    hint: "If you had one of these, how quickly would you need to act to save it?"
   - label: "Inevitability of Loss/Effort to Preserve"
     name: effort
     widget: "select"
@@ -127,80 +121,23 @@ collections:
       - { label: "(3) Major effort to fix", value: 3 }
       - { label: "(2) Small effort to fix", value: 2 }
       - { label: "(1) Entirely avoidable", value: 1 }
-    hint: "??? Can it reasonably be avoided?"
-  - label: "Impact"
-    name: impact
-    widget: "select"
-    options:
-      - { label: "(10) Globally traumatic, destabilizing impact to a large group of people", value: 10 }
-      - { label: "(9) Internationally traumatic, destabilizing impact to a large group of people", value: 9 }
-      - { label: "(8) Nationally traumatic, destabilizing impact to a large group of people", value: 8 }
-      - { label: "(7) Locally traumatic, destabilizing impact to a large group of people", value: 7 }
-      - { label: "(6) Impact to a large group of people", value: 6 }
-      - { label: "(5) Impact to a smaller group of people", value: 5 }
-      - { label: "(4) Inconvenient", value: 4 }
-      - { label: "(3) Inconvenient, but quickly recoverable", value: 3 }
-      - { label: "(2) Inconvenient to a smaller group of people, but quickly recoverable", value: 2 }
-      - { label: "(1) Briefly inconvenient", value: 1 }
-    hint: "??? What is the extent to which the loss of the digital material would be felt?"
-  - label: "Significance"
-    name: significance
-    widget: "select"
-    options:
-      - { label: "(10) Unique, irreplaceable, invaluable, of global interest and importance to a large group of people", value: 10 }
-      - { label: "(9) Unique, irreplaceable, invaluable, of international interest and importance to a large group of people", value: 9 }
-      - { label: "(8) Unique, irreplaceable, invaluable, of national interest and importance to a large group of people", value: 8 }
-      - { label: "(7) Unique, irreplaceable, invaluable, of community/local interest and importance to a large group of people", value: 7 }
-      - { label: "(6) Irreplaceable, invaluable, of interest and importance to a large group of people", value: 6 }
-      - { label: "(5) Invaluable and significant to a smaller group of people", value: 5 }
-      - { label: "(4) Of some value and significance to a smaller group of people", value: 4 }
-      - { label: "(3) Of some value or significance to a smaller group of people", value: 3 }
-      - { label: "(2) Derivative and easily reproducible", value: 2 }
-      - { label: "(1) Limited significance", value: 1 }
-    hint: "??? What is the significance, value and/or 'uniqueness' of the digital material?"
+    hint: "Can it reasonably be avoided?"
   - label: Trends
     name: trends
     widget: list
     minimize_collapsed: false
-    summary: '{{fields.year}} - {{fields.trend}}'
+    summary: '{{ "{{fields.year}} - {{fields.trend}} - {{fields.classification}}" }}'
     fields:
     - { label: "Year", name: "year", widget: "number", value_type: "int" }
     - { label: "Trend", name: "trend", widget: "select", options: ['material-improvement', 'no-change', 'towards-greater-risk'] }
+    - { label: "Classification", name: "classification", required: false, widget: "relation", collection: "classifications", value_field: "id", search_fields: ['title']}
     required: false
-  - label: Status in the Presence of Aggravating Conditions
-    name: status-at-risk
-    widget: "object"
-    fields:
-    - label: "Status"
-      name: status
-      multiple: false
-      required: true
-      widget: relation
-      collection: "statuses"
-      value_field: "{{slug}}"
-      search_fields: [ 'title' ] 
-      i18n: duplicate
-    - label: Reasons
-      name: reasons
-      widget: "text"
-  - label: Status in the Presence of Good Practice
-    name: status-in-care
-    widget: "object"
-    fields:
-    - label: "Status"
-      name: status
-      multiple: false
-      required: true
-      widget: relation
-      collection: "statuses"
-      value_field: "{{slug}}"
-      search_fields: [ 'title' ] 
-      i18n: duplicate
-    - label: Reasons
-      name: reasons
-      widget: "text"
-
-
+  - label: Hazards
+    name: hazards
+    widget: "text"
+  - label: Mitigations
+    name: mitigations
+    widget: "text"
 # -------------
   - label: Year Added
     name: year-added
@@ -237,17 +174,23 @@ collections:
     i18n: true
     hint: '??? Currently, these sections are just free-text and loose headings - but this is perhaps a bad idea?'
 
-- name: statuses
+- name: classifications
   label: Classifications
-  folder: content/status
+  folder: content/classification
   create: false
   delete: false
   hide: false
-  path: '{{slug}}'
-  media_folder: '/assets/images/status'
-  public_folder: '/images/status'
+  path: '{{ "{{slug}}" }}'
+  media_folder: '/assets/images/classification'
+  public_folder: '/images/classification'
   i18n: true
   fields:
+  - label: ID
+    name: id
+    widget: string
+    required: true
+    i18n: duplicate
+    hint: "NOTE: Changing this ID will break all the links to this category."
   - label: Title
     name: title
     widget: string
@@ -270,7 +213,7 @@ collections:
   create: false
   delete: false
   hide: false
-  path: '{{slug}}/_index'
+  path: '{{ "{{slug}}" }}/_index'
   media_folder: '/assets/images/category'
   public_folder: '/images/category'
   i18n: true
@@ -297,13 +240,55 @@ collections:
     required: false
     i18n: duplicate
 
+- name: threats
+  label: Threats
+  folder: content/threats
+  create: true
+  delete: false
+  hide: false
+  path: '{{ "{{slug}}" }}/_index'
+  media_folder: '/assets/images/threats'
+  public_folder: '/images/threats'
+  i18n: true
+  summary: '{{ "{{class}} > {{title}}" }}'
+  fields:
+  - label: ID
+    name: id
+    widget: string
+    required: true
+    i18n: duplicate
+    hint: "NOTE: Changing this ID will break all the links to this category."
+  - label: Title
+    name: title
+    widget: string
+    required: true
+    i18n: true
+  - label: Description
+    name: description
+    widget: string
+    required: false
+    i18n: true
+  - label: 'Image'
+    name: 'image'
+    widget: 'image'
+    required: false
+    i18n: duplicate
+  - label: "Threat Class"
+    name: class
+    widget: "select"
+    options:
+      - "Organisational Threats"
+      - "Complexity Threats"
+      - "Technological Threats"
+    hint: "The broad class of threat this belongs to."
+
 - name: pages
   label: 'Information Pages'
   folder: content
   create: false
   delete: false
   hide: false
-  path: '{{slug}}'
+  path: '{{ "{{slug}}" }}'
   media_folder: '/assets/images/'
   public_folder: '/images/'
   i18n: true

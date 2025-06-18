@@ -1,4 +1,5 @@
 ---
+id: practically-extinct
 title: Practically Extinct
 description: Digital materials are listed as Practically Extinct when the few
   known examples are inaccessible by most practical means and methods.  This

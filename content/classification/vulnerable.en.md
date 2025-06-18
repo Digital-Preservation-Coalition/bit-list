@@ -1,4 +1,5 @@
 ---
+id: vulnerable
 title: Vulnerable
 description: Digital materials are listed as Vulnerable when the technical
   challenges to preservation are modest but responsibility for care is poorly
