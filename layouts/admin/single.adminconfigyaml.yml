@@ -164,10 +164,8 @@ collections:
     name: aliases
     widget: list
     minimize_collapsed: true
-    fields:
-    - { label: "Alias", name: "alias", widget: "string" }
     required: false
-    hint: "Other URLs for this site that should resolve to this item."
+    hint: "Comma separated list of other URLs (for this site) that should resolve to this item."
   - label: 'Body'
     name: 'body'
     widget: 'markdown'

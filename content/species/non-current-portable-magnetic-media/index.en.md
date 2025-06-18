@@ -1,19 +1,34 @@
 ---
 title: Non-current Portable Magnetic Media
-description: "Materials saved to floppy disks, tape, portable hard disks or other numerous magnetic storage devices where the media is out of warranty and reader devices may no longer be supported or integrated easily into hardware infrastructure: typically, more than five years old."
-examples: "Floppy disks; tape; certain kinds of portable hard disks, zip drives."
-categories: [ "portable-media" ]
-classification: "critically-endangered"
-tags: ["featured"]
+description: "Materials saved to floppy disks, tape, portable hard disks or
+  other numerous magnetic storage devices where the media is out of warranty and
+  reader devices may no longer be supported or integrated easily into hardware
+  infrastructure: typically, more than five years old."
+examples: Floppy disks; tape; certain kinds of portable hard disks, zip drives.
+categories:
+  - portable-media
+threats:
+  - obsolete-hardware-media
+classification: critically-endangered
 imminence: 4
 effort: 3
-hazards: "Poor storage; inability to access readers; no replication; encryption; aggressive compression; uncertainty over IPR or the presence of orphaned works."
-mitigations: "Active management; dependable access to readers; strong documentation; documentation independent from the media."
+trends:
+  - year: 2023
+    trend: no-change
+    classification: critically-endangered
+  - year: 2024
+    trend: no-change
+    classification: critically-endangered
+hazards: Poor storage; inability to access readers; no replication; encryption;
+  aggressive compression; uncertainty over IPR or the presence of orphaned
+  works.
+mitigations: Active management; dependable access to readers; strong
+  documentation; documentation independent from the media.
 year-added: 2019
 published: 2019-01-01
 last-updated: 2023-01-01
 aliases:
-- /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-portable-magnetic-media
+  - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-portable-magnetic-media
 ---
 ## 2023 Review
 

@@ -1,0 +1,9 @@
+{{ $classification := page.GetPage ( printf "classification/%s" .classification ) }}
+
+{{ $img := printf "images/classification/%s.png" .classification }}
+{{ $imageSize := page.Store.Get "imageSize" | default "100x"}}
+{{ with resources.Get $img }}
+  {{ with .Resize $imageSize }}
+    <img src="{{ .RelPermalink }}" alt="{{ $classification.Params.title }}" width="{{ .Width }}" height="{{ .Height }}">
+  {{ end }}
+{{ end }}
