@@ -82,7 +82,7 @@
         {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger" "material-improvement" "bg-primary" ) }}
         {{ $tf := ( dict "no-change" "text-dark" "towards-greater-risk" "text-light" "material-improvement" "text-light" ) }}
         {{ with index .Params "trends" }}
-        {{ range first 2 . }}
+        {{ range first 2 ( sort . "year" "desc" ) }}
         <div class="h-50 {{ index $tc .trend }} {{ index $tf .trend }} justify-content-center align-items-center p-1">
           <div>
             <h3 class="mb-2">Trend in {{ .year }}</h3>
