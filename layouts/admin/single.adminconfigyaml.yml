@@ -145,6 +145,21 @@ collections:
   - label: Mitigations
     name: mitigations
     widget: "text"
+  - label: Case Studies & Examples
+    name: case-studies
+    i18n: false
+    widget: list
+    minimize_collapsed: false
+    fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Author(s)", name: authors, widget: string, required: false }
+    - { label: "Publisher", name: "publisher", widget: "string", required: false }
+    - { label: "Year", name: year, widget: number, value_type: int, min: 1700, max: 2200, required: false }
+    - { label: "URL", name: "url", widget: "string" }
+    - { label: "Accessed At", name: "accessed", widget: "datetime", date_format: "YYYY-MM-DD", required: false }
+    - { label: "Comment", name: "comment", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false }
+    required: false
+    
 # -------------
   - label: Year Added
     name: year-added
@@ -173,11 +188,16 @@ collections:
     minimize_collapsed: true
     required: false
     hint: "Comma separated list of other URLs (for this site that should resolve to this item."
-  - label: 'Body'
+  - label: 'Discussion'
     name: 'body'
     widget: 'markdown'
     i18n: true
-    hint: '??? Currently, these sections are just free-text and loose headings - but this is perhaps a bad idea?'
+    hint: 'Discussion summarising the review process, outcome and history.'
+  - label: 'Comments'
+    name: 'comments'
+    widget: 'markdown'
+    i18n: true
+    hint: 'Additional comments for this species.'
 
 - name: classifications
   label: Classifications

@@ -109,16 +109,22 @@
 
       {{ .Content }}
 
-  {{ with index (.Params.aliases) 0 }}
-  <p>
-  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
-    Click Here To Open The Current Live Page For This Entry On The DPC Website
-  </a>
-  {{ end }}
-  </p>
+      {{ with index .Params.comments }}
+      <h3>Additional Comments</h3>
+      {{ . | markdownify }}
+      {{ end }}
 
     </details>
   </div>
+
+  {{ with index .Params "case-studies" }}
+  <h2>Case Studies & Examples</h2>
+  <ul>
+  {{ range .}}
+  <li>{{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><b>{{ .title }}</b></a>, {{ .authors }} ({{.year}}), <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.</li>
+  {{ end }}
+  </ul>
+  {{ end }}
 
   <hr>
   <details data-pagefind-ignore>
@@ -127,6 +133,15 @@
   {{ .Params | jsonify (dict "indent" "  ") }}
   </pretty-json>
   </details>
+
+  {{ with index (.Params.aliases) 0 }}
+  <p class="mt-2">
+  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
+    Click Here To Open The Current Live Page For This Entry On The DPC Website
+  </a>
+  {{ end }}
+  </p>
+
   <hr>
 
 </div>
