@@ -42,9 +42,14 @@
       </div>
       <!-- Threats -->
       <div class="col-6 col-sm-4 text-dark bg-warning pt-2">
-        <h3>Threats<br>
-        {{ .Params.threats }}
-        </h3>
+        <h3>Threats</h3>
+        <p>
+        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
+          {{ if in $.Params.threats .Params.id }}
+          <a class="badge text-dark nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
+          {{ end }}
+        {{end}}
+        </p>
       </div>
       <!-- Imminence -->
       <div class="col-12 col-sm-4 text-light bg-danger pt-2">
