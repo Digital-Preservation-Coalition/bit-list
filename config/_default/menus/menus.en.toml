@@ -41,7 +41,7 @@ parent = "browse"
 
 [[social]]
   name = "GitHub"
-  pre = "<svg xmlns='http://www.w3.org/2000/svg' class='feather feather-github'><use href='/bit-list/images/feather/feather-sprite.svg#github'/></svg>"
+  pre = "<i class='bi bi-github'></i>"
   url = "https://github.com/Digital-Preservation-Coalition/bit-list/"
   weight = 10
   title = "Visit the GitHub project"

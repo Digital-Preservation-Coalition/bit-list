@@ -7,3 +7,9 @@
   {{ $js := . | minify | fingerprint "sha512" -}}
   <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end }}
+{{ $css := resources.Get "bootstrap-icons/font/bootstrap-icons.min.css" }}
+{{ with $css }}
+  {{ $css := . | fingerprint "sha512" -}}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $js.Data.Integrity }}">
+{{ end }}
+

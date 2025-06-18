@@ -52,7 +52,9 @@ mainSections = ['species', 'posts']
   [[module.mounts]]
     source = "static"
     target = "static"
-
+  [[module.mounts]]
+    source = "node_modules/bootstrap-icons"
+    target = "assets/bootstrap-icons"
 
 #
 # Add config to generate DecapCMS config etc. via Hugo

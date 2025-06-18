@@ -10,6 +10,10 @@ threats = "Threats"
 status = "Status"
 classification = "Classification"
 
+towards-greater-risk = "Towards greater risk."
+no-change = "No change."
+material-improvement = "Material improvement."
+
 imminence-5 = "IMM 5"
 imminence-4 = "Action is recommended within three years, detailed assessment within one year."
 imminence-3 = "IMM 3"
