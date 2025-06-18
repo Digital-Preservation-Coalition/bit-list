@@ -99,9 +99,15 @@
       </div>
       <!-- Previously -->
       <div class="col-6 col-sm-4 p-0">
-        <div class="h-100 d-flex justify-content-center align-items-center text-white bg-secondary">
+        <div class="h-100 d-flex justify-content-center align-items-center text-dark bg-light">
           <div>
-            <h3>Previously</h3>
+            <h3 class="pb-2">Previously</h3>
+        {{ with index .Params "trends" }}
+          {{ range last 1 (first 2 ( sort . "year" "desc" )) }}
+            {{ $.Store.Set "imageSize" "100x" }}
+            {{ partial "classification-img" . }}
+          {{ end }}
+        {{ end }}
           </div>
         </div>
       </div>
