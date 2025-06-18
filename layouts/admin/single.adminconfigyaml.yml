@@ -93,6 +93,13 @@ collections:
     search_fields: [ 'title' ] 
     display_fields: ['title']
     i18n: duplicate
+  - label: "Tags"
+    name: tags
+    widget: "select"
+    required: false
+    multiple: true
+    options:
+      - "featured"
   - label: "Classification"
     name: classification
     multiple: false
@@ -165,7 +172,7 @@ collections:
     widget: list
     minimize_collapsed: true
     required: false
-    hint: "Comma separated list of other URLs (for this site) that should resolve to this item."
+    hint: "Comma separated list of other URLs (for this site that should resolve to this item."
   - label: 'Body'
     name: 'body'
     widget: 'markdown'
@@ -187,6 +194,7 @@ collections:
     name: id
     widget: string
     required: true
+    editable: false
     i18n: duplicate
     hint: "NOTE: Changing this ID will break all the links to this category."
   - label: Title

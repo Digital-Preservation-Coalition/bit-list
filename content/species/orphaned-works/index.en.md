@@ -1,38 +1,37 @@
 ---
+hazards: Lack of understanding of copyright; lack of documentation; dependencies
+  resulting from hardware, software or media; lack of use resulting in lack of
+  priority; lack of strategic investment in digital preservation; workflows that
+  inhibit preservation of content that has not been licensed; encryption; poor
+  storage.
+significance: 6
 title: Orphaned Works
 description: Digital materials where copyright is uncertain, disputed or
   unknowable, meaning that preservation actions are constrained or prevented.
 examples: Photographs, music recordings, literature.
 categories:
   - orphaned-works
-threat: social-media-cloud
-classification: endangered
-previous-status: endangered
-decision: consensus
+threats:
+  - legal-constraints
 imminence: 4
 effort: 5
-impact: 9
-significance: 6
 trends:
   - year: 2023
     trend: towards-greater-risk
+    classification: endangered
   - year: 2024
     trend: no-change
-status-at-risk:
-  status: critically-endangered
-  reasons: Lack of understanding of copyright; lack of documentation; dependencies
-    resulting from hardware, software or media; lack of use resulting in lack of
-    priority; lack of strategic investment in digital preservation; workflows
-    that inhibit preservation of content that has not been licensed; encryption;
-    poor storage.
-status-in-care:
-  reasons: Preservation pathway enabled; proven preservation plan applied; active
-    effort to resolve IPR issues; institutional willingness to take risks for
-    preservation.
-  status: vulnerable
+    classification: endangered
+mitigations: Preservation pathway enabled; proven preservation plan applied;
+  active effort to resolve IPR issues; institutional willingness to take risks
+  for preservation.
 year-added: 2017
-published: 2017-06-10
 last-updated: 2025-06-10
+impact: 9
+classification: endangered
+published: 2017-06-10
+threat: social-media-cloud
+decision: consensus
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-orphaned-works
 ---

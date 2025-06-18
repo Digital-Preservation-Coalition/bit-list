@@ -2,9 +2,8 @@
 
 <div class="container py-3">
 
-    {{ if or .Site.Params.options.listCategoryFilter .Site.Params.options.listTagFilter }}
-        <div class="row mb-3">
-
+    {{ if eq .Kind "taxonomy" }}
+      <div class="row mb-3">
             {{ if .Site.Params.options.listCategoryFilter }}
                 <div class="col-auto">
                     <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
@@ -22,8 +21,25 @@
                     {{end}}
                 </div>
             {{ end }}
+      </div>
 
+      <h1>{{ .Title }}</h1>
+
+      {{ .Content }}
+      
+      <div class="row mb-3">
+        <div class="col-auto">
+        {{ if eq .Title "Tags" }}
+        <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#tag` | relURL }}"/></svg>
+        {{ else }}
+        <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
+        {{ end }}
+        {{ range .Data.Terms.ByCount }}
+            <a class="badge text-bg-light nav-link" href="{{.Page.RelPermalink}}">{{.Page.LinkTitle}} ({{ .Count }})</a>&nbsp;
+        {{end}}
         </div>
+      </div>
+
     {{ end }}
 
     {{ if ne .Kind "taxonomy" }}

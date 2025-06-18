@@ -43,7 +43,7 @@
       <!-- Threats -->
       <div class="col-6 col-sm-4 text-dark bg-warning pt-2">
         <h3>Threats<br>
-        {{ .Params.threat }}
+        {{ .Params.threats }}
         </h3>
       </div>
       <!-- Imminence -->
@@ -54,22 +54,16 @@
     </div>
     <div class="row p-0">
       <div class="col-12 col-sm-6 p-0" >
-        {{ with index .Params "status-at-risk"}}
         <div class="p-3 h-100 text-dark bg-danger" style="--bs-bg-opacity: .1;">
-          {{ $classification := page.GetPage ( printf "classification/%s" .classification ) }}
         <h3 class="mb-2 text-center">Hazards</h3>
-        <p>{{ .reasons }}</p>
+        <p>{{ .Params.hazards }}</p>
         </div>
-        {{ end }}
         </div>
       <div class="col-12 col-sm-6 p-0">
-        {{ with index .Params "status-in-care"}}
         <div class="p-3 h-100 text-dark bg-success" style="--bs-bg-opacity: .1;">
-          {{ $classification := page.GetPage ( printf "classification/%s" .classification ) }}
         <h3 class="mb-2 text-center">Mitigations</h3>
-        <p>{{ .reasons }}</p>
+        <p>{{ .Params.mitigations }}</p>
         </div>
-        {{ end }}
         </div>
       <!-- Effort -->
       <div class="col-12 col-sm-4 text-light bg-primary pt-2">

@@ -1,32 +1,48 @@
 ---
-title: Digital Recordings Published via Cloud-based Music Sharing Platforms
-description: "Music licensed and playable through corporate platforms protected by rights management and subscription revenues and presented as compressed single-track recordings."
-examples: "Spotify, iTunes, Bandcamp, SoundCloud."
-categories: [ "sound-and-vision", "cloud" ]
+hazards: Lack of skills, commitment or policy from corporate owners; conflating
+  backup with preservation; loss of original multitrack recordings; poor
+  planning and roadmap for corporate infrastructure; slapdash procurement or
+  migration to new systems; mergers and acquisitions; profusion of corporate
+  systems; uncertainty over IPR or the presence of orphaned works; single point
+  of failure; technical protection measures that inhibit preservation actions;
+  encryption.
+significance: 10
+categories:
+  - sound-and-vision
+  - cloud
+last-updated: 2024-01-01
+impact: 9
 classification: endangered
 previous-status: endangered
-threat: social-media-cloud
-tags: ["featured"]
-decision: consensus
-year-added: 2019
-last-updated: 2024-01-01
+title: Digital Recordings Published via Cloud-based Music Sharing Platforms
+description: Music licensed and playable through corporate platforms protected
+  by rights management and subscription revenues and presented as compressed
+  single-track recordings.
+examples: Spotify, iTunes, Bandcamp, SoundCloud.
+threats:
+  - social-media
+  - cloud
 imminence: 4
 effort: 3
-impact: 9
-significance: 10
 trends:
-- year: 2024
-  trend: no-change
-- year: 2023
-  trend: no-change
-status-at-risk:
-  status: critically-endangered
-  reasons: "Lack of skills, commitment or policy from corporate owners; conflating backup with preservation; loss of original multitrack recordings; poor planning and roadmap for corporate infrastructure; slapdash procurement or migration to new systems; mergers and acquisitions; profusion of corporate systems; uncertainty over IPR or the presence of orphaned works; single point of failure; technical protection measures that inhibit preservation actions; encryption."
-status-in-care:
- status: vulnerable
- reasons: "Strong backup and documentation; use of open formats and open source software; data management planning for preservation; licensing that enables preservation; corporate preservation capability; resilient to hacking; authenticity and integrity managed; recognition of preservation functions at executive level; technology watch; regular preservation audits; accreditation and participation in the professional preservation community."
+  - year: 2024
+    trend: no-change
+    classification: endangered
+  - year: 2023
+    trend: no-change
+    classification: endangered
+mitigations: Strong backup and documentation; use of open formats and open
+  source software; data management planning for preservation; licensing that
+  enables preservation; corporate preservation capability; resilient to hacking;
+  authenticity and integrity managed; recognition of preservation functions at
+  executive level; technology watch; regular preservation audits; accreditation
+  and participation in the professional preservation community.
+year-added: 2019
+published: 2019-01-01
+tags:
+  - featured
 aliases:
-- /digipres/champion-digital-preservation/bit-list/endangered/bitlist-published-digital-recordings
+  - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-published-digital-recordings
 ---
 ## 2023 Review
 

@@ -9,6 +9,8 @@ categories:
   - portable-media
 threats:
   - obsolete-hardware-media
+tags:
+  - featured
 classification: critically-endangered
 imminence: 4
 effort: 3
