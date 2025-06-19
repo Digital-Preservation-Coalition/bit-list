@@ -26,19 +26,22 @@
       <h1>{{ .Title }}</h1>
 
       {{ .Content }}
+
+      By count...
       
       <div class="row mb-3">
-        <div class="col-auto">
-        {{ if eq .Title "Tags" }}
-        <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#tag` | relURL }}"/></svg>
-        {{ else }}
-        <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
-        {{ end }}
         {{ range .Data.Terms }}
+        <div class="col-auto">
+            {{ if eq $.Title "Tags" }}
+            <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#tag` | relURL }}"/></svg>
+            {{ else }}
+            <svg xmlns="http://www.w3.org/2000/svg" class="feather me-2"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
+            {{ end }}
             <a class="badge text-bg-light nav-link" href="{{.Page.RelPermalink}}">{{.Page.LinkTitle}} ({{ .Count }})</a>&nbsp;
-        {{end}}
         </div>
+        {{end}}
       </div>
+      As a flat list of all entries...
       <div class="row m-3">
         <ul>
        {{ range sort .Pages "LinkTitle" }}
