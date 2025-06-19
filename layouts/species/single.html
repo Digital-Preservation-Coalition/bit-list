@@ -46,7 +46,7 @@
         <p>
         {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
           {{ if in $.Params.threats .Params.id }}
-          <a class="badge text-dark nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
+          <a class="badge text-bg-dark nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
           {{ end }}
         {{end}}
         </p>
@@ -91,6 +91,7 @@
         <div class="h-50 {{ index $tc .trend }} {{ index $tf .trend }} justify-content-center align-items-center p-1">
           <div>
             <h3 class="mb-1">Trend in {{ .year }}</h3>
+            <div class="float-end p-1 pe-3">{{ $.Store.Set "imageSize" "50x" }}{{ partial "classification-img" . }}</div>
             <p class="mb-2">{{ T .trend}}</p>
             <h3 class="mb-2">
             {{ if eq .trend "towards-greater-risk"}}<i class="bi bi-arrow-up-right"></i>{{end}}
@@ -104,15 +105,10 @@
       </div>
       <!-- Previously -->
       <div class="col-6 col-sm-4 p-0">
-        <div class="h-100 d-flex justify-content-center align-items-center p-1 text-dark bg-light">
+        <div class="h-100 d-flex justify-content-center align-items-center p-1 text-light bg-primary">
           <div class="">
-            <h3 class="pb-2">Previously</h3>
-        {{ with index .Params "trends" }}
-          {{ range last 1 (first 2 ( sort . "year" "desc" )) }}
-            {{ $.Store.Set "imageSize" "100x" }}
-            {{ partial "classification-img" . }}
-          {{ end }}
-        {{ end }}
+            <h3 class="pb-2">???<br>Collections<br>and/or<br>Institutions<br>???</h3>
+ 
           </div>
         </div>
       </div>
