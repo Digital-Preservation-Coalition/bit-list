@@ -41,8 +41,8 @@
       </div>
       <div class="row m-3">
         <ul>
-       {{ range sort .Pages "LinkTitle" }}
-         <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
+       {{ range sort .Pages "Params.class" }}
+         <li><a href="{{ .RelPermalink }}">{{ .Params.class }} &gt; {{ .LinkTitle }}</a></li>
        {{ end }}
         </ul>
       </div>
