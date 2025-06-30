@@ -11,3 +11,7 @@ body {
 body {
   padding: 20px;
 }
+
+img {
+  max-width: 100%;
+}
