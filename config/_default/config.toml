@@ -59,17 +59,3 @@ mainSections = ['species', 'posts']
     source = "node_modules/bootstrap-icons/font"
     target = "static/bootstrap-icons/font"
 
-#
-# Add config to generate DecapCMS config etc. via Hugo
-# https://discourse.gohugo.io/t/using-outputformats-to-generate-config-yml-in-a-certain-section/52308
-#
-
-[outputFormats]
-  [outputFormats.AdminConfigYaml]
-    baseName = 'config'
-    isPlainText = true
-    mediaType = 'application/yaml'
-
-[mediaTypes]
-  [mediaTypes.'application/yaml']
-    suffixes = ['yml', 'yaml']
