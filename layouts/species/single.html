@@ -165,8 +165,9 @@
     <h2 class="align-middle" style="display: inline-block;">Related Species</h2>
     
       <ul>
-        {{ range .}}
-        <li><a href="{{.}}"><b>{{ . }}</b></a>.</li>
+        {{ range . }}
+        {{ $rel := $.GetPage ( printf "species/%s" . ) }}
+        <li><a href="{{ $rel.RelPermalink }}">{{$rel.Title}}</a></li>
         {{ end }}
       </ul>
 
