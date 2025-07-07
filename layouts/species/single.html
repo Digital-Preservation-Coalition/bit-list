@@ -108,7 +108,7 @@
         <div class="h-100 d-flex justify-content-center align-items-center p-1 text-light bg-primary">
           <div class="">
             <h3 class="pb-2">???<br>Collections<br>and/or<br>Institutions<br>???</h3>
- 
+            <a class="text-light" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Informed</a>
           </div>
         </div>
       </div>
@@ -157,6 +157,19 @@
       </ul>
 
     </details>
+  </div>
+  {{ end }}
+
+  {{ with index .Params "related-species" }}
+  <div class="species-related-species">
+    <h2 class="align-middle" style="display: inline-block;">Related Species</h2>
+    
+      <ul>
+        {{ range .}}
+        <li><a href="{{.}}"><b>{{ . }}</b></a>.</li>
+        {{ end }}
+      </ul>
+
   </div>
   {{ end }}
 

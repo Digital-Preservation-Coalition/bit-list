@@ -10,6 +10,5 @@
 {{ $css := resources.Get "bootstrap-icons/font/bootstrap-icons.min.css" }}
 {{ with $css }}
   {{ $css := . | fingerprint "sha512" -}}
-  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $js.Data.Integrity }}">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
-

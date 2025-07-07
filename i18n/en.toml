@@ -4,6 +4,7 @@ contents = "Contents"
 
 search = "Search"
 search-tbl = "Search the Bit List"
+add-to-tbl = "Add to the Bit List"
 
 category = "Category"
 threats = "Threats"

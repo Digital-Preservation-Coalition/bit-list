@@ -1,14 +1,5 @@
 {{ define "main" }}
 
-<!-- PageFind -->
-<link href="{{ .Site.BaseURL }}pagefind/pagefind-ui.css" rel="stylesheet">
-<script src="{{ .Site.BaseURL }}pagefind/pagefind-ui.js"></script>
-{{ $js := resources.Get "js/pagefind-setup.js" }}
-{{ with $js }}
-  {{ $js := . | minify | fingerprint "sha512" -}}
-  <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
-{{ end }}
-
 <section class="section bd-masthead">
   <div class="container-xxl">
     <div class="col-md-8 mx-auto text-center my-5">

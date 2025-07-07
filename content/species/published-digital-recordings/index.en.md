@@ -7,9 +7,7 @@ hazards: Lack of skills, commitment or policy from corporate owners; conflating
   of failure; technical protection measures that inhibit preservation actions;
   encryption.
 significance: 10
-categories:
-  - sound-and-vision
-  - cloud
+id: EkCh9cvCW
 last-updated: 2024-01-01
 impact: 9
 classification: endangered
@@ -19,9 +17,14 @@ description: Music licensed and playable through corporate platforms protected
   by rights management and subscription revenues and presented as compressed
   single-track recordings.
 examples: Spotify, iTunes, Bandcamp, SoundCloud.
+categories:
+  - sound-and-vision
+  - cloud
 threats:
   - social-media
   - cloud
+tags:
+  - featured
 imminence: 4
 effort: 3
 trends:
@@ -37,10 +40,10 @@ mitigations: Strong backup and documentation; use of open formats and open
   authenticity and integrity managed; recognition of preservation functions at
   executive level; technology watch; regular preservation audits; accreditation
   and participation in the professional preservation community.
+related-species:
+  - orphaned-works/index
 year-added: 2019
 published: 2019-01-01
-tags:
-  - featured
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-published-digital-recordings
 ---

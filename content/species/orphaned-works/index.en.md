@@ -5,6 +5,7 @@ hazards: Lack of understanding of copyright; lack of documentation; dependencies
   inhibit preservation of content that has not been licensed; encryption; poor
   storage.
 significance: 6
+id: f_d-IZHbLC
 title: Orphaned Works
 description: Digital materials where copyright is uncertain, disputed or
   unknowable, meaning that preservation actions are constrained or prevented.
