@@ -26,12 +26,37 @@
   {{ partial "featured-pages" . }}
 </section>
 
-<!--
-<section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Latest Posts</h3>
-  {{ partial "latest-posts" . }}
+
+<section class="section container my-5">
+  <h3 class="text-secondary text-center">Classifications</h3>
+   <div class="row">
+    {{ range (where .Site.Pages "Section" "classification") }}
+      {{ range .Pages.ByWeight }}
+      <div class="col-sm-4 col-md-2 mx-auto text-center my-3">
+        {{ $cd := dict "classification" .Params.id }}
+        {{ .Store.Set "imageSize" "100x" }}{{ partial "classification-img" $cd }}
+      </div>
+      {{ end }}
+    {{ end }}
+   </div>
 </section>
--->
+
+<section class="section container my-5">
+  <h3 class="text-secondary text-center">Categories</h3>
+   <div class="row">
+    {{ range (where .Site.Pages "Section" "categories") }}
+      {{ $cat_name := (.Path | path.BaseName )}}
+      <div class="col-sm-4 col-md-2 mx-auto text-center my-3">
+            <div class="d-flex justify-content-center align-items-center">
+          <h5>{{ .Title }}</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          {{ .Store.Set "imageSize" "100x" }}{{ partial "cat-img" $cat_name }}
+        </div>
+      </div>
+    {{ end }}
+   </div>
+</section>
 
 <div class="container py-3">
   {{ .Content }}

@@ -7,4 +7,5 @@ description: Digital materials are listed Critically Endangered when they face
   preservation needs. This classification includes Endangered materials in the
   presence of aggravating conditions.
 image: critically-endangered.png
+weight: 20
 ---

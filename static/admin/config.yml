@@ -248,6 +248,16 @@ collections:
     widget: 'image'
     required: false
     i18n: duplicate
+  - label: Weight
+    name: weight
+    widget: "number"
+    value_type: "int"
+    min: 0
+    max: 100
+    required: true
+    i18n: duplicate
+    hint: "The 'weight' to give this item, higher numbers mean lower in lists."
+  
 
 - name: categories
   label: Categories

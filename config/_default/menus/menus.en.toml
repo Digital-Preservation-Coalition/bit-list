@@ -28,6 +28,12 @@ weight = 10
 parent = "browse"
 
 [[main]]
+name = "Classifications"
+pageRef = "/classification"
+weight = 15
+parent = "browse"
+
+[[main]]
 name = "Categories"
 pageRef = "/categories"
 weight = 20

@@ -1,0 +1,9 @@
+{{ $cat := site.GetPage ( printf "categories/%s" . ) }}
+{{ $path := printf "images/category/%s.png" .  }}
+{{ with resources.Get $path }}
+    {{ with .Resize "x80" }}
+    <a href="{{ $cat.RelPermalink }}" title="{{ $cat.Params.title }}">
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $cat.Params.title }}">
+    </a>
+    {{ end }}
+{{ end }}

@@ -6,4 +6,5 @@ description: Digital materials are listed as Practically Extinct when the few
   classification includes Critically Endangered materials in the presence of
   aggravating conditions.
 image: extinct.png
+weight: 10
 ---

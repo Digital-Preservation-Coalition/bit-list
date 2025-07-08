@@ -7,4 +7,5 @@ description: Digital materials are listed as Vulnerable when the technical
   needs. This classification includes Lower Risk materials in the presence of
   aggravating conditions.
 image: vulnerable.png
+weight: 40
 ---

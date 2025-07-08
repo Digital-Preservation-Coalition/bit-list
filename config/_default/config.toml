@@ -30,6 +30,7 @@ mainSections = ['species', 'posts']
 [taxonomies]
   tag = "tags"
   category = "categories"
+#  classification = "classification"
   threat = 'threats'
   author = 'authors'
 

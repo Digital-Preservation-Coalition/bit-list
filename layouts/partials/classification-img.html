@@ -4,6 +4,6 @@
 {{ $imageSize := page.Store.Get "imageSize" | default "100x"}}
 {{ with resources.Get $img }}
   {{ with .Resize $imageSize }}
-    <img src="{{ .RelPermalink }}" alt="{{ $classification.Params.title }}" width="{{ .Width }}" height="{{ .Height }}">
+    <a href="{{ $classification.RelPermalink }}"><img src="{{ .RelPermalink }}" alt="{{ $classification.Params.title }}" width="{{ .Width }}" height="{{ .Height }}"></a>
   {{ end }}
 {{ end }}

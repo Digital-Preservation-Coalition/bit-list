@@ -6,4 +6,5 @@ description: Digital materials are listed Endangered when they face material
   understood, or where the responsible agencies are poorly equipped to meet
   preservation needs. This classification includes Vulnerable materials in the
   presence of aggravating conditions.
+weight: 30
 ---
