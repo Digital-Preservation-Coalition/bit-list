@@ -1,5 +1,5 @@
 ---
 id: cloud
-title: Cloud
+title: Complex Platforms (Cloud)
 class: Complexity Threats
 ---

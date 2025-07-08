@@ -11,6 +11,8 @@ threats = "Threats"
 status = "Status"
 classification = "Classification"
 
+endangered = "Endangered"
+
 towards-greater-risk = "Towards greater risk."
 no-change = "No change."
 material-improvement = "Material improvement."

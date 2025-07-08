@@ -40,16 +40,16 @@
           <h3>Added to list: {{ index .Params "year-added" }}</h3>
         </div>
       </div>
-      <!-- Threats -->
-      <div class="col-6 col-sm-4 text-dark bg-warning pt-2">
-        <h3>Threats</h3>
-        <p>
-        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
-          {{ if in $.Params.threats .Params.id }}
-          <a class="badge text-bg-dark nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
-          {{ end }}
-        {{end}}
-        </p>
+      <!-- Effort -->
+      <div class="col-6 col-sm-4 text-light bg-primary">
+        <div class="h-100 d-flex justify-content-center align-items-center">
+        <div class="pt-1">
+        <h3 class="mb-1">Effort</h3>
+        <p class="mb-0">{{ range .Params.effort }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.effort ) }}<i class="bi bi-circle"></i> {{end}}</p>
+        <p class="mb-2">{{ T ( printf "effort-%d" .Params.effort ) }}</p>
+        </div>
+
+        </div>
       </div>
       <!-- Imminence -->
       <div class="col-12 col-sm-4 text-light bg-danger pt-2">
@@ -71,16 +71,16 @@
         <p>{{ .Params.mitigations }}</p>
         </div>
         </div>
-      <!-- Effort -->
-      <div class="col-12 col-sm-4 text-light bg-primary">
-        <div class="h-100 d-flex justify-content-center align-items-center">
-        <div class="pt-1">
-        <h3 class="mb-1">Effort</h3>
-        <p class="mb-0">{{ range .Params.effort }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.effort ) }}<i class="bi bi-circle"></i> {{end}}</p>
-        <p class="mb-2">{{ T ( printf "effort-%d" .Params.effort ) }}</p>
-        </div>
-
-        </div>
+      <!-- Threats -->
+      <div class="col-12 col-sm-4 text-dark bg-warning pt-2">
+        <h3>Threats</h3>
+        <p>
+        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
+          {{ if in $.Params.threats .Params.id }}
+          <a class="badge text-bg-dark nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
+          {{ end }}
+        {{end}}
+        </p>
       </div>
       <!-- Trends -->
       <div class="col-6 col-sm-4 text-dark p-0">

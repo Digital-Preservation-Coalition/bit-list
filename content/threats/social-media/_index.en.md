@@ -1,5 +1,5 @@
 ---
 id: social-media
-title: Social Media
+title: Proprietary Data (Platform Dependent)
 class: Complexity Threats
 ---

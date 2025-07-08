@@ -291,7 +291,9 @@ collections:
   media_folder: '/assets/images/threats'
   public_folder: '/images/threats'
   i18n: true
-  summary: '{{class}} > {{title}}'
+  view_groups:
+  - label: Class
+    field: class
   fields:
   - name: id
     label: ID

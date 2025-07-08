@@ -1,5 +1,5 @@
 ---
 id: proprietary-data
-title: Proprietary Data
+title: Proprietary Data (Software Dependent)
 class: Complexity Threats
 ---
