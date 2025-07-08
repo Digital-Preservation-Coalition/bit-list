@@ -1,7 +1,8 @@
 {{ $cat := site.GetPage ( printf "categories/%s" . ) }}
 {{ $path := printf "images/category/%s.png" .  }}
+{{ $imageSize := page.Store.Get "catImageSize" | default "x80"}}
 {{ with resources.Get $path }}
-    {{ with .Resize "x80" }}
+    {{ with .Resize $imageSize }}
     <a href="{{ $cat.RelPermalink }}" title="{{ $cat.Params.title }}">
         <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $cat.Params.title }}">
     </a>
