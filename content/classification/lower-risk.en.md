@@ -6,5 +6,5 @@ description: Digital materials are listed as Lower Risk when it does not meet
   preservation requirement.  Failure or removal of the preservation function
   would result in re-classification to one of the threatened categories.
 image: lower-risk.png
-weight: 50
+weight: 60
 ---
