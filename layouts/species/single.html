@@ -12,111 +12,98 @@
     {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" .Params }}
     </div>
 
-    <h1>{{ .Title }}</h1>  
+    <h1 class="text-primary">{{ .Title }}</h1>  
     <p>{{ .Params.description }}</p>
+
+    <p>
+      <a class="btn btn-primary" href="#" role="button">
+          <strong data-pagefind-filter="{{ T "category" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</strong>
+      </a>
+    </p>
+
   
-    <h2>Examples</h2>
+    <h2 class="text-primary">Examples</h2>
     <p>{{ .Params.examples }}</p>
     
   </div>
 
-<div class="species-factsheet container mb-3 text-center overflow-hidden border border-primary">
-  <div class="row bg-primary">
-      <div class="col-6 col-sm-4 text-dark bg-primary-subtle p-2">
-        <div class="d-flex justify-content-center align-items-center">
-          <h3 data-pagefind-filter="{{ T "category" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</h3>
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-          {{ .Store.Set "imageSize" "150x" }}{{ partial "cat-img" $cat_name }}
-        </div>
-        <div class="d-flex justify-content-center align-items-center">
-          <h3>Added to list: {{ index .Params "year-added" }}</h3>
-        </div>
+<div class="species-factsheet container mb-3 text-center overflow-hidden">
+  <div class="row">
+      <div class="col-6 col-sm-6 text-dark bg-primary p-2 border border-2 border-white" style="--bs-bg-opacity: .5;">
+        <h3 class="mb-1">Imminence</h3>
+        <p class="mb-0">{{ range .Params.imminence }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.imminence ) }}<i class="bi bi-circle"></i> {{end}}</p>
+        <p class="mb-2">{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
       </div>
       <!-- Effort -->
-      <div class="col-6 col-sm-4 text-light bg-primary">
+      <div class="col-6 col-sm-6 text-dark bg-primary-subtle border border-2 border-white">
         <div class="h-100 d-flex justify-content-center align-items-center">
         <div class="pt-1">
         <h3 class="mb-1">Effort</h3>
         <p class="mb-0">{{ range .Params.effort }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.effort ) }}<i class="bi bi-circle"></i> {{end}}</p>
         <p class="mb-2">{{ T ( printf "effort-%d" .Params.effort ) }}</p>
         </div>
-
         </div>
       </div>
-      <!-- Imminence -->
-      <div class="col-12 col-sm-4 text-light bg-danger pt-2">
-        <h3 class="mb-1">Imminence</h3>
-        <p class="mb-0">{{ range .Params.imminence }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.imminence ) }}<i class="bi bi-circle"></i> {{end}}</p>
-        <p class="mb-2">{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
-      </div>
-    </div>
-    <div class="row p-0">
+  </div>
+  <div class="row p-0">
       <div class="col-12 col-sm-6 p-0" >
-        <div class="p-3 h-100 text-dark bg-danger-subtle">
+        <div class="p-3 h-100 text-dark bg-primary-subtle border border-2 border-white">
         <h3 class="mb-2 text-center">Hazards</h3>
         <p>{{ .Params.hazards }}</p>
+        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
+          {{ if in $.Params.threats .Params.id }}
+          <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
+          {{ end }}
+        {{end}}
         </div>
         </div>
       <div class="col-12 col-sm-6 p-0">
-        <div class="p-3 h-100 text-dark bg-success-subtle">
+        <div class="p-3 h-100 text-dark bg-primary border border-2 border-white"  style="--bs-bg-opacity: .5;">
         <h3 class="mb-2 text-center">Mitigations</h3>
         <p>{{ .Params.mitigations }}</p>
         </div>
-        </div>
-      <!-- Threats -->
-      <div class="col-12 col-sm-4 text-dark bg-warning pt-2">
-        <h3>Threats</h3>
-        <p>
-        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
-          {{ if in $.Params.threats .Params.id }}
-          <a class="badge text-bg-dark nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
-          {{ end }}
-        {{end}}
-        </p>
       </div>
-      <!-- Trends -->
-      <div class="col-6 col-sm-4 text-dark p-0">
-        {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger" "material-improvement" "bg-primary" ) }}
-        {{ $tf := ( dict "no-change" "text-dark" "towards-greater-risk" "text-light" "material-improvement" "text-light" ) }}
-        {{ with index .Params "trends" }}
-        {{ range first 2 ( sort . "year" "desc" ) }}
-        <div class="h-50 {{ index $tc .trend }} {{ index $tf .trend }} justify-content-center align-items-center p-1">
-          <div>
-            <h3 class="mb-1">Trend in {{ .year }}</h3>
-            <div class="float-end p-1 pe-3">{{ $.Store.Set "imageSize" "50x" }}{{ partial "classification-img" . }}</div>
-            <p class="mb-2">{{ T .trend}}</p>
-            <h3 class="mb-2">
-            {{ if eq .trend "towards-greater-risk"}}<i class="bi bi-arrow-up-right"></i>{{end}}
-            {{ if eq .trend "no-change"}}<i class="bi bi-arrow-right"></i>{{end}}
-            {{ if eq .trend "material-improvement"}}<i class="bi bi-arrow-down-right"></i>{{end}}
-            </h3>
-          </div>
-        </div>
-        {{ end }}
-        {{ end }}
-      </div>
-      <!-- Previously -->
-      <div class="col-6 col-sm-4 p-0">
-        <div class="h-100 d-flex justify-content-center align-items-center p-1 text-light bg-primary">
-          <div class="">
-            <h3 class="pb-2">???<br>Collections<br>and/or<br>Institutions<br>???</h3>
-            <a class="text-light" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Informed</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
   
-  <p class="float-end p-1">
-  {{ $edit_url := printf "admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
-  <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-primary">Edit This Entry</a>
-  </p>
+{{ with index .Params "related-species" }}
+<div class="species-related-species pb-3">
+  <h2 class="text-primary" style="display: inline-block;">Related Species</h2>
+  
+    <div class="list-group">
+      {{ range . }}
+      {{ $rel := $.GetPage ( printf "species/%s" . ) }}
+      <a class="list-group-item list-group-item-action" href="{{ $rel.RelPermalink }}"><strong>{{$rel.Title}}</strong></a>
+      {{ end }}
+    </div>
+
+</div>
+{{ end }}
+
+  <h2 class="text-primary">Bit List History</h2>
+
+  <strong>Added to list:</strong> {{ index .Params "year-added" }}
+
+  <div class="row p-2">
+  {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger" "material-improvement" "bg-primary" ) }}
+  {{ $tf := ( dict "no-change" "text-dark" "towards-greater-risk" "text-light" "material-improvement" "text-light" ) }}
+  {{ with index .Params "trends" }}
+  {{ range first 2 ( sort . "year" "desc" ) }}
+  <div class="col-6 {{ index $tc .trend }} {{ index $tf .trend }} border border-2 border-white text-center p-1">
+      <strong>{{ .year }}:</strong> {{ T .trend}}
+      {{ if eq .trend "towards-greater-risk"}}<i class="bi bi-arrow-up-right"></i>{{end}}
+      {{ if eq .trend "no-change"}}<i class="bi bi-arrow-right"></i>{{end}}
+      {{ if eq .trend "material-improvement"}}<i class="bi bi-arrow-down-right"></i>{{end}}
+  </div>
+  {{ end }}
+  {{ end }}
+  </div>
+
 
   <div class="species-discussion">
     <details class="p-1">
   
-      <summary><h2 class="align-middle" style="display: inline-block;">Discussion</h2></summary>
+      <summary><h3 class="text-primary" style="display: inline-block;">Last Review</h3></summary>
     
       {{ .TableOfContents }}
 
@@ -129,7 +116,7 @@
     <div class="species-discussion">
     <details class="p-1">
   
-      <summary><h2 class="align-middle" style="display: inline-block;">Additional Comments</h2></summary>
+      <summary><h2 class="text-primary" style="display: inline-block;">Additional Information</h2></summary>
     
       {{ . | markdownify }}
 
@@ -141,11 +128,11 @@
   <div class="species-case-studies">
     <details class="p-1">
   
-      <summary><h2 class="align-middle" style="display: inline-block;">Case Studies & Examples</h2></summary>
+      <summary><h2 class="text-primary" style="display: inline-block;">Case Studies & Examples</h2></summary>
     
       <ul>
         {{ range .}}
-        <li>{{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><b>{{ .title }}</b></a>, {{ .authors }} ({{.year}}), <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.</li>
+        <li>{{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><strong>{{ .title }}</strong></a>, {{ .authors }} ({{.year}}), <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.</li>
         {{ end }}
       </ul>
 
@@ -153,23 +140,16 @@
   </div>
   {{ end }}
 
-  {{ with index .Params "related-species" }}
-  <div class="species-related-species">
-    <h2 class="align-middle" style="display: inline-block;">Related Species</h2>
-    
-      <ul>
-        {{ range . }}
-        {{ $rel := $.GetPage ( printf "species/%s" . ) }}
-        <li><a href="{{ $rel.RelPermalink }}">{{$rel.Title}}</a></li>
-        {{ end }}
-      </ul>
-
-  </div>
-  {{ end }}
-
   <hr>
+
+  <p class="float-end p-1">
+  {{ $edit_url := printf "admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
+  <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-primary">Edit This Entry</a>
+  <a class="btn btn-sm btn-primary" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Informed</a>
+  </p>
+
   <details data-pagefind-ignore>
-  <summary><b>Raw Metadata</b></summary>
+  <summary><strong>Raw Metadata</strong></summary>
   <pretty-json>
   {{ .Params | jsonify (dict "indent" "  ") }}
   </pretty-json>
