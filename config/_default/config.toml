@@ -23,6 +23,11 @@ enableEmoji = true
 # 
 mainSections = ['species', 'posts']
 
+# Add Markdown generation, which with the 'species' template, generates the necessary pandoc input:
+[outputs]
+  section = ['html', 'rss', 'markdown']
+
+
 [frontmatter]
   date = ["date", "publishDate", "lastmod", "last-updated" ]
   lastmod = ["lastmod", "last-updated", ":fileModTime", ":default"]
