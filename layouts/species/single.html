@@ -1,144 +1,9 @@
 {{ define "main" }}
 
-{{ $cat_name := index .Params.categories 0 }}
-{{ $cat := .GetPage ( printf "categories/%s" $cat_name ) }}
-{{ $classification := .GetPage ( printf "classification/%s" .Params.classification ) }}
 
 <div class="container py-3" data-pagefind-body>
 
-  <div class="species-header clearfix" data-pagefind-filter="{{ T "classification" }}:{{ $classification.Params.title }}">
-    
-    <div class="float-end p-1">
-    {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" .Params }}
-    </div>
-
-    <h1 class="text-primary">{{ .Title }}</h1>  
-    <p>{{ .Params.description }}</p>
-
-    <p>
-      <a class="btn btn-primary" href="#" role="button">
-          <strong data-pagefind-filter="{{ T "category" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</strong>
-      </a>
-    </p>
-
-  
-    <h2 class="text-primary">Examples</h2>
-    <p>{{ .Params.examples }}</p>
-    
-  </div>
-
-<div class="species-factsheet container mb-3 text-center overflow-hidden">
-  <div class="row">
-      <div class="col-6 col-sm-6 text-dark bg-primary p-2 border border-2 border-white" style="--bs-bg-opacity: .5;">
-        <h3 class="mb-1">Imminence</h3>
-        <p class="mb-0">{{ range .Params.imminence }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.imminence ) }}<i class="bi bi-circle"></i> {{end}}</p>
-        <p class="mb-2">{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
-      </div>
-      <!-- Effort -->
-      <div class="col-6 col-sm-6 text-dark bg-primary-subtle border border-2 border-white">
-        <div class="h-100 d-flex justify-content-center align-items-center">
-        <div class="pt-1">
-        <h3 class="mb-1">Effort</h3>
-        <p class="mb-0">{{ range .Params.effort }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.effort ) }}<i class="bi bi-circle"></i> {{end}}</p>
-        <p class="mb-2">{{ T ( printf "effort-%d" .Params.effort ) }}</p>
-        </div>
-        </div>
-      </div>
-  </div>
-  <div class="row p-0">
-      <div class="col-12 col-sm-6 p-0" >
-        <div class="p-3 h-100 text-dark bg-primary-subtle border border-2 border-white">
-        <h3 class="mb-2 text-center">Hazards</h3>
-        <p>{{ .Params.hazards }}</p>
-        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
-          {{ if in $.Params.threats .Params.id }}
-          <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
-          {{ end }}
-        {{end}}
-        </div>
-        </div>
-      <div class="col-12 col-sm-6 p-0">
-        <div class="p-3 h-100 text-dark bg-primary border border-2 border-white"  style="--bs-bg-opacity: .5;">
-        <h3 class="mb-2 text-center">Mitigations</h3>
-        <p>{{ .Params.mitigations }}</p>
-        </div>
-      </div>
-  </div>
-</div>
-  
-{{ with index .Params "related-species" }}
-<div class="species-related-species pb-3">
-  <h2 class="text-primary" style="display: inline-block;">Related Species</h2>
-  
-    <div class="list-group">
-      {{ range . }}
-      {{ $rel := $.GetPage ( printf "species/%s" . ) }}
-      <a class="list-group-item list-group-item-action" href="{{ $rel.RelPermalink }}"><strong>{{$rel.Title}}</strong></a>
-      {{ end }}
-    </div>
-
-</div>
-{{ end }}
-
-  <h2 class="text-primary">Bit List History</h2>
-
-  <strong>Added to list:</strong> {{ index .Params "year-added" }}
-
-  <div class="row p-2">
-  {{ $tc := ( dict "no-change" "bg-warning-subtle" "towards-greater-risk" "bg-danger" "material-improvement" "bg-primary" ) }}
-  {{ $tf := ( dict "no-change" "text-dark" "towards-greater-risk" "text-light" "material-improvement" "text-light" ) }}
-  {{ with index .Params "trends" }}
-  {{ range first 2 ( sort . "year" "desc" ) }}
-  <div class="col-6 {{ index $tc .trend }} {{ index $tf .trend }} border border-2 border-white text-center p-1">
-      <strong>{{ .year }}:</strong> {{ T .trend}}
-      {{ if eq .trend "towards-greater-risk"}}<i class="bi bi-arrow-up-right"></i>{{end}}
-      {{ if eq .trend "no-change"}}<i class="bi bi-arrow-right"></i>{{end}}
-      {{ if eq .trend "material-improvement"}}<i class="bi bi-arrow-down-right"></i>{{end}}
-  </div>
-  {{ end }}
-  {{ end }}
-  </div>
-
-
-  <div class="species-discussion">
-    <details class="p-1">
-  
-      <summary><h3 class="text-primary" style="display: inline-block;">Last Review</h3></summary>
-    
-      {{ .TableOfContents }}
-
-      {{ .Content }}
-
-    </details>
-  </div>
-
-      {{ with index .Params.comments }}
-    <div class="species-discussion">
-    <details class="p-1">
-  
-      <summary><h2 class="text-primary" style="display: inline-block;">Additional Information</h2></summary>
-    
-      {{ . | markdownify }}
-
-    </details>
-  </div>
-      {{ end }}
-
-  {{ with index .Params "case-studies" }}
-  <div class="species-case-studies">
-    <details class="p-1">
-  
-      <summary><h2 class="text-primary" style="display: inline-block;">Case Studies & Examples</h2></summary>
-    
-      <ul>
-        {{ range .}}
-        <li>{{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><strong>{{ .title }}</strong></a>, {{ .authors }} ({{.year}}), <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.</li>
-        {{ end }}
-      </ul>
-
-    </details>
-  </div>
-  {{ end }}
+  {{ partial "species-info.html" . }}
 
   <hr>
 
@@ -156,14 +21,13 @@
   </details>
 
   {{ with index (.Params.aliases) 0 }}
-  <p class="mt-2">
+  <p class="float-end p-1">
   <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
     Click Here To Open The Current Live Page For This Entry On The DPC Website
   </a>
   {{ end }}
   </p>
 
-  <hr>
 
 </div>
 
