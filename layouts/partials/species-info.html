@@ -122,7 +122,7 @@
     
       <ul>
         {{ range .}}
-        <li>{{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><strong>{{ .title }}</strong></a>, {{ .authors }} ({{.year}}), <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.</li>
+        <li>{{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><strong>{{ .title }}</strong></a>, {{ .authors }}{{ with index . "year" }} ({{.}}),{{end}} <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.</li>
         {{ end }}
       </ul>
   </div>

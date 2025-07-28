@@ -13,7 +13,7 @@
   <a class="btn btn-sm btn-primary" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Informed</a>
   </p>
 
-  <details data-pagefind-ignore>
+  <details data-pagefind-ignore class="clearfix">
   <summary><strong>Raw Metadata</strong></summary>
   <pretty-json>
   {{ .Params | jsonify (dict "indent" "  ") }}
