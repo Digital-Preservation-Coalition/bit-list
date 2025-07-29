@@ -1,28 +1,26 @@
 # The Bit List
 
-{{ $threat_classes := slice  "Organisational Threats" "Complexity Threats" "Technological Threats" }}
-{{ $tax := $.Site.GetPage "taxonomyTerm" "threats" }}
+# Threats
+
+{{- $threat_classes := slice  "Organisational Threats" "Complexity Threats" "Technological Threats" -}}
+{{- $tax := $.Site.GetPage "taxonomyTerm" "threats" -}}
 
 {{ range $threat_classes }}
+
 ## {{ . }}
 {{ range (where $tax.Pages ".Params.class" "eq" . ) }}
 ### {{ .Title }}
-{{ range $p := sort .Pages ".Params.classification" }}
-
-
-
+{{- range $p := sort .Pages ".Params.classification" }}
 
 #### {{ .Title }}
 ![](./images/classification/{{.Params.classification}}.png){width=25%}{{ .Params.description }}
 
-
 ##### Categories
 
-{{ range .Params.categories }}
-{{- $cat := $.GetPage ( printf "categories/%s" . ) -}}
+{{ range .Params.categories -}}
+{{ $cat := $.GetPage ( printf "categories/%s" . ) -}}
 - {{ $cat.Params.Title }}
 {{ end }}
-
 ##### Examples
 
 {{ .Params.examples }}
@@ -34,10 +32,9 @@ __Imminence__ | __Effort__
 
 ##### Threats
 
-{{ range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}{{ if in $p.Params.threats .Params.id }}
+{{ range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}{{ if in $p.Params.threats .Params.id -}}
 - {{ .Title }}
-{{- end }}{{ end }}
-
+{{ end }}{{ end }}
 ##### Hazards
 
 {{ .Params.hazards }}
@@ -52,7 +49,7 @@ __Added to list:__ {{ index .Params "year-added" }}
 
 ###### Trends
 
-{{ with index .Params "trends" }}
+{{- with index .Params "trends" }}
 {{ range first 2 ( sort . "year" "desc" ) }}
 - __{{ .year }}:__ {{ T .trend}}
 {{- end }}
@@ -84,6 +81,7 @@ __Added to list:__ {{ index .Params "year-added" }}
 
 {{ end }}
 {{ end }}
+
 {{ end }}
 
 
