@@ -7,7 +7,7 @@
 # https://schema.org/Article
 description = "The Global Bit List of Endangered Digital Species (or Bit List for short) is a community-sourced list of at-risk digital materials."
 images = ['images/logo.svg','images/bit-list-logo.svg']
-mainMenuLogo = "images/logo-white.svg"
+#mainMenuLogo = "images/logo-white.svg"
 
 # For favicons
 ## Chrome Browser
