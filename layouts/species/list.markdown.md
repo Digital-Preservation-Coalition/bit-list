@@ -1,18 +1,18 @@
 # The Bit List
 
-{{- range $taxonomyName, $taxonomy := .Site.Taxonomies -}}
-{{- if eq $taxonomyName "threats" -}}
-## {{ T ( $taxonomyName ) }}
+{{ $threat_classes := slice  "Organisational Threats" "Complexity Threats" "Technological Threats" }}
+{{ $tax := $.Site.GetPage "taxonomyTerm" "threats" }}
 
-{{ range $termName, $term := $taxonomy -}}
-{{- $termPath := (printf "%s/%s" $taxonomyName $termName) -}}
-{{- $termPage := site.GetPage $termPath }}
-### {{ $termPage.Title }}
+{{ range $threat_classes }}
+## {{ . }}
+{{ range (where $tax.Pages ".Params.class" "eq" . ) }}
+### {{ .Title }}
+{{ range $p := sort .Pages ".Params.classification" }}
 
-{{ range $p := $term.Pages }}
+
+
 
 #### {{ .Title }}
-
 ![](./images/classification/{{.Params.classification}}.png){width=25%}{{ .Params.description }}
 
 
@@ -75,14 +75,15 @@ __Added to list:__ {{ index .Params "year-added" }}
 ##### Case Studies & Examples
 
 {{ range .}}
-- {{with .comment}}{{ . | markdownify }} See {{end}}<a href="{{.url}}"><strong>{{ .title }}</strong></a>, {{ .authors }}{{ with index . "year" }} ({{.}}),{{end}} <i>{{ .publisher }}</i>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.
+- {{with .comment}}{{ . | markdownify }} See {{end}}__{{ .title }}__,{{ with index . "authors" }} {{ . }},{{end}}{{ with index . "year" }} ({{.}}),{{end}}{{ with index . "publisher" }} _{{ . }}_{{end}} <{{.url}}>{{ with index . "accessed"}} [accessed at {{.}}]{{end}}.
 {{ end }}
 {{ end }}
 
 
-{{ end }}
+
 
 {{ end }}
+{{ end }}
+{{ end }}
 
-{{ end }}
-{{ end }}
+
