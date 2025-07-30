@@ -21,9 +21,9 @@ name = "Browse"
 weight = 40
 
 [[main]]
-identifier = "species"
-name = "Species"
-pageRef = "/species"
+identifier = "entries"
+name = "Entries"
+pageRef = "/entries"
 weight = 10
 parent = "browse"
 
