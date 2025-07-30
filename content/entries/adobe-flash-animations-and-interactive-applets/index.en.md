@@ -24,6 +24,43 @@ trends:
 hazards: No longer supported by web browsers.
 mitigations: Migration plan initiated; supported in multiple browsers; security
   vetted; emulation pathway; clear licensing that enables preservation.
+case-studies:
+  - title: Flashpoint Archive
+    authors: BlueMaxima
+    url: https://flashpointarchive.org/
+    accessed: 2023-10-24
+  - title: Flash Game Archive
+    url: http://www.flashgamearchive.com/
+    accessed: 2023-10-24
+  - title: Adobe Flash Games Archive
+    publisher: Internet Archive
+    year: 2021
+    url: https://archive.org/details/adobe-flash-games-archive
+    accessed: 2023-10-24
+  - comment: Ruffle is a Flash Player emulator which is used by a number of websites
+      that were known for Flash games and animations including Newground, Armor
+      Games, Cool Math Games and Kongregate
+    title: Ruffle
+    url: https://ruffle.rs/
+    accessed: 2023-10-24
+  - authors: van Veenendaal, R., Wijsman, L., Takema, J. and Rappard, M
+    title: "Around for Decades, Gone in a Flash: How we dealt with Flash objects and
+      the National Archives of the Netherlands"
+    year: 2023
+    publisher: iPRES 2023 Conference, Urbana-Champaign, Illinois, USA, 19–22 September
+    url: https://www.ideals.illinois.edu/items/128299
+    accessed: 2025-07-30
+  - authors: Richner, J.
+    title: How Flash Games shaped the video game industry
+    url: https://www.flashgamehistory.com/
+    accessed: 2023-10-24
+  - comment: ""
+    url: https://archive.org/details/softwarelibrary_flash?tab=collection
+    authors: Scott, J.
+    title: "Software Library: Flash"
+    publisher: Internet Archive
+    year: 2020
+    accessed: 2023-10-24
 year-added: 2019
 published: 2019-01-01
 last-updated: 2025-07-30
