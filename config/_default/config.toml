@@ -21,9 +21,9 @@ enableEmoji = true
 #googleAnalytics = "UA-1511XXXX-X"
 
 # 
-mainSections = ['species', 'posts']
+mainSections = ['entries', 'posts']
 
-# Add Markdown generation, which with the 'species' template, generates the necessary pandoc input:
+# Add Markdown generation, which with the 'entries' Markdown template, generates the necessary pandoc input:
 [outputs]
   section = ['html', 'rss', 'markdown']
 

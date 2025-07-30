@@ -3,12 +3,12 @@
 
 <div class="container py-3" data-pagefind-body>
 
-  {{ partial "species-info.html" . }}
+  {{ partial "entry-info.html" . }}
 
   <hr>
 
   <p class="float-end p-1">
-  {{ $edit_url := printf "admin/#/collections/species/entries/%s/index" ( path.BaseName .Path ) }}
+  {{ $edit_url := printf "admin/#/collections/entries/entries/%s/index" ( path.BaseName .Path ) }}
   <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-primary">Edit This Entry</a>
   <a class="btn btn-sm btn-primary" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Informed</a>
   </p>

@@ -3,7 +3,7 @@
 
 <div class="container py-3">
 
-  <div class="species-header clearfix">
+  <div class="entries-header clearfix">
     <div class="float-end p-1">
       {{ $cd := dict "classification" .Params.id }}
     {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" $cd }}
@@ -14,7 +14,7 @@
     {{ .Content }}
 
     <ul>
-    {{ range (where .Site.Pages "Section" "species") }}
+    {{ range (where .Site.Pages "Section" "entries") }}
       {{ range .Pages }}
         {{ if eq .Params.classification $.Params.id }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>

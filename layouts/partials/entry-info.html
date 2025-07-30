@@ -1,6 +1,6 @@
 {{ $classification := .GetPage ( printf "classification/%s" .Params.classification ) }}
 
-  <div class="species-header clearfix" data-pagefind-filter="{{ T "classification" }}:{{ $classification.Params.title }}">
+  <div class="entries-header clearfix" data-pagefind-filter="{{ T "classification" }}:{{ $classification.Params.title }}">
     
     <div class="float-end p-1">
     {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" .Params }}
@@ -24,7 +24,7 @@
     
   </div>
 
-<div class="species-factsheet container mb-3 text-center overflow-hidden">
+<div class="entries-factsheet container mb-3 text-center overflow-hidden">
   <div class="row">
       <div class="col-6 col-sm-6 text-dark bg-primary p-2 border border-2 border-white" style="--bs-bg-opacity: .5;">
         <h3 class="mb-1">Imminence</h3>
@@ -63,13 +63,13 @@
   </div>
 </div>
   
-{{ with index .Params "related-species" }}
-<div class="species-related-species pb-3">
-  <h2 class="text-primary" style="display: inline-block;">Related Species</h2>
+{{ with index .Params "related-entries" }}
+<div class="entries-related-entries pb-3">
+  <h2 class="text-primary" style="display: inline-block;">Related entries</h2>
   
     <div class="list-group">
       {{ range . }}
-      {{ $rel := $.GetPage ( printf "species/%s" . ) }}
+      {{ $rel := $.GetPage ( printf "entries/%s" . ) }}
       <a class="list-group-item list-group-item-action" href="{{ $rel.RelPermalink }}"><strong>{{$rel.Title}}</strong></a>
       {{ end }}
     </div>
@@ -97,7 +97,7 @@
   </div>
 
 
-  <div class="species-discussion">
+  <div class="entries-discussion">
     <h3 class="text-primary" style="display: inline-block;">Last Review</h3>
     
       {{ .TableOfContents }}
@@ -107,7 +107,7 @@
   </div>
 
       {{ with index .Params.comments }}
-    <div class="species-discussion">
+    <div class="entries-discussion">
 
       <h2 class="text-primary" style="display: inline-block;">Additional Information</h2>
     
@@ -117,7 +117,7 @@
       {{ end }}
 
   {{ with index .Params "case-studies" }}
-  <div class="species-case-studies">
+  <div class="entries-case-studies">
     <h2 class="text-primary" style="display: inline-block;">Case Studies & Examples</h2>
     
       <ul>

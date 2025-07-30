@@ -39,9 +39,10 @@ i18n:
 # Defining the different collections of items:
 collections:
 
-- name: species
-  label: Bit-List Species
-  folder: content/species
+- name: entries
+  label: Bit-List Entries
+  label_singular: Bit-List Entry
+  folder: content/entries
   create: true
   path: '{{slug}}/index'
   media_folder: ''
@@ -52,24 +53,24 @@ collections:
     label: ID
     widget: id
     regenerate: false
-    hint: "An automatically-generated unique identifier for this workflow."
+    hint: "An automatically-generated unique identifier for this entry."
   - label: Title
     name: title
     widget: string
     required: true
-    hint: "The full name of this species of digital preservation threat ??? this is a species under threat, not a threat????"
+    hint: "The full name of this kind of digital material."
     i18n: true
   - label: Description
     name: description
     widget: text
     required: true
-    hint: "A brief description of this species."
+    hint: "A brief description of this kind of digital material."
     i18n: true
   - label: Examples
     name: examples
     widget: string
     required: true
-    hint: "Examples of this species."
+    hint: "Examples of this kind of digital material."
     i18n: true
   - label: 'Image'
     name: 'image'
@@ -86,7 +87,7 @@ collections:
     value_field: 'id'
     search_fields: ["title"]
     display_fields: ["title"]
-    hint: "The category of digital species."
+    hint: "The category of digital materials."
     i18n: duplicate
   - label: "Threats"
     name: threats
@@ -164,12 +165,12 @@ collections:
     - { label: "Accessed At", name: "accessed", widget: "datetime", date_format: "YYYY-MM-DD", required: false }
     - { label: "Comment", name: "comment", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false }
     required: false
-  - label: "Related Species"
-    name: related-species
+  - label: "Related entries"
+    name: related-entries
     multiple: true
     required: false
     widget: relation
-    collection: "species"
+    collection: "entries"
     value_field: "{{slug}}"
     search_fields: [ 'title' ] 
     display_fields: ['title']
@@ -210,12 +211,12 @@ collections:
     widget: 'markdown'
     i18n: true
     hint: 'Discussion summarising the review process, outcome and history.'
-  - label: 'Comments'
+  - label: 'Additional Information'
     name: 'comments'
     widget: 'markdown'
     required: false
     i18n: true
-    hint: 'Additional comments for this species.'
+    hint: 'Additional information for this entry.'
 
 - name: classifications
   label: Classifications

@@ -5,7 +5,7 @@ layout: single-toc
 
 ## What is the _Bit List_?
 
-A free-to-access and open resource for digital preservation advocacy, the DPC's _Global Bit List of Endangered Digital Species_ (or _Bit List_ for short) is a community-sourced list of at-risk digital materials which is revised every two years. Entries to the list are nominated by the community, who are at the forefront of digital preservation efforts, and reviewed by international organizations which represent global expertise in the preservation of the listed digital species.
+A free-to-access and open resource for digital preservation advocacy, the DPC's _Global Bit List of Endangered Digital Materials_ (or _Bit List_ for short) is a community-sourced list of at-risk digital materials which is revised every two years. Entries to the list are nominated by the community, who are at the forefront of digital preservation efforts, and reviewed by international organizations which represent global expertise in the preservation of the listed digital material.
 
 {{< figure 
   src="../../images/bit-list-logo.svg"
@@ -17,7 +17,7 @@ By compiling and maintaining the _Bit List_, the DPC aims to equip digital pres
 
 ## Interpreting and Using The Bit List
 
-**The Global Bit List of Endangered Digital Species (_Bit List_) is first and foremost an advocacy tool.**
+**The Global Bit List of Endangered Digital Materials (_Bit List_) is first and foremost an advocacy tool.**
 
 The _Bit List_ describes a range of digital materials in varied organizational settings which, in the experience of the global digital preservation community, face distinct and imminent challenges. These challenges may be as much to do with accountability, policy or business process as technological obsolescence or media decay.
 
@@ -25,13 +25,13 @@ By identifying these challenges and by providing elementary recommendations abou
 
 ### How are the entries contributed and verified?
 
-**Entries to the _Bit List_ are nominated by the community, who are at the forefront of digital preservation efforts, and reviewed by international organizations which represent global expertise in the preservation of the listed digital species.**
+**Entries to the _Bit List_ are nominated by the community, who are at the forefront of digital preservation efforts, and reviewed by international organizations which represent global expertise in the preservation of the listed digital material.**
 
 Although all digital materials can fall within the scope of the list, the published editions of the _Bit List_ are not a complete account of all digital materials at risk— only those items which members of the community recognize as being at risk are included.
 
 Consequently, the absence of a digital material on the list should not be taken as evidence that it is not at risk, but instead simply that the community which has compiled the list has not encountered any explicit risks or has no experience with these materials.
 
-Once nominations have been collected and collated, the _Bit List_ Council—comprising experts which represent global expertise in the preservation of the listed digital species—evaluate the entries before recommending their final list. The new, updated list is published on World Digital Preservation Day, providing digital preservationists around the globe with an updated advocacy tool on a day designed to draw attention to this real and current challenge.
+Once nominations have been collected and collated, the _Bit List_ Council—comprising experts which represent global expertise in the preservation of the listed digital materials—evaluate the entries before recommending their final list. The new, updated list is published on World Digital Preservation Day, providing digital preservationists around the globe with an updated advocacy tool on a day designed to draw attention to this real and current challenge.
 
 The _Bit List_ offers a provisional commentary with the recognition that the extent of the digital domain, the complexity of the threats, and the sophistication of emerging solutions mean that no process could ever fully capture the risks and challenges faced by digital content around the world. It is published and reviewed with the understanding that new risks are continuously arising; every day and (inevitably) between editions of the _Bit List_.
 
@@ -39,7 +39,7 @@ The _Bit List_ offers a provisional commentary with the recognition that the e
 
 **By providing real, illustrative examples of at-risk digital materials alongside their identified aggravating risk factors and recommendations for practical action, users of the _Bit List_ may present the information to support their own advocacy activities and to make a strong independently verified case for digital preservation action.**
 
-Entries on the _Bit List_ are presented in a published report and are also available online. Entries are grouped both by risk ‘classification’ and digital ‘species’, allowing users to approach and navigate the list either way.
+Entries on the _Bit List_ are presented in a published report and are also available online. Entries are grouped both by risk ‘classification’ and 'kinds' of digital materials, allowing users to approach and navigate the list either way.
 
 **_Entry Descriptions and Examples_**
 
