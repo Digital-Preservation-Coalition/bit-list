@@ -49,6 +49,13 @@ collections:
   media_folder: ''
   public_folder: ''
   i18n: true
+  view_groups:
+  - label: Classification
+    field: classification
+  - label: Imminence
+    field: imminence
+  - label: Effort
+    field: effort
   fields:
   - name: id
     label: ID
