@@ -28,7 +28,8 @@ media_folder: "assets/uploads"
 
 # Use the PR-based editorial workflow:
 # https://decapcms.org/docs/editorial-workflows/
-publish_mode: editorial_workflow
+# (combine with open authoring (above) for 'crowd sourcing')
+#publish_mode: editorial_workflow
 
 # Multi-language support
 i18n:
@@ -161,7 +162,7 @@ collections:
     - { label: "Author(s)", name: authors, widget: string, required: false }
     - { label: "Publisher", name: "publisher", widget: "string", required: false }
     - { label: "Year", name: year, widget: number, value_type: int, min: 1700, max: 2200, required: false }
-    - { label: "URL", name: "url", widget: "string" }
+    - { label: "URL", name: "url", widget: "string", required: false }
     - { label: "Accessed At", name: "accessed", widget: "datetime", date_format: "YYYY-MM-DD", required: false }
     - { label: "Comment", name: "comment", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false }
     required: false
