@@ -13,6 +13,7 @@ examples: Photographs, music recordings, literature.
 categories:
   - orphaned-works
 threats:
+  - out-of-band
   - legal-constraints
 imminence: 4
 effort: 5

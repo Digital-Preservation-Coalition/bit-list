@@ -7,21 +7,20 @@ hazards: Lack of skills, commitment or policy from corporate owners; conflating
   of failure; technical protection measures that inhibit preservation actions;
   encryption.
 significance: 10
-id: EkCh9cvCW
-last-updated: 2024-01-01
-impact: 9
 description: Music licensed and playable through corporate platforms protected
   by rights management and subscription revenues and presented as compressed
   single-track recordings.
+threats:
+  - bSz9w-YoKP
+last-updated: 2024-01-01
+impact: 9
 classification: endangered
 previous-status: endangered
+id: EkCh9cvCW
 title: Digital Recordings Published via Cloud-based Music Sharing Platforms
 examples: Spotify, iTunes, Bandcamp, SoundCloud.
 categories:
   - sound-and-vision
-  - cloud
-threats:
-  - social-media
   - cloud
 tags:
   - featured

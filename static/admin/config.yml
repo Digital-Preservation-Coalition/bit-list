@@ -302,9 +302,10 @@ collections:
 
 - name: threats
   label: Threats
+  label_singular: Threat
   folder: content/threats
   create: true
-  delete: false
+  delete: true
   hide: false
   path: '{{slug}}/_index'
   media_folder: '/assets/images/threats'
@@ -317,7 +318,7 @@ collections:
   - name: id
     label: ID
     widget: id
-    regenerate: false
+    regenerate: true
     hint: "An automatically-generated unique identifier for this workflow."
   - label: Title
     name: title
@@ -338,9 +339,10 @@ collections:
     name: class
     widget: "select"
     options:
-      - "Organisational Threats"
-      - "Complexity Threats"
-      - "Technological Threats"
+      - "Organisational"
+      - "Complexity"
+      - "Content"
+      - "Technological"
     hint: "The broad class of threat this belongs to."
 
 - name: pages

@@ -2,7 +2,7 @@
 
 # Threats
 
-{{- $threat_classes := slice  "Organisational Threats" "Complexity Threats" "Technological Threats" -}}
+{{- $threat_classes := slice  "Organisational" "Complexity" "Content" "Technological" -}}
 {{- $tax := $.Site.GetPage "taxonomyTerm" "threats" -}}
 {{- $s := newScratch -}}
 
@@ -11,6 +11,9 @@
 ## {{ . }}
 {{ range (where $tax.Pages ".Params.class" "eq" . ) }}
 ### {{ .Title }}
+
+{{ with .Params.description }}{{ . }}{{ end -}}
+
 {{- range $p := sort .Pages ".Params.classification" }}
 
 {{ if $s.Get $p.Path }}{{ else }}{{ $s.Set $p.Path "ADDED" -}}
