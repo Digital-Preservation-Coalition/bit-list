@@ -11,7 +11,7 @@ description: Music licensed and playable through corporate platforms protected
   by rights management and subscription revenues and presented as compressed
   single-track recordings.
 threats:
-  - bSz9w-YoKP
+  - proprietary-data
 last-updated: 2024-01-01
 impact: 9
 classification: endangered

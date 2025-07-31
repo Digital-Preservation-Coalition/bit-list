@@ -10,7 +10,7 @@ examples: Flash and Shockwave based games; cartoons; interactives.
 categories:
   - web
 threats:
-  - bSz9w-YoKP
+  - proprietary-data
 classification: practically-extinct
 imminence: 5
 effort: 5

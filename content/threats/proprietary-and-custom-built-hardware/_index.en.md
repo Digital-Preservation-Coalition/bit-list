@@ -1,5 +1,5 @@
 ---
 id: proprietary-hardware
-title: " Proprietary and Custom-built Hardware"
+title: "Proprietary and Custom-built Hardware"
 class: Technological
 ---
