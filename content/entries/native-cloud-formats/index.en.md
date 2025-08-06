@@ -27,7 +27,7 @@ mitigations: Reduction of dependencies; improved export functionality; clear
   migration pathways; application of records management standards; version
   control; integrity checking; comprehensive documentation; access to web
   harvesting; technology watch.
-year-added: 2022
+year-added: 2023
 published: 2025-08-06
 last-updated: 2025-08-06
 aliases:
