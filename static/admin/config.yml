@@ -80,12 +80,6 @@ collections:
     required: true
     hint: "Examples of this kind of digital material."
     i18n: true
-  - label: 'Image'
-    name: 'image'
-    widget: 'image'
-    required: false
-    hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
-    i18n: duplicate
   - label: "Category"
     name: categories
     multiple: true
@@ -160,32 +154,6 @@ collections:
   - label: Mitigations
     name: mitigations
     widget: "text"
-  - label: Case Studies & Examples
-    name: case-studies
-    i18n: false
-    widget: list
-    minimize_collapsed: false
-    fields:
-    - { label: "Title", name: "title", widget: "string" }
-    - { label: "Author(s)", name: authors, widget: string, required: false }
-    - { label: "Publisher", name: "publisher", widget: "string", required: false }
-    - { label: "Year", name: year, widget: number, value_type: int, min: 1700, max: 2200, required: false }
-    - { label: "URL", name: "url", widget: "string", required: false }
-    - { label: "Accessed At", name: "accessed", widget: "datetime", date_format: "YYYY-MM-DD", required: false }
-    - { label: "Comment", name: "comment", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false }
-    required: false
-  - label: "Related entries"
-    name: related-entries
-    multiple: true
-    required: false
-    widget: relation
-    collection: "entries"
-    value_field: "{{slug}}"
-    search_fields: [ 'title' ] 
-    display_fields: ['title']
-    i18n: duplicate
-
-# -------------
   - label: Year Added
     name: year-added
     widget: "number"
@@ -226,6 +194,37 @@ collections:
     required: false
     i18n: true
     hint: 'Additional information for this entry.'
+  - label: Case Studies & Examples
+    name: case-studies
+    i18n: false
+    widget: list
+    minimize_collapsed: false
+    fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Author(s)", name: authors, widget: string, required: false }
+    - { label: "Publisher", name: "publisher", widget: "string", required: false }
+    - { label: "Year", name: year, widget: number, value_type: int, min: 1700, max: 2200, required: false }
+    - { label: "URL", name: "url", widget: "string", required: false }
+    - { label: "Accessed At", name: "accessed", widget: "datetime", date_format: "YYYY-MM-DD", required: false }
+    - { label: "Comment", name: "comment", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false }
+    required: false
+  - label: "Related entries"
+    name: related-entries
+    multiple: true
+    required: false
+    widget: relation
+    collection: "entries"
+    value_field: "{{slug}}"
+    search_fields: [ 'title' ] 
+    display_fields: ['title']
+    i18n: duplicate
+  - label: 'Image'
+    name: 'image'
+    widget: 'image'
+    required: false
+    hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
+    i18n: duplicate
+
 
 - name: classifications
   label: Classifications
