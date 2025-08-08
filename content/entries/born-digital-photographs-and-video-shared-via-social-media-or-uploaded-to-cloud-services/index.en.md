@@ -27,7 +27,7 @@ mitigations: Offline backup; lossless compression; good documentation; access to
   web harvesting; clarity of intellectual property rights that enable
   preservation; credible preservation commitment from service provider; export
   pathway.
-year-added: 2017
+year-added: 2018
 published: 2025-08-08
 last-updated: 2025-08-08
 aliases:
