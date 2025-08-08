@@ -17,6 +17,13 @@ threats:
 classification: endangered
 imminence: 3
 effort: 4
+trends:
+  - year: 2023
+    trend: no-change
+    classification: endangered
+  - year: 2023
+    trend: no-change
+    classification: endangered
 hazards: Lack of skills, commitment or policy from corporate owners; lack of
   storage replication by provider; dependence on proprietary products or
   formats; poor management of data protection; inaccessibility to automated web
