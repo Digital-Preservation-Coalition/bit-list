@@ -12,6 +12,8 @@ description: This entry regards the preservation of websites and domains that
   there is a significant risk of loss.
 examples: Domains registered without a country code; domains with a country code
   but weak or unenforceable legal deposit permission to harvest
+categories:
+  - Web
 threats:
   - Proprietary Data
 classification: critically-endangered
