@@ -35,10 +35,10 @@ published: 2025-08-21
 last-updated: 2025-08-21
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-web-no-legal-deposit
-comments: There is not only a significant risk of loss to the content but also
-  risk of loss to access. Unless the Internet Archive is picking these up, the
-  early web or permission regimes are in place, and these early instances are
-  gone forever and will continue to be lost.
+comments: >-
+  
+
+  There is not only a significant risk of loss to the content but also risk of loss to access. Unless the Internet Archive is picking these up, the early web or permission regimes are in place, and these early instances are gone forever and will continue to be lost.
 case-studies:
   - title: "Web Archiving Survey Results: An NDSA Report"
     authors: National Digital Stewardship Alliance (NDSA)
