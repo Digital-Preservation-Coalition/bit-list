@@ -34,7 +34,7 @@ year-added: 2017
 published: 2025-08-21
 last-updated: 2025-08-21
 aliases:
-  - /digipres/champion-digital-preservation/bit-list
+  - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-smart-phone-apps
 comments: >-
   Old versions of apps are completely lost to most users: once you upgrade an
   app, you typically cannot go back. Perhaps iOS is more critical - at least
