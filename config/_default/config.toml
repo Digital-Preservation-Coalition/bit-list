@@ -24,8 +24,9 @@ enableEmoji = true
 mainSections = ['entries', 'posts']
 
 # Add Markdown generation, which with the 'entries' Markdown template, generates the necessary pandoc input:
-[outputs]
-  section = ['html', 'rss', 'markdown']
+# (except this does not seem to be necessary, and causes problems for sections without a template)
+#[outputs]
+#  section = ['html', 'rss', 'markdown']
 
 
 [frontmatter]
