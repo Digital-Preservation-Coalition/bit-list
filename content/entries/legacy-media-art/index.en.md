@@ -61,6 +61,40 @@ case-studies:
       collecting remit. It offers basic guidance on the specificities of digital
       art and how it may differ from other digital content in an institution’s
       care.
+  - url: https://aama.net.au/
+    title: Archiving Australian Media Arts Project
+    comment: Archiving Australian Media Arts Project is a research project funded by
+      the Australian Research Council involving collaboration between university
+      researchers and cultural institutions. The aim was to develop a good
+      practice method for stabilising digital media artworks, providing emulated
+      access to the artworks to researchers in reading rooms, and to investigate
+      the contemporary exhibition and re-display of historical media artworks.
+      This has also led to Aus Easi project.
+    accessed: 2024-09-06
+  - authors: Central European Art Database
+    title: "NEW MEDIA MUSEUMS: Creating Framework for Preserving and Collecting
+      Media Arts in V4"
+    url: http://cead.space/Detail/projects/3797
+    year: 2021
+    accessed: 2023-10-24
+    comment: "NEW MEDIA MUSEUMS: Creating Framework for Preserving and Collecting
+      Media Arts in V4, initiated by the Olomouc Museum of Art as a joint
+      international platform for sharing experience with building and
+      maintaining collections of new media artworks across different types of
+      institutions. The aim of the project is to find workable methods for
+      heritage institutions to build and maintain collections of media arts,
+      which are necessary for safeguarding this area for the benefit of
+      society."
+  - comment: The Collaborative Infrastructure for sustainable access to digital art
+      LIMA project, to prevent the loss of digital artworks and to commonly
+      develop the knowledge to preserve these works in a sustainable way. The
+      project ‘Infrastructure sustainable accessibility digital art’ invests in
+      research, training, knowledge sharing and conservation to prevent the loss
+      of both digital artworks and the knowledge to preserve them.
+    authors: LIMA
+    title: Collaborative infrastructure for sustainable access to digital art
+    url: https://www.li-ma.nl/lima/article/collaborative-infrastructure-sustainable-access-digital-art
+    accessed: 2023-10-24
 ---
 **2023 Review**
 
