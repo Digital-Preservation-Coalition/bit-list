@@ -58,7 +58,7 @@ This entry was added in 2019. It is characterized by regulatory barriers rather
 
 The 2023 Council agreed with the *Critically Endangered* classification. They also noted an increase in the imminence and inevitability of loss, recognizing that while the need for major efforts to prevent or reduce losses continues, it is much more likely that loss of material has already occurred and will continue to do so by the time tools or techniques have been developed. While the Council agreed the entry description should be updated to reflect these areas of discussion, overall risks remain on the same basis as before (‘No change’ to trend).
 
-**2024 Review**
+**2024 Interim Review**
 
 These risks remain on the same basis as before, with no significant trend towards even greater or reduced risk (‘No change’ to trend).
 
