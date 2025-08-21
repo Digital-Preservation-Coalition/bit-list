@@ -100,8 +100,14 @@ case-studies:
     year: 2022
     accessed: 2023-10-24
 ---
+**2023 Review**
+
 This entry was added in 2017 to draw attention to the challenges of software preservation and the extraordinary velocity of the market for apps. Given the speed of change, it is hard to see how digital preservation efforts can keep pace. The 2019 Jury noted that splitting this entry into different groups based on the platform would clarify differences, although the risks would be largely the same. The 2021 Jury discussed this further in light of the new 2021 ‘Smartphone Gaming’ entry, which can be considered a subset of this category as well as Gaming in which it is currently assigned. The 2021 Jury found no identifiable trend towards greater or reduced risk but discussed the impact of loss; some loss seems inevitable due to the changes that have taken place in mobile ecosystems over the past 15 years. The 2022 Taskforce noted no change to trend (they agreed these risks remain on the same basis as before with no significant increase or decrease over the preceding year).
 
 The 2023 Council agreed with the *Critically Endangered* classification with no change to trend but also recommended a change to significance of loss; the significance of loss was increased from the previous year’s reviews, suggesting that the loss of tools or services within this group could have a larger global impact. Obsolescence plays a large part; the rate of change of smart operating systems is high, as are the number of apps, which means the obsolescence rate is high. Furthermore, a large number of vendors are also leaving the market, which means their specific apps will also vanish. While the Council agreed the entry description should be updated to reflect these areas of discussion, overall risks remained on the same basis as before (‘No change’ to the 2023 trend).
 
 Members of the 2023 Council also noted that it may be better to have a broader smart device apps entry rather than specifically ‘Smartphone Apps’ and ‘Smart TV Apps’ as separate standalone entries. The risks posed by these apps can apply to a variety of devices; for example, before Smartphones, there were PDAs, and there are now Smart fridges, set-top-boxes, fire sticks, e-book readers, and other devices which have apps. For this reason, they recommended that the next major review for the Bit List includes a rescoping of Smartphone Apps and Smart TV Apps to consider: What differentiates these apps from others? What cultural heritage purpose do these apps serve? Are organizations collecting them? Are there distinct aggravating factors or risk profiles?
+
+**2024 Interim Review**
+
+These risks remain on the same basis as before, with no significant trend towards even greater or reduced risk (‘No change’ to trend).
