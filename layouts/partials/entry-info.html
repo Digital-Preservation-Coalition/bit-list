@@ -65,7 +65,7 @@
   
 {{ with index .Params "related-entries" }}
 <div class="entries-related-entries pb-3">
-  <h2 class="text-primary" style="display: inline-block;">Related entries</h2>
+  <h2 class="text-primary">Related entries</h2>
   
     <div class="list-group">
       {{ range . }}
@@ -98,7 +98,7 @@
 
 
   <div class="entries-discussion">
-    <h3 class="text-primary" style="display: inline-block;">Last Review</h3>
+    <h3 class="text-primary">Last Review</h3>
     
       {{ .TableOfContents }}
 
@@ -109,7 +109,7 @@
       {{ with index .Params.comments }}
     <div class="entries-discussion">
 
-      <h2 class="text-primary" style="display: inline-block;">Additional Information</h2>
+      <h2 class="text-primary">Additional Information</h2>
     
       {{ . | markdownify }}
 
@@ -118,7 +118,7 @@
 
   {{ with index .Params "case-studies" }}
   <div class="entries-case-studies">
-    <h2 class="text-primary" style="display: inline-block;">Case Studies & Examples</h2>
+    <h2 class="text-primary">Case Studies & Examples</h2>
     
       <ul>
         {{ range .}}
