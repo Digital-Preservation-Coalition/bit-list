@@ -30,7 +30,7 @@ hazards: Device dependence; poor documentation; uncertainty over IPR or the
 mitigations: Strong documentation; version control for code and compiled app;
   emulation enabled; designated repository taking preservation responsibility
   and capacity to deliver
-year-added: 2012
+year-added: 2017
 published: 2025-08-21
 last-updated: 2025-08-21
 aliases:
