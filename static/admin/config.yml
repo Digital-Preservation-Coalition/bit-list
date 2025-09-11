@@ -97,7 +97,7 @@ collections:
     required: false
     widget: relation
     collection: "threats"
-    value_field: 'title'
+    value_field: "{{slug}}"
     search_fields: [ 'title' ] 
     display_fields: ["{{class}} > {{title}}"]
     i18n: duplicate
