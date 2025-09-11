@@ -9,7 +9,7 @@ examples: Floppy disks; tape; certain kinds of portable hard disks, zip drives.
 categories:
   - portable-media
 threats:
-  - obsolete-hardware-media
+  - obsolete-hardware-media/_index
 tags:
   - featured
 classification: critically-endangered
@@ -27,6 +27,22 @@ hazards: Poor storage; inability to access readers; no replication; encryption;
   works.
 mitigations: Active management; dependable access to readers; strong
   documentation; documentation independent from the media.
+year-added: 2019
+published: 2019-01-01
+last-updated: 2023-01-01
+aliases:
+  - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-portable-magnetic-media
+comments: >
+  There is no ‘active management’ of data found on these media items. The data
+  should be copied off of the media and into a digital preservation system that
+  allows for active management. Data found on these media should be considered a
+  backup, at best.
+
+
+  We know what to do with this type of material, it is the scale that makes it a problem.
+
+
+  There is really no excuse for using floppy disks for storage these days. Tape is a different proposition since it allows high-density back up offline and nearline. But there are challenges with the backward compatibility of popular and even relatively recent LTO versions.
 case-studies:
   - title: The Magnetic Tape Alert Project
     url: https://www.iasa-web.org/magnetic-tape-alert-project
@@ -59,22 +75,6 @@ case-studies:
     year: 2016
     accessed: ""
     authors: Pennock, M., May, P., Day, M., Davies, K. and Whibley, S.
-year-added: 2019
-published: 2019-01-01
-last-updated: 2023-01-01
-aliases:
-  - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-portable-magnetic-media
-comments: >
-  There is no ‘active management’ of data found on these media items. The data
-  should be copied off of the media and into a digital preservation system that
-  allows for active management. Data found on these media should be considered a
-  backup, at best.
-
-
-  We know what to do with this type of material, it is the scale that makes it a problem.
-
-
-  There is really no excuse for using floppy disks for storage these days. Tape is a different proposition since it allows high-density back up offline and nearline. But there are challenges with the backward compatibility of popular and even relatively recent LTO versions.
 ---
 The 2019 Jury introduced this entry to ensure that the range of media storage is properly assessed and presented. Portable magnetic media is ubiquitous but is fragile not just to physical wear and tear but also to magnetic interference and bit-rot. The substrates of the disks can prove unstable, and in some cases, proprietary reader technology means that the disk becomes obsolete before it degrades. Storage at scale also means the percentage likelihood of failure increases. The 2021 Jury and 2022 Taskforce agreed with the entry’s assigned risk classification with no noted trend towards increased or reduced risk.
 
