@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+<div class="container py-3">
+
+  <div class="entries-header clearfix">
+<!--
+    <div class="float-end p-1">
+      {{ $cd := dict "classification" .Params.id }}
+    {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" $cd }}
+    </div>
+    -->
+
+    <h1>{{ .Title }}</h1>  
+
+    {{ .Content }}
+
+  </div>
+
+  <div class="row mb-3 clearfix">
+    {{ range (where .Site.Pages "Section" "entries") }}
+      {{ range .Pages }}
+        {{ if in .Params.threats $.Params.title }}
+            {{ partial "entry-card" . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    </ul>
+    
+  </div>
+
+</div>
+
+{{ end }}
