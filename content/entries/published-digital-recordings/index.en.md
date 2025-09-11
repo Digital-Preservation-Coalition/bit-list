@@ -39,8 +39,6 @@ mitigations: Strong backup and documentation; use of open formats and open
   authenticity and integrity managed; recognition of preservation functions at
   executive level; technology watch; regular preservation audits; accreditation
   and participation in the professional preservation community.
-related-entries:
-  - orphaned-works/index
 year-added: 2019
 published: 2019-01-01
 aliases:
