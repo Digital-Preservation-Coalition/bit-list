@@ -242,7 +242,7 @@ collections:
     label: ID
     widget: id
     regenerate: false
-    hint: "An automatically-generated unique identifier for this workflow."
+    hint: "An automatically-generated unique identifier."
   - label: Title
     name: title
     widget: string
@@ -284,7 +284,7 @@ collections:
     label: ID
     widget: id
     regenerate: false
-    hint: "An automatically-generated unique identifier for this workflow."
+    hint: "An automatically-generated unique identifier."
   - label: Title
     name: title
     widget: string
@@ -320,7 +320,7 @@ collections:
     label: ID
     widget: id
     regenerate: true
-    hint: "An automatically-generated unique identifier for this workflow."
+    hint: "An automatically-generated unique identifier."
   - label: Title
     name: title
     widget: string
