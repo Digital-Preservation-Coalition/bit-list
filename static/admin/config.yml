@@ -308,7 +308,7 @@ collections:
   create: true
   delete: true
   hide: false
-  path: '{{slug}}'
+  path: '{{slug}}/index'
   media_folder: '/assets/images/threats'
   public_folder: '/images/threats'
   i18n: true
