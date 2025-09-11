@@ -1,0 +1,90 @@
+<div class="col-12 col-md-6 mt-3">
+
+    <div class="card h-100">
+        <div class="card-body">
+            <div class="float-end p-0">{{ page.Store.Set "imageSize" "80x" }}{{ partial "classification-img" .Params }}</div>
+
+            <h4 class="card-title">
+                <a class="stretched-link text-primary text-decoration-none" href="{{ .RelPermalink }}">
+                    {{ .Title }}
+                </a>
+            </h4>
+            <p class="text-text">
+                {{ with .Params.description }}
+                    {{ . }}
+                {{ else }}
+                    {{ .Summary | truncate 400 }}
+                {{ end }}
+            </p>
+        </div>
+        {{ if isset .Params "date" }}
+        <div class="card-footer">
+            <small class="text-muted">
+                <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="{{ `images/feather/feather-sprite.svg#calendar` | relURL }}"/></svg>
+                <time class="ms-2" datetime="{{ .Date.Format `2006-01-02T15:04:05Z0700` | safeHTML }}">{{ .Date | time.Format ":date_long" }}</time>
+                {{ if isset .Params "categories" }}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
+                    {{ range .Params.categories }}
+                        <a class="text-decoration-none text-muted ms-2" href="{{ `/categories/` | relLangURL }}{{ . | urlize}}/">{{ . }}</a>
+                    {{end}}
+                {{ end }}
+            </small>
+        </div>
+        {{ end }}
+    </div>
+
+</div>
+
+<!--
+
+        <div class="card border-light-subtle mb-3">
+            <div class="row g-0">
+
+                <div class="col-md-4 d-flex align-items-center">
+                    {{ if isset .Params "images" }}
+                        {{ with .Resources.GetMatch (index .Params.Images 0) }}
+                            {{ $image := .Fill "600x300 Center webp" }}
+                            <img class="img-fluid rounded p-1" src="{{ $image.RelPermalink }}" loading="lazy" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="featured image {{.Title }}">
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">{{ .Title }}</h2>
+
+                        <div class="card-subtitle text-muted mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="{{ `images/feather/feather-sprite.svg#calendar` | relURL }}"/></svg>
+                            <time class="ms-2" datetime="{{ .Lastmod.Format `2006-01-02T15:04:05Z0700` | safeHTML }}">{{ .Lastmod | time.Format ":date_long" }}</time>
+
+                            {{ if isset .Params "categories" }}
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
+                                {{ range .Params.categories }}
+                                    <a class="text-decoration-none text-muted ms-2" href="{{ `/categories/` | relLangURL }}{{ . | urlize}}/">{{ . }}</a>
+                                {{end}}
+                            {{ end }}
+
+                            {{ if isset .Params "tags" }}
+                                <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="{{ `images/feather/feather-sprite.svg#tag` | relURL }}"/></svg>
+                                {{ range .Params.tags }}
+                                    <a class="text-decoration-none text-muted ms-2" href="{{ `/tags/` | relLangURL }}{{ . | urlize}}/">{{ . }}</a>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+
+                        <div class="card-text">
+                            {{ with .Params.description }}
+                                {{ . }}
+                            {{ else }}
+                                {{ .Summary | truncate 400 }}
+                            {{ end }}
+                        </div>
+                        
+                        <a class="stretched-link" href="{{.RelPermalink}}"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+-->

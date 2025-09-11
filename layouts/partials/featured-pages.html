@@ -1,30 +1,6 @@
 <div class="row row-cols-1 g-4">
 
     {{ range .Site.Taxonomies.tags.featured }}
-        <div class="col-12 col-sm-6 ">
-
-            <div class="card h-100">
-                <div class="card-body">
-                    <div class="float-end p-0">{{ page.Store.Set "imageSize" "80x" }}{{ partial "classification-img" .Params }}</div>
-
-                    <h4 class="card-title">
-                        <a class="stretched-link text-primary text-decoration-none" href="{{ .RelPermalink }}">
-                            {{ .Title }}
-                        </a>
-                    </h4>
-                    <p class="text-text">
-                        {{ with .Params.description }}
-                            {{ . }}
-                        {{ else }}
-                            {{ .Summary | truncate 400 }}
-                        {{ end }}
-                    </p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-muted">{{ .Date | time.Format ":date_long" }}</small>
-                </div>
-            </div>
-    
-        </div>
+        {{ partial "entry-card" . }}
     {{ end }}
 </div>

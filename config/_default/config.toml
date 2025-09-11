@@ -36,8 +36,11 @@ mainSections = ['entries', 'posts']
 [taxonomies]
   tag = "tags"
   category = "categories"
-  threat = 'threats'
   author = 'authors'
+
+# Doesn't seem to do much?
+#disableKinds = ['taxonomy', 'term']
+
 
 [sitemap]
   changefreq = "monthly"

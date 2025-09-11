@@ -1,6 +1,6 @@
 ---
 id: bMeaUbbEtx
-title: " Published Research Papers"
+title: "Published Research Papers"
 description: Completed research papers published in serials, monographs or
   theses which fall under specific collecting policies of research libraries or
   archives and are managed through dedicated repository infrastructures.
