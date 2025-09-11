@@ -208,22 +208,23 @@ collections:
     - { label: "Accessed At", name: "accessed", widget: "datetime", date_format: "YYYY-MM-DD", required: false }
     - { label: "Comment", name: "comment", widget: "markdown", buttons: ["bold", "italic", "link"], editor_components: [], required: false }
     required: false
-  - label: "Related entries"
-    name: related-entries
-    multiple: true
-    required: false
-    widget: relation
-    collection: "entries"
-    value_field: "{{slug}}"
-    search_fields: [ 'title' ] 
-    display_fields: ['title']
-    i18n: duplicate
-  - label: 'Image'
-    name: 'image'
-    widget: 'image'
-    required: false
-    hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
-    i18n: duplicate
+  # These are proposed new fields for the next major update:
+  # - label: "Related entries"
+  #   name: related-entries
+  #   multiple: true
+  #   required: false
+  #   widget: relation
+  #   collection: "entries"
+  #   value_field: "{{slug}}"
+  #   search_fields: [ 'title' ] 
+  #   display_fields: ['title']
+  #   i18n: duplicate
+  # - label: 'Image'
+  #   name: 'image'
+  #   widget: 'image'
+  #   required: false
+  #   hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
+  #   i18n: duplicate
 
 
 - name: classifications
