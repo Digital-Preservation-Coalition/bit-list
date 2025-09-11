@@ -1,13 +1,8 @@
 ---
 id: DhTYAdUrga
 title: Legacy Interfaces and Services Offered Online by Major Companies
-description: Online services with unique interfaces that change regularly and
-  through those changes provide a different experience and different content to
-  their users.
-examples: Interfaces to user-driven social platforms such as MySpace, Bebo,
-  Facebook, Twitter/X, Reddit, LinkedIn, Sina Weibo, Flickr, and social platform
-  API-driven services such as Botometer and Tweetdeck and many others, and
-  superseded policies and terms governing access and re-use of platform data
+description: Online services with unique interfaces that change regularly and through those changes provide a different experience and different content to their users.
+examples: Interfaces to user-driven social platforms such as MySpace, Bebo, Facebook, Twitter/X, Reddit, LinkedIn, Sina Weibo, Flickr, and social platform API-driven services such as Botometer and Tweetdeck and many others, and superseded policies and terms governing access and re-use of platform data
 categories:
   - Social Media
 threats:
@@ -23,58 +18,39 @@ trends:
     trend: no-change
     classification: practically-extinct
 hazards: TBC
-mitigations: Robust and extensive web archives with strong documentation of
-  platform documentation (such as terms of service) over time; search algorithms
-  (where available); ranking and personalization of interfaces; awareness of IPR
-  and the presence of orphaned works
+mitigations: Robust and extensive web archives with strong documentation of platform documentation (such as terms of service) over time; search algorithms (where available); ranking and personalization of interfaces; awareness of IPR and the presence of orphaned works
 year-added: 2019
 published: 2025-08-21
-last-updated: 2025-08-21
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-legacy-interfaces-and-services
-comments: >-
-  The interfaces alone have less impact if they are gone (since many research
-  users are interested in the extracted data). However, it's an important
-  distinction for us to make that we could end up preserving social media data
-  as datasets in the long run, meaning that the look and feel (which serves a
-  different sort of purpose) will be lost. A number of social media researchers
-  in groups like the Association of Internet Researchers (AoIR) may care more
-  about the data, but perhaps it is worth exploring a bit more about their
-  interest in interfaces.
-
+comments: |-
+  The interfaces alone have less impact if they are gone (since many research users are interested in the extracted data). However, it's an important distinction for us to make that we could end up preserving social media data as datasets in the long run, meaning that the look and feel (which serves a different sort of purpose) will be lost. A number of social media researchers in groups like the Association of Internet Researchers (AoIR) may care more about the data, but perhaps it is worth exploring a bit more about their interest in interfaces.
 
   Without the interfaces and the underlying software that enables social media platforms, it will be impossible to preserve the look and feel and even meaning of a large portion of content that depends on particular functionality or interface to be accurately or authentically interpreted, including for evidential uses, artworks, design research, and historical/qualitative research. The loss of these interfaces (or lack of any indication of robust documentation by platforms) means a significant gap in the cultural heritage of many communities and even entire nations. For example, some content creators on YouTube may lose access to their content and accounts due to copyright infringement claims or reports of inappropriate content, which may or may not be supportable. The risk of loss is higher if the content is not stored anywhere else. Though some mitigation methods are available through the platform, this issue may only affect a small number of accounts.
 
-
   Some of the content/iterations of these are likely preserved to an extent within existing web archives but not as targeted collection efforts. As we've seen with MySpace and other platforms where the platform producers decide to remove content or shut down with little notice, loss may be sudden.
-
 
   Replaying social media content from 2014 through modern interfaces poses a challenge to authenticity and reliability. If no recording or documentation for legacy interfaces has been preserved, it will not be possible to recreate older interfaces. You'd think the platform owners may preserve older versions, but these copies (if they exist) are not available to research or collecting institutions, and it would be worth engaging in a conversation about making them available for scholarly projects and cultural heritage.
 
-
   Some of this information is almost certainly lost already (some through deliberate disposal). The imminence of action depends on the type of institution.
 case-studies:
-  - title: "Web Archiving Survey Results: An NDSA Report"
+  - title: 'Web Archiving Survey Results: An NDSA Report'
     authors: National Digital Stewardship Alliance (NDSA)
     year: 2023
     url: https://doi.org/10.17605/OSF.IO/N5MYR
     accessed: 2024-09-11
-    comment: In the 2023 NDSA Web Archiving Survey Report, one of the major
-      takeaways related to respondents’ concerns about ability to collect social
-      media—in particular, Twitter, Instagram, Facebook, and Reddit. Content
-      housed within social networks has always been difficult to capture for a
-      myriad of reasons and recent changes to numerous social platforms have
-      made this task harder.
+    comment: In the 2023 NDSA Web Archiving Survey Report, one of the major takeaways related to respondents’ concerns about ability to collect social media—in particular, Twitter, Instagram, Facebook, and Reddit. Content housed within social networks has always been difficult to capture for a myriad of reasons and recent changes to numerous social platforms have made this task harder.
   - title: Platform-controlled social media APIs threaten open science
     authors: Davidson, B.I., Wischerath, D., Racek, D. et al.
     url: https://doi.org/10.1038/s41562-023-01750-2
     year: 2021
   - title: Looking Forwards
-    authors: "Summers, E. "
+    authors: 'Summers, E. '
     year: 2023
     url: https://web.archive.org/web/20230720201537/https
     accessed: 2024-09-04
-  - title: "The Shame Machine: Who Profits in the New Age of Humiliation"
+  - title: 'The Shame Machine: Who Profits in the New Age of Humiliation'
     authors: O'Neil, C. (2022)
     year: 2022
   - title: The Digital Services Act
@@ -82,8 +58,7 @@ case-studies:
     url: https://web.archive.org/web/20240611053451/https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/europe-fit-digital-age/digital-services-act_en
     year: 2024
     accessed: 2024-09-04
-  - title: "Preview: Senate Judiciary Committee to Press Big Tech CEOs on Failures
-      to Protect Kids Online During Landmark Hearing Today"
+  - title: 'Preview: Senate Judiciary Committee to Press Big Tech CEOs on Failures to Protect Kids Online During Landmark Hearing Today'
     authors: US Senate Committee on the Judiciary
     url: https://web.archive.org/web/20240607212543/https://www.judiciary.senate.gov/press/releases/preview-senate-judiciary-committee-to-press-big-tech-ceos-on-failures-to-protect-kids-online-during-landmark-hearing-today
     year: 2024
@@ -94,7 +69,7 @@ case-studies:
     url: https://web.archive.org/web/20240406092903/https://www.judiciary.senate.gov/committee-activity/hearings/social-media-and-the-teen-mental-health-crisis
     accessed: 2024-09-04
   - title: Surgeon General Calls for Warning Labels on Social Media Platforms
-    authors: "Barry, E. and Kang, C. "
+    authors: 'Barry, E. and Kang, C. '
     publisher: New York Times
     year: 2024
     url: https://web.archive.org/web/20240620034730/https://www.nytimes.com/2024/06/17/health/surgeon-general-social-media-warning-label.html

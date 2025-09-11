@@ -1,12 +1,8 @@
 ---
 id: YM92CSwXVU
 title: Unpublished Research Data
-description: Data sets produced in the course of research but never shared or
-  made available outside of the initial research team.
-examples: Unpublished research data can include different kinds of unpublished
-  research data outputs, such as unstructured or structured datasets, databases,
-  or other organized collections of computerized information or data such as
-  periodical articles, books, graphics and multimedia
+description: Data sets produced in the course of research but never shared or made available outside of the initial research team.
+examples: Unpublished research data can include different kinds of unpublished research data outputs, such as unstructured or structured datasets, databases, or other organized collections of computerized information or data such as periodical articles, books, graphics and multimedia
 categories:
   - Research Outputs
 threats:
@@ -21,31 +17,19 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Originating researcher no longer active or changed research focus;
-  staff on temporary contracts; dependence on single student or staff member;
-  weak or fluid institutional commitment to subject matter; weak institutional
-  commitment to data sharing; uncertainty over IPR or the presence of orphaned
-  works; encryption; limited or dysfunctional data management planning.
-mitigations: Replication and documentation; data management plan; preservation
-  pathway agreed.
+hazards: Originating researcher no longer active or changed research focus; staff on temporary contracts; dependence on single student or staff member; weak or fluid institutional commitment to subject matter; weak institutional commitment to data sharing; uncertainty over IPR or the presence of orphaned works; encryption; limited or dysfunctional data management planning.
+mitigations: Replication and documentation; data management plan; preservation pathway agreed.
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-unpublished-research-data
-comments: >-
-  If we do not know it exists, does it exist? It may also be that in certain
-  circumstances this includes data that is unfavourable and has intentionally
-  not been published. If perceived as high-value, someone in the research team
-  will likely take steps to ensure it is protected. We can be proactive and
-  offer advice, but ultimately it is down to them. We cannot keep everything!
-
+comments: |-
+  If we do not know it exists, does it exist? It may also be that in certain circumstances this includes data that is unfavourable and has intentionally not been published. If perceived as high-value, someone in the research team will likely take steps to ensure it is protected. We can be proactive and offer advice, but ultimately it is down to them. We cannot keep everything!
 
   This is a wide field, so the scale and impact are hard to describe, but the risk is higher than papers due to potential file format complexity.
 
-
   Success is dependent on how successful an institution’s research data management communications are. Advocacy and research are needed to show the scale of the problem, as well as education regarding open science and preservation.
-
 
   Simply having a data management plan prepared is not sufficient, it needs to be properly implemented and kept up to date and relevant for both the researcher and the repository which will take a copy of the data. DMP should be used to appraise what data is worth long term preservation (e.g. NERC Data Value Check List), and what data is of lower quality, non-reusable, and even a reputational risk should it be shared further.
 ---

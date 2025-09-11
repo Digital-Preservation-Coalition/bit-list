@@ -1,12 +1,8 @@
 ---
 id: rdZ4ZPwS_Q
 title: Digitally Published Sheet Music
-description: Sheet music licensed and published in various digital formats,
-  subject to copyright restrictions and often protected by digital rights
-  management technologies.
-examples: This entry includes all manner of published sheet music, including
-  choral works, orchestral works, scores published in different forms such as
-  PDF, PDF/A and XML.
+description: Sheet music licensed and published in various digital formats, subject to copyright restrictions and often protected by digital rights management technologies.
+examples: This entry includes all manner of published sheet music, including choral works, orchestral works, scores published in different forms such as PDF, PDF/A and XML.
 categories:
   - Sound and Vision
 threats:
@@ -21,20 +17,14 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Encryption; uncertainty over IPR or the presence of orphaned works;
-  uncertain business model of publisher; lack of legal deposit mandate.
-mitigations: Rights management conducive to preservation; held in a trusted
-  repository; legislation in place such as legal deposit enabling copying.
+hazards: Encryption; uncertainty over IPR or the presence of orphaned works; uncertain business model of publisher; lack of legal deposit mandate.
+mitigations: Rights management conducive to preservation; held in a trusted repository; legislation in place such as legal deposit enabling copying.
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-digitally-published-sheet-music
-comments: The commercial value of these materials should be a protection against
-  their loss, and the history of the music industry indicates that sheet music
-  continues to have value, so even if an individual organization fails or its
-  DRM servers go offline, and some music becomes inaccessible, it is not lost.
-  However, the difficulties of archiving DRM-locked files remain real.
+comments: The commercial value of these materials should be a protection against their loss, and the history of the music industry indicates that sheet music continues to have value, so even if an individual organization fails or its DRM servers go offline, and some music becomes inaccessible, it is not lost. However, the difficulties of archiving DRM-locked files remain real.
 ---
 **2023 Review**
 

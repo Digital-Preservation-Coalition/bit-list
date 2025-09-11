@@ -1,14 +1,8 @@
 ---
 id: VmiGptjjrl
 title: Unpublished Research Data from Government Researchers
-description: Data sets and research outputs produced in the course of government
-  research but never shared or made available outside of the initial research.
-  In particular, the risk classification applies to research data under
-  government embargo, restrictions due to sensitivities, classification issues,
-  and/or materials suppressed for ideological reasons.
-examples: Data sets or research outputs produced for agencies that have closed
-  or have had funding withdrawn from research initiatives; research data from
-  government agencies no longer active
+description: Data sets and research outputs produced in the course of government research but never shared or made available outside of the initial research. In particular, the risk classification applies to research data under government embargo, restrictions due to sensitivities, classification issues, and/or materials suppressed for ideological reasons.
+examples: Data sets or research outputs produced for agencies that have closed or have had funding withdrawn from research initiatives; research data from government agencies no longer active
 categories:
   - Research Outputs
 threats:
@@ -23,20 +17,14 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Lack of access to archival services; sudden or unanticipated closure;
-  loss of implicit knowledge from destabilized or demoralized staff; encryption;
-  uncertainty over IPR or the presence of orphaned works
-mitigations: Archival responsibility well developed; documentation; published
-  through research channels
+hazards: Lack of access to archival services; sudden or unanticipated closure; loss of implicit knowledge from destabilized or demoralized staff; encryption; uncertainty over IPR or the presence of orphaned works
+mitigations: Archival responsibility well developed; documentation; published through research channels
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-unpublished-us-govt-research
-comments: The US made the news as part of the last government, but this is
-  probably an issue in other countries as well and is, therefore, a category
-  that could be made more generic. One question to ask is whether the research
-  data is considered of long-term value or considered ephemeral?
+comments: The US made the news as part of the last government, but this is probably an issue in other countries as well and is, therefore, a category that could be made more generic. One question to ask is whether the research data is considered of long-term value or considered ephemeral?
 ---
 **2023 Review**
 

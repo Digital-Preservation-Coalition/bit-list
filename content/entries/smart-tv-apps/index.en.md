@@ -1,10 +1,7 @@
 ---
 id: Fj7shQWCkv
 title: Smart TV Apps
-description: Apps created for smartphones. Many are deprecated quickly but
-  others survive through multiple update cycles. It is hard to maintain version
-  control and often dependent upon the company that publishes them. There is no
-  clear agency or mandate to record or collect.
+description: Apps created for smartphones. Many are deprecated quickly but others survive through multiple update cycles. It is hard to maintain version control and often dependent upon the company that publishes them. There is no clear agency or mandate to record or collect.
 examples: UlangoTV; ITV Hub; Plex; apps created for older or no longer manufactured TVs
 categories:
   - Apps
@@ -17,25 +14,15 @@ trends:
   - year: 2024
     classification: critically-endangered
     trend: no-change
-hazards: Device dependence; poor documentation; lack of preservation interest or
-  mandate by company; uncertainty over IPR or the presence of orphaned works;
-  deletion of stores or apps
-mitigations: Strong documentation; development of tools to archive stores and
-  preserve menus online via the WARC format, and for HTML5 and Flash-only based
-  smart TV media; designated repository taking preservation responsibility and
-  capacity to deliver
+hazards: Device dependence; poor documentation; lack of preservation interest or mandate by company; uncertainty over IPR or the presence of orphaned works; deletion of stores or apps
+mitigations: Strong documentation; development of tools to archive stores and preserve menus online via the WARC format, and for HTML5 and Flash-only based smart TV media; designated repository taking preservation responsibility and capacity to deliver
 year-added: 2023
 published: 2025-08-21
-last-updated: 2025-08-21
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-smart-tv-apps
-comments: >-
-  In regard to preservation actions, rooting methods for old smart TVs are often
-  non-existent or hard to do (and sometimes manageable when they do exist); it
-  is challenging to buy or find owners of older smart TV units with
-  removed-from-the-store apps that have rootable versions and/or is willing to
-  root.
-
+comments: |-
+  In regard to preservation actions, rooting methods for old smart TVs are often non-existent or hard to do (and sometimes manageable when they do exist); it is challenging to buy or find owners of older smart TV units with removed-from-the-store apps that have rootable versions and/or is willing to root.
 
   The content these apps contain can hold social and cultural significance; they can provide a history of television, entertainment, and exclusive or unique content only made available through the apps specifically designed for smart TVs. Although there is a small community of people interested in old smart TVs and a bigger one focused on new ones too, in the future, when the technologies become even more obsolete, there will be researchers and others interested in looking back at Smart TVs as a piece of the history of entertainment and even culture.
 case-studies:
@@ -45,21 +32,12 @@ case-studies:
     year: 2020
     url: https://torrentfreak.com/ace-shuts-down-ulango-tv-pirate-iptv-app-seizes-domain-200113/
     accessed: 2023-10-24
-    comment: The nominator of this entry provided UlangoTV as an example of an
-      archive of old smart TV apps. The domain of UlangoTV, an app that
-      aggregated live Internet Protocol Television (IPTV) streams, was taken
-      down by the Alliance for Creativity and Entertainment (ACE). Domain
-      records show that Ulango.tv is now owned by the Motion Picture
-      Association, indicating an agreement and handover took place; at the time
-      of writing, servers hosting the smart TV app archive are currently in an
-      evidence locker with no indications for releasing without paying to get
-      the full archive.
+    comment: The nominator of this entry provided UlangoTV as an example of an archive of old smart TV apps. The domain of UlangoTV, an app that aggregated live Internet Protocol Television (IPTV) streams, was taken down by the Alliance for Creativity and Entertainment (ACE). Domain records show that Ulango.tv is now owned by the Motion Picture Association, indicating an agreement and handover took place; at the time of writing, servers hosting the smart TV app archive are currently in an evidence locker with no indications for releasing without paying to get the full archive.
   - title: Category:TV
     authors: postmarketOS
     url: https://wiki.postmarketos.org/wiki/TVs
     accessed: 2023-10-24
-    comment: The postmarketOS wiki offers a central guide on smart TV rooting
-      methods for different models.
+    comment: The postmarketOS wiki offers a central guide on smart TV rooting methods for different models.
 ---
 **2023 Review**
 

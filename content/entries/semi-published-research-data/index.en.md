@@ -1,10 +1,7 @@
 ---
 id: aATQqxOy7L
 title: Semi-Published Research Data
-description: Data sets produced in the course of research and shared between
-  researchers, such as by posting to a website or portal but without
-  preservation capability or commitment. Typically the data remains in the hands
-  of the researchers who have the job of maintaining it.
+description: Data sets produced in the course of research and shared between researchers, such as by posting to a website or portal but without preservation capability or commitment. Typically the data remains in the hands of the researchers who have the job of maintaining it.
 examples: Departmental web servers; project wikis; GitHub repositories
 categories:
   - Research Outputs
@@ -20,40 +17,25 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Originating researcher no longer active or changed research focus;
-  staff on temporary contracts; dependence on single student or staff member;
-  weak or fluid institutional commitment to subject matter; weak institutional
-  commitment to data sharing; uncertainty over IPR or the presence of orphaned
-  works; encryption; limited or dysfunctional data management planning; web
-  capture challenges that means unlikely to be picked up by automatic crawlers
-mitigations: Data in preparation for transfer to specialist repository; robust
-  data management planning; documented and managed professionally using data
-  stewards
+hazards: Originating researcher no longer active or changed research focus; staff on temporary contracts; dependence on single student or staff member; weak or fluid institutional commitment to subject matter; weak institutional commitment to data sharing; uncertainty over IPR or the presence of orphaned works; encryption; limited or dysfunctional data management planning; web capture challenges that means unlikely to be picked up by automatic crawlers
+mitigations: Data in preparation for transfer to specialist repository; robust data management planning; documented and managed professionally using data stewards
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-semi-published-research-data
-comments: >-
-  There is a positive trend of increased research data management activity and
-  engagement by libraries and data centres, which should help to ensure that
-  more research datasets are properly deposited in data repositories, rather
-  than left in a 'semi-published' state.
-
+comments: |-
+  There is a positive trend of increased research data management activity and engagement by libraries and data centres, which should help to ensure that more research datasets are properly deposited in data repositories, rather than left in a 'semi-published' state.
 
   Offering and minting researchers Digital Object Identifiers for datasets deposited at specialist repositories will encourage data citation and increase research impact of individual researchers, which traditionally relied more on publishing papers than datasets.
 case-studies:
-  - title: "Practical Guide to Sustainable Research Data: Maturity Matrices for
-      Research Funding Organisations, Research Performing Organisations, and
-      Research Data Infrastructures"
-    authors: "Boccali, T., Sølsnes, A., Thorley, M., Winkler-Nees, S. and
-      Timmermann, M. "
+  - title: 'Practical Guide to Sustainable Research Data: Maturity Matrices for Research Funding Organisations, Research Performing Organisations, and Research Data Infrastructures'
+    authors: 'Boccali, T., Sølsnes, A., Thorley, M., Winkler-Nees, S. and Timmermann, M. '
     publisher: Science Europe
     year: 2021
     url: http://doi.org/10.5281/zenodo.4769703
-  - title: Development and outputs of the European Open Science Cloud (EOSC)
-      Long-Term Data Preservation Task Force
-    authors: "European Open Science Cloud (EOSC) "
+  - title: Development and outputs of the European Open Science Cloud (EOSC) Long-Term Data Preservation Task Force
+    authors: 'European Open Science Cloud (EOSC) '
     url: https://www.eosc.eu/advisory-groups/long-term-data-preservation
     accessed: 2023-10-24
 ---

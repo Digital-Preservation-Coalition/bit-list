@@ -1,12 +1,8 @@
 ---
 id: Mix9rQcsvr
 title: Non-current Hard Disk Technologies
-description: "Materials saved to storage devices with a variety of underlying
-  magnetic or solid-state technologies that are hardwired into a computer that
-  is no longer under warranty or supported: typically, hard disks more than five
-  years old."
-examples: Disks installed into computers or servers that are more than five
-  years old, or out of warranty
+description: 'Materials saved to storage devices with a variety of underlying magnetic or solid-state technologies that are hardwired into a computer that is no longer under warranty or supported: typically, hard disks more than five years old.'
+examples: Disks installed into computers or servers that are more than five years old, or out of warranty
 categories:
   - Integrated Storage
 threats:
@@ -21,31 +17,22 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Lack of replication; poor storage; non-standard connections or
-  controllers; aggressive compression; encryption; Uncertainty over IPR or the
-  presence of orphaned works
-mitigations: Maintenance schedule; renewable extendable warranty; best practice
-  storage and operation; replication
+hazards: Lack of replication; poor storage; non-standard connections or controllers; aggressive compression; encryption; Uncertainty over IPR or the presence of orphaned works
+mitigations: Maintenance schedule; renewable extendable warranty; best practice storage and operation; replication
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-non-current-hard-disk
-comments: >-
-  A lot of early PCI-E flash devices (e.g. Fusion-IO) used proprietary drivers
-  before the NVME standard was developed, but are now dropping off support.
-  Intel has stopped development of Optane non-volatile RAM, some of which
-  required specific CPU support to access although that form was usually used
-  for data caching rather than storage.
-
+comments: |-
+  A lot of early PCI-E flash devices (e.g. Fusion-IO) used proprietary drivers before the NVME standard was developed, but are now dropping off support. Intel has stopped development of Optane non-volatile RAM, some of which required specific CPU support to access although that form was usually used for data caching rather than storage.
 
   Accessing drives with pre-SATA interfaces is increasingly difficult since interface cards and OS support can be hard to come by.
-
 
   The greater density of newer disks, as well as encryption and compression, mean they can be more fragile than older disks with less density, and less sophisticated read/write technologies. The age of a disk is not the best or only indicator of its reliability.
 case-studies:
   - title: Music industry’s 1990s hard drives, like all HDDs, are dying
-    authors: "Purdy, K. "
+    authors: 'Purdy, K. '
     publisher: Ars Technica
     url: https://arstechnica.com/gadgets/2024/09/music-industrys-1990s-hard-drives-like-all-hdds-are-dying/
     year: 2024

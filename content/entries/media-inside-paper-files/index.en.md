@@ -1,10 +1,8 @@
 ---
 id: AXgPdL52eB
 title: Media Inside Paper Files
-description: Media inside paper files occurred in records since the 1980s and
-  will continue to do so for many years.
-examples: Digital media mixed with paper files in records offices and filing
-  cabinets of almost every kind of enterprise
+description: Media inside paper files occurred in records since the 1980s and will continue to do so for many years.
+examples: Digital media mixed with paper files in records offices and filing cabinets of almost every kind of enterprise
 categories:
   - Portable Media
 threats:
@@ -19,25 +17,14 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Unsustainable effort to assess; exotic or obsolete media; poor storage;
-  lack of descriptive labelling; uncertainty over IPR or the presence of
-  orphaned works
-mitigations: Carefully labelled; managed programme of assessment and retrieval;
-  robust media used
+hazards: Unsustainable effort to assess; exotic or obsolete media; poor storage; lack of descriptive labelling; uncertainty over IPR or the presence of orphaned works
+mitigations: Carefully labelled; managed programme of assessment and retrieval; robust media used
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-media-inside-paper-files
-comments: This is highly dependent on who is looking after the portable formats.
-  There are good examples, for example in libraries, where disks are stored at
-  the back of books or in front of magazines and can be processed at the point
-  of acquisition. In archives, however, dealing with bit-level preservation of
-  external media (often on legacy formats) is largely an unquantified problem,
-  and so resource commitments will not be in place. So, there is a method and
-  tools but simply no time committed and no proper assessment either. In other
-  agencies, the issue will not have even been considered, and for them, it will
-  be much harder over time with some inevitable loss.
+comments: This is highly dependent on who is looking after the portable formats. There are good examples, for example in libraries, where disks are stored at the back of books or in front of magazines and can be processed at the point of acquisition. In archives, however, dealing with bit-level preservation of external media (often on legacy formats) is largely an unquantified problem, and so resource commitments will not be in place. So, there is a method and tools but simply no time committed and no proper assessment either. In other agencies, the issue will not have even been considered, and for them, it will be much harder over time with some inevitable loss.
 ---
 **2023 Review**
 

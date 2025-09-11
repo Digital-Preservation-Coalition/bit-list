@@ -1,11 +1,7 @@
 ---
 id: B8L8NZJiTO
 title: Adobe Flash Animations and Interactive Applets
-description: Animations, games, and other interactive applets created with
-  Macromedia Adobe Flash Player and Shockwave Flash, along with their
-  accompanying websites. These are primarily .swf files, but they can also
-  include networked collections of .swf files and external assets, as well as
-  the web pages where they are displayed.
+description: Animations, games, and other interactive applets created with Macromedia Adobe Flash Player and Shockwave Flash, along with their accompanying websites. These are primarily .swf files, but they can also include networked collections of .swf files and external assets, as well as the web pages where they are displayed.
 examples: Flash and Shockwave based games; cartoons; interactives.
 categories:
   - web
@@ -22,8 +18,7 @@ trends:
     trend: no-change
     classification: practically-extinct
 hazards: No longer supported by web browsers.
-mitigations: Migration plan initiated; supported in multiple browsers; security
-  vetted; emulation pathway; clear licensing that enables preservation.
+mitigations: Migration plan initiated; supported in multiple browsers; security vetted; emulation pathway; clear licensing that enables preservation.
 case-studies:
   - title: Flashpoint Archive
     authors: BlueMaxima
@@ -37,15 +32,12 @@ case-studies:
     year: 2021
     url: https://archive.org/details/adobe-flash-games-archive
     accessed: 2023-10-24
-  - comment: Ruffle is a Flash Player emulator which is used by a number of websites
-      that were known for Flash games and animations including Newground, Armor
-      Games, Cool Math Games and Kongregate
+  - comment: Ruffle is a Flash Player emulator which is used by a number of websites that were known for Flash games and animations including Newground, Armor Games, Cool Math Games and Kongregate
     title: Ruffle
     url: https://ruffle.rs/
     accessed: 2023-10-24
   - authors: van Veenendaal, R., Wijsman, L., Takema, J. and Rappard, M
-    title: "Around for Decades, Gone in a Flash: How we dealt with Flash objects and
-      the National Archives of the Netherlands"
+    title: 'Around for Decades, Gone in a Flash: How we dealt with Flash objects and the National Archives of the Netherlands'
     year: 2023
     publisher: iPRES 2023 Conference, Urbana-Champaign, Illinois, USA, 19–22 September
     url: https://www.ideals.illinois.edu/items/128299
@@ -57,23 +49,17 @@ case-studies:
   - comment: ""
     url: https://archive.org/details/softwarelibrary_flash?tab=collection
     authors: Scott, J.
-    title: "Software Library: Flash"
+    title: 'Software Library: Flash'
     publisher: Internet Archive
     year: 2020
     accessed: 2023-10-24
 year-added: 2019
 published: 2019-01-01
-last-updated: 2025-07-30
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-adobe-flash-and-applets
-comments: >-
-  Flash represents a significant amount of the creativity of websites in the
-  early 2000s including net-based art and cartoons. With extinction, archives
-  will need to consider if it is possible to preserve interaction through the
-  development of new web archiving and emulation tools and techniques. These are
-  culturally significant artefacts or so of the web and were a gateway for many
-  early game developers given the ease of which Flash games could be made.
-
+comments: |-
+  Flash represents a significant amount of the creativity of websites in the early 2000s including net-based art and cartoons. With extinction, archives will need to consider if it is possible to preserve interaction through the development of new web archiving and emulation tools and techniques. These are culturally significant artefacts or so of the web and were a gateway for many early game developers given the ease of which Flash games could be made.
 
   It’s important to note there are quite a number of community projects working on this, whilst the focus tends to be on Flash games there is still work around Flash animations. Projects like Flashpoint Archive do have their own workflows for getting the games/animations but have their own preservation issues. The survival of Flashpoint is reliant on a small group of people with the storage space entirely relying on one person maintaining it. Other Flash game archives exist as well, such as Flash Game Archives. The Internet Archive has a number of Flash game collections as well. There is also work being done around emulating Flash within web browsers through Ruffle which increases access to Flash games and animations.
 ---

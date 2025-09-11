@@ -1,10 +1,8 @@
 ---
 id: n4n-mTJomp
 title: Recordings of Video Gameplay Uploaded to Online Platforms
-description: Recordings of game playing and e-sports that show how games are
-  experienced and played, especially multi-user online games and tournaments.
-examples: Material uploaded to Amazon Twitch, game channels on YouTube and other
-  playback services
+description: Recordings of game playing and e-sports that show how games are experienced and played, especially multi-user online games and tournaments.
+examples: Material uploaded to Amazon Twitch, game channels on YouTube and other playback services
 categories:
   - Gaming
   - Sound and Vision
@@ -22,31 +20,17 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Uncertainty over IPR or the presence of orphaned works; lack of offline
-  backup; changing business model of providers; limited recognition of the
-  cultural and historic value of game play; over-dependence on goodwill subsidy
-  of an ad-hoc community; lack of preservation know-how at service providers;
-  dependency on bespoke hardware or interfaces; DMCA takedowns
-mitigations: Offline backup; managed intellectual property rights; players and
-  audiences invested in data
+hazards: Uncertainty over IPR or the presence of orphaned works; lack of offline backup; changing business model of providers; limited recognition of the cultural and historic value of game play; over-dependence on goodwill subsidy of an ad-hoc community; lack of preservation know-how at service providers; dependency on bespoke hardware or interfaces; DMCA takedowns
+mitigations: Offline backup; managed intellectual property rights; players and audiences invested in data
 year-added: 2015
 published: 2025-08-22
-last-updated: 2025-08-22
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-recordings-of-video-game-play
-comments: >-
-  Copyright claims on video content by publishers such as Nintendo also
-  complicate things. One example of major copyright claims affecting content
-  creators has been Nintendo issuing copyright strikes on a Legend of Zelda:
-  Breath of the Wild video due to its demonstration of a fan-made mod and, once
-  the issue had been raised, more copyright strikes were issued on Legend of
-  Zelda: Breath of the Wild videos that did not contain footage of the mod. In
-  other cases, content creators have had to deal with copyright strikes being
-  issued due to the in-game music.
-
+comments: |-
+  Copyright claims on video content by publishers such as Nintendo also complicate things. One example of major copyright claims affecting content creators has been Nintendo issuing copyright strikes on a Legend of Zelda: Breath of the Wild video due to its demonstration of a fan-made mod and, once the issue had been raised, more copyright strikes were issued on Legend of Zelda: Breath of the Wild videos that did not contain footage of the mod. In other cases, content creators have had to deal with copyright strikes being issued due to the in-game music.
 
   The significance of loss here is high because recordings, including commentary, and onscreen interactions with other players, seem likely to be the best way of preserving the experience of playing certain games at certain times. We are familiar with the challenges of preserving video, but we need to think about how established approaches will work in the context of the aggravating circumstances outlined above. There is a degree of urgency associated with working out how (legally and technically) preserving the materials that they hold may be preserved.
-
 
   Important for social context, and from a DP point of view videos should not be too hard, but if we are capturing the experience to inform digital preservation actions and intents, then do not these videos exist in places such as YouTube and wouldn't they be brought in as part of the 'documentary' evidence of DP actions taken on the game or sports that have come into the archive?
 case-studies:
@@ -55,13 +39,12 @@ case-studies:
     year: 2024
     url: https://www.ubisoft.com/en-gb/help/connectivity-and-performance/article/posting-copyrighted-ubisoft-material/000062649
     accessed: 2024-09-06
-  - title: "The Game Archivist "
+  - title: 'The Game Archivist '
     url: https://www.youtube.com/@thegamearchivist
     accessed: 2023-10-24
-    comment: The Game Archivist YouTube channel is dedicated to recording full
-      gameplay videos with no commentary to “keep their experience preserved”.
+    comment: The Game Archivist YouTube channel is dedicated to recording full gameplay videos with no commentary to “keep their experience preserved”.
   - title: Nintendo’s Copyright Strikes Push Away Its Biggest Fans
-    authors: "Bedingfield, W. "
+    authors: 'Bedingfield, W. '
     publisher: WIRED
     year: 2023
     url: https://www.wired.co.uk/article/nintendo

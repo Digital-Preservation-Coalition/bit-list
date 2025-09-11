@@ -1,19 +1,8 @@
 ---
 id: Dc7oCDE2Te
 title: Manuals, Documentation, and Associated Materials
-description: Manuals that support physical, born-digital, and hybrid-digital
-  museum objects, including technical manuals and that may contain diagrams,
-  images, videos and more. Manuals may include those specifically created for
-  the object, and/or from the supplier or manufacturer (and may exist for the
-  entire object, or for each component part). Covered here is other
-  documentation critical for the management, preservation, access, and display
-  of collections objects, including conservation records. Associated materials
-  (such as sidecar or other technical files) can provide insight into the
-  digital content held in the collection. Encompassed in this entry is both
-  information for internal use, supporting outgoing loans, as well as an
-  information source for current and future researchers.
-examples: Manuals created for the object and/or from the supplier or
-  manufacturer; conservation records and other forms of documentation.
+description: Manuals that support physical, born-digital, and hybrid-digital museum objects, including technical manuals and that may contain diagrams, images, videos and more. Manuals may include those specifically created for the object, and/or from the supplier or manufacturer (and may exist for the entire object, or for each component part). Covered here is other documentation critical for the management, preservation, access, and display of collections objects, including conservation records. Associated materials (such as sidecar or other technical files) can provide insight into the digital content held in the collection. Encompassed in this entry is both information for internal use, supporting outgoing loans, as well as an information source for current and future researchers.
+examples: Manuals created for the object and/or from the supplier or manufacturer; conservation records and other forms of documentation.
 categories:
   - Museum and Gallery
 threats:
@@ -25,18 +14,16 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Poor documentation; lack of preservation planning; held in proprietary
-  file formats; uncertainty over IPR or the presence of orphaned works
-mitigations: Strong documentation; preservation capability; open source or
-  commonly used file formats
+hazards: Poor documentation; lack of preservation planning; held in proprietary file formats; uncertainty over IPR or the presence of orphaned works
+mitigations: Strong documentation; preservation capability; open source or commonly used file formats
 year-added: 2023
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-manuals-docs-associated-materials
 case-studies:
   - title: How Are Museums Using Artificial Intelligence?
-    authors: "Styx, L. "
+    authors: 'Styx, L. '
     year: 2024
     publisher: Museum Next
     url: https://www.museumnext.com/article/artificial-intelligence-and-the-future-of-museums/

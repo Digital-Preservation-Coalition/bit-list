@@ -1,15 +1,8 @@
 ---
 id: Uy_rHh51jc
 title: Records of Quasi Non-Governmental Agencies
-description: Records from agencies at arms-length to government whether locally,
-  nationally or internationally. They may be required to maintain archives for
-  the purposes of transparency, sometimes for extended periods, and sometimes in
-  diverse and complicated forms.
-examples: Records of non-executive state or national agencies; museum or leisure
-  trusts; industry or public regulators; public audit services; public-good
-  funding and investment agencies; autonomous and semi-autonomous public
-  agencies; sovereign wealth funds; public/private partnerships; publicly owned
-  companies.
+description: Records from agencies at arms-length to government whether locally, nationally or internationally. They may be required to maintain archives for the purposes of transparency, sometimes for extended periods, and sometimes in diverse and complicated forms.
+examples: Records of non-executive state or national agencies; museum or leisure trusts; industry or public regulators; public audit services; public-good funding and investment agencies; autonomous and semi-autonomous public agencies; sovereign wealth funds; public/private partnerships; publicly owned companies.
 categories:
   - Public Records
 threats:
@@ -24,40 +17,21 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Lack of preservation infrastructure; conflation of backup with
-  preservation; loss of authenticity or integrity; Long-lived business
-  processes; poor storage; churn of staff; significant volumes or diversity of
-  data; poorly developed digitization specifications; ill-informed records
-  management; poorly developed migration or normalizations specifications;
-  long-standing protocols or procedures that apply unsuitable paper processes to
-  digital materials; encryption; political instability; lack of sustained
-  funding; Uncertainty over IPR or the presence of orphaned works
-mitigations: Well-managed data infrastructure; preservation enabled at the point
-  of creation; carefully managed authenticity; use of persistent identifiers;
-  finding aids; well-managed records management processes; application of
-  records management standards; recognition of preservation requirements at
-  highest levels; strategic investment in digital preservation; preservation
-  roadmap; participation in digital preservation community
+hazards: Lack of preservation infrastructure; conflation of backup with preservation; loss of authenticity or integrity; Long-lived business processes; poor storage; churn of staff; significant volumes or diversity of data; poorly developed digitization specifications; ill-informed records management; poorly developed migration or normalizations specifications; long-standing protocols or procedures that apply unsuitable paper processes to digital materials; encryption; political instability; lack of sustained funding; Uncertainty over IPR or the presence of orphaned works
+mitigations: Well-managed data infrastructure; preservation enabled at the point of creation; carefully managed authenticity; use of persistent identifiers; finding aids; well-managed records management processes; application of records management standards; recognition of preservation requirements at highest levels; strategic investment in digital preservation; preservation roadmap; participation in digital preservation community
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-records-of-quangos
-comments: >-
-  There is a large variation in the types of records held by QuaNGOs and/or
-  ALEOs. Additionally the quality of digital preservation performed can vary
-  widely. Therefore, the same approach to scoring was taken for this entry as
-  the one above.
-
+comments: |-
+  There is a large variation in the types of records held by QuaNGOs and/or ALEOs. Additionally the quality of digital preservation performed can vary widely. Therefore, the same approach to scoring was taken for this entry as the one above.
 
   Similar to the risks of NGOs, we consider these records to be at greater risk due to there being less regulation, and the regulations that exist being less stringently enforced.
 
-
   An additional risk factor for these records is a blurring of the lines of responsibility, which can lead to records 'falling through gaps', or to difficulties funding digital preservation practice. This can be further complicated by outdated legislation which does not take into account the complexity of privatisation and public/private partnerships.
 
-
   Although the split draws attention to the different pressures faced by QuaNGOs it could be further subdivided into legally required public records and additional information that may enrich our digital preservation of society. The classification assumes that the roles and requirements for records management are clearly defined, but if this is not the case or there are inadequate resources to match the requirements, then the risk goes up.
-
 
   While the 2022 trend shows increases in risk there are some green shoots of hope in Ireland found when working actively with the agencies, and communicating some of the concerns they have for their data so there's better awareness and hopefully that will turn into action.
 case-studies:

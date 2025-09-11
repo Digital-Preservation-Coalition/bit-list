@@ -1,12 +1,8 @@
 ---
 id: uiDV4FK-RH
 title: Local Network Storage
-description: Materials routinely copied or backed up to locally managed data
-  storage facilities and able to be restored under institutional service
-  arrangements.
-examples: Institutional or departmental network storage and institutional data
-  centers based on technologies such as (NAS) Network Attached Storage, (SAN)
-  Storage Area Networks, Gluster FS and related.
+description: Materials routinely copied or backed up to locally managed data storage facilities and able to be restored under institutional service arrangements.
+examples: Institutional or departmental network storage and institutional data centers based on technologies such as (NAS) Network Attached Storage, (SAN) Storage Area Networks, Gluster FS and related.
 categories:
   - Integrated Storage
 threats:
@@ -21,23 +17,12 @@ trends:
   - year: 2024
     trend: no-change
     classification: vulnerable
-hazards: Encryption; lack of routine maintenance; lack of storage replication;
-  over-dependence on a single supplier, technology or technician; insufficient
-  documentation; single point of failure; political or commercial interference;
-  failure of dependencies (e.g., power supply, controller software); overly
-  aggressive compression; poor information security; lack of integrity-checking;
-  lack of strategic investment; lack of warranty; unenforceable warranty,
-  encryption; Uncertainty over IPR or the presence of orphaned works.
-mitigations: Backup to different technology; backup to diverse locations;
-  documentation of assets; integrity checking; preservation planning;
-  refreshment planning; export functionality; resilient to hacking; selection
-  and appraisal criteria; version control; resilient funding; technology watch;
-  enforceable warranty; disaster planning and documentation.
+hazards: Encryption; lack of routine maintenance; lack of storage replication; over-dependence on a single supplier, technology or technician; insufficient documentation; single point of failure; political or commercial interference; failure of dependencies (e.g., power supply, controller software); overly aggressive compression; poor information security; lack of integrity-checking; lack of strategic investment; lack of warranty; unenforceable warranty, encryption; Uncertainty over IPR or the presence of orphaned works.
+mitigations: Backup to different technology; backup to diverse locations; documentation of assets; integrity checking; preservation planning; refreshment planning; export functionality; resilient to hacking; selection and appraisal criteria; version control; resilient funding; technology watch; enforceable warranty; disaster planning and documentation.
 year-added: 2019
 published: 2025-08-06
-last-updated: 2025-08-06
-comments: There has been a renewed interest in tape as offline storage is the
-  only sure protection against advanced ransomware.
+last-updated: "2024-11-07"
+comments: There has been a renewed interest in tape as offline storage is the only sure protection against advanced ransomware.
 case-studies:
   - url: https://dpconline.org/handbook/organizational-activities/storage
     authors: Digital Preservation Coalition

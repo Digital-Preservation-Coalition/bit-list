@@ -1,13 +1,8 @@
 ---
 id: dMpGawOoJP
 title: Politically Sensitive Data
-description: Digital content where the knowledge to preserve exists, and there
-  is no threat to obsolescence, but where political interests may be served by
-  elimination, falsification or concealment.
-examples: Online News; social media and web-based campaigning; social media
-  relating to 2016 UK/EU referendum; Promises made in Scottish independence
-  referendum 2014; US Environmental Data; UK Public Finance Initiative (PFI)
-  documents; Recordings of Leinster House
+description: Digital content where the knowledge to preserve exists, and there is no threat to obsolescence, but where political interests may be served by elimination, falsification or concealment.
+examples: Online News; social media and web-based campaigning; social media relating to 2016 UK/EU referendum; Promises made in Scottish independence referendum 2014; US Environmental Data; UK Public Finance Initiative (PFI) documents; Recordings of Leinster House
 categories:
   - Political Data
 classification: critically-endangered
@@ -20,28 +15,18 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Opaque terms and conditions that facilitate deletion or obfuscation;
-  lack of access to web-harvesting; significant lobby interest; change of
-  administration; data resides in single jurisdiction; reputational risk to
-  collecting institution; uncertainty over IPR or the presence of orphaned works
-mitigations: Robust political archives; robust preservation services for
-  investigative journalists
+hazards: Opaque terms and conditions that facilitate deletion or obfuscation; lack of access to web-harvesting; significant lobby interest; change of administration; data resides in single jurisdiction; reputational risk to collecting institution; uncertainty over IPR or the presence of orphaned works
+mitigations: Robust political archives; robust preservation services for investigative journalists
 year-added: 2017
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-politically-sensitive-data
-comments: There is a question of whether it is the duty of archives/libraries to
-  preserve the falsification but to instead preserve the constituent pieces to
-  allow researchers to infer elimination, falsification or concealment.
+comments: There is a question of whether it is the duty of archives/libraries to preserve the falsification but to instead preserve the constituent pieces to allow researchers to infer elimination, falsification or concealment.
 case-studies:
   - url: https://opendatabarometer.org/
     accessed: 2023-10-24
-    comment: World Wide Web Foundation, The Open Data Barometer, which provides a
-      global measure of how governments are publishing and using open data for
-      accountability, innovation and social impact, which looks at the 30
-      governments that have adopted the Open Data Charter and those that, as G20
-      members, have committed to G20 Anti-Corruption Open Data Principles.
+    comment: World Wide Web Foundation, The Open Data Barometer, which provides a global measure of how governments are publishing and using open data for accountability, innovation and social impact, which looks at the 30 governments that have adopted the Open Data Charter and those that, as G20 members, have committed to G20 Anti-Corruption Open Data Principles.
     title: The Open Data Barometer
     authors: World Wide Web Foundation
   - title: Undelete our government
@@ -51,18 +36,12 @@ case-studies:
     url: https://www.dpconline.org/blog/undelete-our-government
     accessed: 2023-10-24
   - title: What’s up with using WhatsApp?
-    authors: "Mitcham, J. "
+    authors: 'Mitcham, J. '
     publisher: Digital Preservation Coalition Blog
     url: https://www.dpconline.org/blog/what-s-up-with-using-whatsapp
     year: 2022
     accessed: 2023-10-24
-  - comment: Example of data rescue work by the Environmental Data & Governance
-      Initiative (EDGI), initially formed in November 2016 to document and
-      analyze changes to environmental governance that would transpire under the
-      Trump Administration. EDGI subsequently became the preeminent watchdog
-      group for material on federal environmental data issues on government
-      websites, and a national leader in highlighting President Trump’s impacts
-      such as declines in EPA enforcement.
+  - comment: Example of data rescue work by the Environmental Data & Governance Initiative (EDGI), initially formed in November 2016 to document and analyze changes to environmental governance that would transpire under the Trump Administration. EDGI subsequently became the preeminent watchdog group for material on federal environmental data issues on government websites, and a national leader in highlighting President Trump’s impacts such as declines in EPA enforcement.
     authors: Environmental Data & Governance Initiative
     title: Archiving Data
     url: https://envirodatagov.org/archiving/

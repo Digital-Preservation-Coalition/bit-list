@@ -1,12 +1,8 @@
 ---
 id: r7tPaUnErf
 title: Interpretive Materials
-description: Text, graphics, videos, and other content that is used in gallery
-  and exhibition spaces to guide audiences and provide learning experiences.
-examples: These may include explanatory text and diagrams. This type of content
-  typically sits alongside objects being exhibited. This information may also be
-  used in other forms of digital public engagement, including within websites
-  and social media
+description: Text, graphics, videos, and other content that is used in gallery and exhibition spaces to guide audiences and provide learning experiences.
+examples: These may include explanatory text and diagrams. This type of content typically sits alongside objects being exhibited. This information may also be used in other forms of digital public engagement, including within websites and social media
 categories:
   - Museum and Gallery
   - Social Media
@@ -19,33 +15,23 @@ trends:
   - year: 2024
     trend: towards-greater-risk
     classification: endangered
-hazards: Poor or no documentation; lack of repository and preservation
-  infrastructure; external dependencies; poor storage; significant volumes or
-  diversity of data; digital content being left unmanaged with Exhibitions teams
-  (e.g., not going through any Records Management, Recordkeeping, being passed
-  to the archives, or having preservation even considered); uncertainty over IPR
-  or the presence of orphaned works
-mitigations: Strong documentation; preservation capability; good recordkeeping
-  principles, practices, and management in place; strong repository and
-  preservation technical infrastructure; well-developed migration pathways
+hazards: Poor or no documentation; lack of repository and preservation infrastructure; external dependencies; poor storage; significant volumes or diversity of data; digital content being left unmanaged with Exhibitions teams (e.g., not going through any Records Management, Recordkeeping, being passed to the archives, or having preservation even considered); uncertainty over IPR or the presence of orphaned works
+mitigations: Strong documentation; preservation capability; good recordkeeping principles, practices, and management in place; strong repository and preservation technical infrastructure; well-developed migration pathways
 year-added: 2023
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-interpretive-materials
-comments: Interpretive outputs through websites may have reduced risk as web
-  outputs if captured as part of national web archiving initiatives.
+comments: Interpretive outputs through websites may have reduced risk as web outputs if captured as part of national web archiving initiatives.
 case-studies:
   - title: The British Library
-    authors: "Learning Lessons from the Cyber-attack: British Library cyber incident
-      review"
+    authors: 'Learning Lessons from the Cyber-attack: British Library cyber incident review'
     year: 2024
     url: https://www.bl.uk/home/british-library-cyber-incident-review-8-march-2024.pdf/
     accessed: 2024-09-06
-    comment: The mentioned British Library cyber incident as a case example of
-      issues arising.
+    comment: The mentioned British Library cyber incident as a case example of issues arising.
   - title: How Are Museums Using Artificial Intelligence?
-    authors: "Styx, L. "
+    authors: 'Styx, L. '
     publisher: Museum Next
     year: 2024
     url: https://www.museumnext.com/article/artificial-intelligence-and-the-future-of-museums/

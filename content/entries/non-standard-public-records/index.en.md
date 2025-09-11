@@ -1,13 +1,8 @@
 ---
 id: _nN-39UZYq
 title: Non-standard Public Records
-description: Records created in the course of public administration and subject
-  to public records legislation but created on unofficial channels and platforms
-  and therefore subject to unlawful destruction whether by accident or design.
-examples: Content and messages from cloud-based instant messaging services (such
-  as WhatsApp or Snapchat) that pertain to public administration and are subject
-  to public records legislation but concealed from or inaccessible to archival
-  agencies
+description: Records created in the course of public administration and subject to public records legislation but created on unofficial channels and platforms and therefore subject to unlawful destruction whether by accident or design.
+examples: Content and messages from cloud-based instant messaging services (such as WhatsApp or Snapchat) that pertain to public administration and are subject to public records legislation but concealed from or inaccessible to archival agencies
 categories:
   - Legal Data
 threats:
@@ -23,31 +18,20 @@ trends:
     trend: no-change
     classification: practically-extinct
 hazards: TBC
-mitigations: Lack of skills, commitment or policy from corporate owners;
-  Business models in conflict with principle of preservation; Archival pathway;
-  public officials briefed on the nature of public records and the penalties for
-  illegal disposal; boundary between public and private correspondence; cloud
-  services administered transparently; export functions; ; Uncertainty over IPR
-  or the presence of orphaned works
+mitigations: Lack of skills, commitment or policy from corporate owners; Business models in conflict with principle of preservation; Archival pathway; public officials briefed on the nature of public records and the penalties for illegal disposal; boundary between public and private correspondence; cloud services administered transparently; export functions; ; Uncertainty over IPR or the presence of orphaned works
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-non-standard-public-records
-comments: >-
-  Even records created on official channels and platforms are potentially being
-  subjected to unlawful destruction through subversion of official formal
-  processes.
-
+comments: |-
+  Even records created on official channels and platforms are potentially being subjected to unlawful destruction through subversion of official formal processes.
 
   This is a ‘small effort to fix’ in terms of the technology to export data. But loss seems likely unless there is stronger monitoring and enforcement of the policy around this.
 
-
   Agencies responsible for the public record will not be able to completely control their public servants' use of unofficial channels (but could tighten), so they need methods to obtain from unofficial channels. Very important for public accountability and transparency of the state.
 
-
   Obviously, these records should not be created using these channels in the first place. It is probably unlawful for those in public office. However, we know there has and always will be this kind of backdoor activity and pretty much always a scandal when it is revealed. The challenge is managing to collect it.
-
 
   Maybe at the time of creating this entry, the Jury was thinking of legal data examples, but at this point, in time, I think the species best belongs under "Public Records" and so should be moved there.
 ---

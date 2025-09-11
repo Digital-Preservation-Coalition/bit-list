@@ -1,15 +1,8 @@
 ---
 id: _-8l9i2X44
 title: Research Materials and Outputs in Museums and Galleries
-description: Digital material used in, or resulting from, research carried out
-  on materials, digital or otherwise, held in galleries, museums, or similar.
-  Research outcomes may not be formally published, and supporting datasets may
-  not be formally accessioned or archived by an organization or a related
-  organization. Access to these research materials and outcomes may only be made
-  available for internal use, to inform other public outcomes, or for individual
-  researchers.
-examples: Unpublished or published research papers, datasets, databases and
-  other supplementary materials
+description: Digital material used in, or resulting from, research carried out on materials, digital or otherwise, held in galleries, museums, or similar. Research outcomes may not be formally published, and supporting datasets may not be formally accessioned or archived by an organization or a related organization. Access to these research materials and outcomes may only be made available for internal use, to inform other public outcomes, or for individual researchers.
+examples: Unpublished or published research papers, datasets, databases and other supplementary materials
 categories:
   - Museum and Gallery
   - Research Outputs
@@ -22,23 +15,17 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Lack of documentation; uncertainty over IPR or the presence of orphaned
-  works; unstable funding for repository; external dependencies.
-mitigations: Strong data management planning; preservation capability; good
-  documentation; deposit into trusted repository.
+hazards: Lack of documentation; uncertainty over IPR or the presence of orphaned works; unstable funding for repository; external dependencies.
+mitigations: Strong data management planning; preservation capability; good documentation; deposit into trusted repository.
 year-added: 2023
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-research-materials-outputs-museums-galleries
-comments: >-
-  To add further clarity, it might be worth differentiating use cases—for
-  research outputs as digital material resulting from research carried out in
-  Museums and Galleries, and for digital material used in research.
-
+comments: |-
+  To add further clarity, it might be worth differentiating use cases—for research outputs as digital material resulting from research carried out in Museums and Galleries, and for digital material used in research.
 
   This research may be publicly or philanthropically funded. While research materials - used and/or developed in the course or research - and research outputs may not be made publicly available, they may be used to inform other outputs, e.g. exhibition, interpretation, conservation, etc.
-
 
   Exhibition catalogues and interpretation of collections are often published online in research papers.
 ---

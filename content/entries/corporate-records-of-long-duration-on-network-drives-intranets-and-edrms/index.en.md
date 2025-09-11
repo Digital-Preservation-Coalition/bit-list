@@ -1,16 +1,8 @@
 ---
 id: uF1EIYIklk
 title: Corporate Records of Long Duration on Network Drives, Intranets and EDRMS
-description: Records on internal corporate network drives, intranets or document
-  management services where access is limited to a distinct group of users, and
-  in which the lifecycle of the record or the business processes they support is
-  greater than the technology on which they are created or retained.
-examples: Born-digital records of small and medium sized enterprises;
-  fasting-changing internal manuals, advice or policies shared on intranets or
-  EDRMS; records of long-lived products and services; Historic guidelines and
-  manuals which evidence ‘best practice’; Documentation supporting long-lived
-  contractual relations; Online terms and conditions; Corporate Slack channels;
-  Google Drives; EDRMS; Email
+description: Records on internal corporate network drives, intranets or document management services where access is limited to a distinct group of users, and in which the lifecycle of the record or the business processes they support is greater than the technology on which they are created or retained.
+examples: Born-digital records of small and medium sized enterprises; fasting-changing internal manuals, advice or policies shared on intranets or EDRMS; records of long-lived products and services; Historic guidelines and manuals which evidence ‘best practice’; Documentation supporting long-lived contractual relations; Online terms and conditions; Corporate Slack channels; Google Drives; EDRMS; Email
 categories:
   - Sensitive Data
 threats:
@@ -25,37 +17,23 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Lack of systematic preservation function; lack of preservation path or
-  plan for data; dependence on proprietary products or formats; poor management
-  of data protection; political or commercial interference; lack of offline
-  equivalent; over-abundance through poor disposal or naming and version
-  control; lack of capacity; lack of commitment; loss or lack of documentation;
-  sector-specific software or data types; encryption; Uncertainty over IPR or
-  the presence of orphaned works owners
-mitigations: Preservation infrastructure and pathways; replication; appraisal
-  and selection including de-duplication
+hazards: Lack of systematic preservation function; lack of preservation path or plan for data; dependence on proprietary products or formats; poor management of data protection; political or commercial interference; lack of offline equivalent; over-abundance through poor disposal or naming and version control; lack of capacity; lack of commitment; loss or lack of documentation; sector-specific software or data types; encryption; Uncertainty over IPR or the presence of orphaned works owners
+mitigations: Preservation infrastructure and pathways; replication; appraisal and selection including de-duplication
 year-added: 2017
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-corporate-records
-comments: >-
-  Corporate records should form part of organizational records management
-  schemes, and so responsibilities should be clear; however, this may be much
-  more challenging for smaller organizations without dedicated roles or with
-  complex data types.
-
+comments: |-
+  Corporate records should form part of organizational records management schemes, and so responsibilities should be clear; however, this may be much more challenging for smaller organizations without dedicated roles or with complex data types.
 
   Processes become as important as technology when it comes to preserving this kind of material. If an organization does not have good records organization, naming conventions etc. that may make material as vulnerable to loss as technological failure or format obsolescence could.
-
 
   Closer collaboration over the digital record lifecycle with recordkeeping organizations such as IRMS/ARA and digital preservation organizations would help to ensure best practice from (before) record creation to its long-term preservation and would help to identify any risks and bridge gaps ‘from the cradle to the grave’. Joining forces and resources will enable the community to raise awareness of the impact of best practices on the organizational governance and related efficiencies.
 case-studies:
   - url: http://doi.org/10.7207/edrmstoolkit21-01
     accessed: 2023-10-24
-    comment: The work and outputs of the EDRMS Preservation Taskforce over the last
-      year, for example the EDRMS Preservation Toolkit, may be helpful for
-      guidance and examples in this context.
+    comment: The work and outputs of the EDRMS Preservation Taskforce over the last year, for example the EDRMS Preservation Toolkit, may be helpful for guidance and examples in this context.
     authors: Digital Preservation Coalition
     publisher: Digital Preservation Coalition
     title: EDRMS Preservation Toolkit

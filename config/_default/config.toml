@@ -30,7 +30,7 @@ mainSections = ['entries', 'posts']
 
 
 [frontmatter]
-  date = ["date", "publishDate", "lastmod", "last-updated" ]
+  date = ["date", "publishDate", "lastmod", "last-updated", ":fileModTime", ":default"]
   lastmod = ["lastmod", "last-updated", ":fileModTime", ":default"]
 
 [taxonomies]

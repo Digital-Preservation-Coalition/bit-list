@@ -1,13 +1,8 @@
 ---
 id: N5vlOxZcVm
 title: Email
-description: Documents, correspondence and other records created in the course
-  of contractual dealings between individuals and agencies, especially where the
-  subjects are of long duration and may be subject to legal scrutiny at
-  undefined points in the distant future.
-examples: Gmail, Hotmail, Yahoo Mail, Outlook, and email in all its forms
-  including individual messages, threads of conversation, mailboxes, email
-  servers and file attachments.
+description: Documents, correspondence and other records created in the course of contractual dealings between individuals and agencies, especially where the subjects are of long duration and may be subject to legal scrutiny at undefined points in the distant future.
+examples: Gmail, Hotmail, Yahoo Mail, Outlook, and email in all its forms including individual messages, threads of conversation, mailboxes, email servers and file attachments.
 categories:
   - Formats
 threats:
@@ -22,47 +17,27 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Lack of skills, commitment or policy from corporate owners; uncertainty
-  or conflicting claims over IPR or orphaned works; use of personal accounts for
-  professional work and vice versa; proliferation and duplication of
-  attachments; email not recognized as a record; absent, unworkable or
-  inconsistent records management; dependence on free cloud-based services; lack
-  of migration path; lack of preservation planning; perverse incentives to
-  delete; encryption.
-mitigations: Application of appraisal and selection tools; timely transfer to
-  preservation facility or archive; commitment to transparency; preservation
-  policy; working preservation plan; clear migration path; widespread
-  recognition of email as a record.
+hazards: Lack of skills, commitment or policy from corporate owners; uncertainty or conflicting claims over IPR or orphaned works; use of personal accounts for professional work and vice versa; proliferation and duplication of attachments; email not recognized as a record; absent, unworkable or inconsistent records management; dependence on free cloud-based services; lack of migration path; lack of preservation planning; perverse incentives to delete; encryption.
+mitigations: Application of appraisal and selection tools; timely transfer to preservation facility or archive; commitment to transparency; preservation policy; working preservation plan; clear migration path; widespread recognition of email as a record.
 year-added: 2017
 published: 2017-08-06
-last-updated: 2025-08-06
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-email
-comments: Email is hugely important as it has been so pervasive as a
-  communication mechanism for society. Some methods used and responsibility
-  adopted for collecting at the business and public body level (again will
-  differ globally), but this will be a fraction of the communities that use it,
-  and few will be set up for the long-term care of this data.
+comments: Email is hugely important as it has been so pervasive as a communication mechanism for society. Some methods used and responsibility adopted for collecting at the business and public body level (again will differ globally), but this will be a fraction of the communities that use it, and few will be set up for the long-term care of this data.
 case-studies:
-  - comment: Resources and outputs from the EA-PDF project to identify the essential
-      characteristics and optimal functional requirements of email messages and
-      necessary related information in a PDF technology-based archive.
+  - comment: Resources and outputs from the EA-PDF project to identify the essential characteristics and optimal functional requirements of email messages and necessary related information in a PDF technology-based archive.
     title: EA-PDF
     authors: PDF Association
     url: https://www.pdfa.org/resource/ea-pdf/
     year: 2021
     accessed: 2023-10-24
-  - comment: Resources and outputs from the Integrating Preservation Functionality
-      into ePADD (ePADD+) project to integrate long-term email preservation
-      functionality into the program and provide a tool supporting the email
-      archiving lifecycle more robustly.
+  - comment: Resources and outputs from the Integrating Preservation Functionality into ePADD (ePADD+) project to integrate long-term email preservation functionality into the program and provide a tool supporting the email archiving lifecycle more robustly.
     title: History
     authors: ePADD
     url: https://www.epaddproject.org/about/history
     accessed: 2023-10-24
-  - comment: Resources and outputs from the RATOM project to develop software to
-      assist archives and other collecting organizations with email analysis,
-      selection, and appraisal tasks.
+  - comment: Resources and outputs from the RATOM project to develop software to assist archives and other collecting organizations with email analysis, selection, and appraisal tasks.
     url: https://ratom.web.unc.edu/about/
     title: About
     publisher: RATOM
@@ -78,26 +53,20 @@ case-studies:
     url: http://doi.org/10.7207/twgn21-08
     year: 2021
   - authors: Murray K and Prom, C.
-    title: "The Future of Email Archives: A Report from the Task Force on Technical
-      Approaches for Email Archives"
+    title: 'The Future of Email Archives: A Report from the Task Force on Technical Approaches for Email Archives'
     publisher: CLIR
     year: 2018
     url: https://clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175.pdf
     accessed: 2023-10-24
-  - comment: "“Novice to Know-How: Email Preservation”, was conceived of and funded
-      by The National Archives (UK) and delivered by the DPC. This course is
-      aimed at learners who already have a solid foundational knowledge of
-      digital preservation (e.g. they have completed the original N2KH learning
-      pathway) and wish to gain practical skills in relation to the preservation
-      of email."
+  - comment: '“Novice to Know-How: Email Preservation”, was conceived of and funded by The National Archives (UK) and delivered by the DPC. This course is aimed at learners who already have a solid foundational knowledge of digital preservation (e.g. they have completed the original N2KH learning pathway) and wish to gain practical skills in relation to the preservation of email.'
     publisher: ""
     authors: DPC and The National Archives (UK)
     year: 2023
-    title: "Novice to Know-How: Email Preservation"
+    title: 'Novice to Know-How: Email Preservation'
     url: https://www.dpconline.org/digipres/prof-development/n2kh-online-training
     accessed: 2023-10-24
   - authors: Ville, M.
-    title: "2013 – 2023: A Review of Ten Years of Email Archiving in France"
+    title: '2013 – 2023: A Review of Ten Years of Email Archiving in France'
     publisher: iPRES 2023 Conference, Urbana-Champaign, Illinois, USA, 19–22 September
     year: 2018
 ---

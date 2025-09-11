@@ -1,9 +1,7 @@
 ---
 id: DwTRuEpls
 title: Data Posted to Defunct or Little-used Social Media Platforms
-description: Older or less widely used social media platforms to which content
-  has been uploaded but for which no guarantees have been made about the long
-  term.
+description: Older or less widely used social media platforms to which content has been uploaded but for which no guarantees have been made about the long term.
 examples: BeBo, MySpace, Google Buzz, Parler and others.
 categories:
   - Social Media
@@ -19,44 +17,30 @@ trends:
   - year: 2023
     trend: no-change
     classification: critically-endangered
-hazards: Closure of platform; lack of offline equivalent; lack of export
-  functionality; no preservation undertaking from service provider; unstable
-  business plan from service provider; Uncertainty over IPR or the presence of
-  orphaned works.
-mitigations: Offline Replication; clear notice periods and alerts; committed
-  ongoing maintenance of service.
+hazards: Closure of platform; lack of offline equivalent; lack of export functionality; no preservation undertaking from service provider; unstable business plan from service provider; Uncertainty over IPR or the presence of orphaned works.
+mitigations: Offline Replication; clear notice periods and alerts; committed ongoing maintenance of service.
 year-added: 2018
 published: 2025-08-08
-last-updated: 2025-08-08
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-data-on-defunct-social-media
-comments: >-
-  The risk to this content depends on the specific service or platform, but
-  older platforms (BeBo, MySpace) pose a higher risk of loss than current
-  platforms (and is likely already lost) but social media wasn’t used to the
-  same extent (and not as widely used by government, corporations, research
-  institutions, etc.) in the early 2000s/2010s when these platforms were
-  popular, which reduces the impact slightly.
-
+comments: |-
+  The risk to this content depends on the specific service or platform, but older platforms (BeBo, MySpace) pose a higher risk of loss than current platforms (and is likely already lost) but social media wasn’t used to the same extent (and not as widely used by government, corporations, research institutions, etc.) in the early 2000s/2010s when these platforms were popular, which reduces the impact slightly.
 
   When looking at the digital preservation landscape and where we need to apply effort as well as resources, defunct early social media spaces are not high on the list; but, when considering how contemporary social media channels could become defunct, it becomes a different conversation because of how intrinsically tied they are to political discourse and influencing political opinion
 
-
   It is to be hoped that some of these have been archived via traditional web archiving, and so the remnants of these sites can be found in bits and pieces in various web archives, but it may be too late to save some of the content that is likely already lost. If some of this is still available, there may be hope in trying to preserve, but it may be difficult if the platforms are not willing to share data or work with preservationists. ArchiveTeam has stepped in here too. There is undoubtedly a story here that could be used as a call for arms to raise awareness about the preservation of current social media platforms too.
 case-studies:
-  - comment: The mentioned example of Skyblog as national platforms which has been
-      successfully archived by Bibliothèque nationale de France.
+  - comment: The mentioned example of Skyblog as national platforms which has been successfully archived by Bibliothèque nationale de France.
     authors: Bibliothèque nationale de France
     title: La Bibliothèque nationale archive les Skyblogs
     publisher: BnF
     year: 2024
     url: https://web.archive.org/web/20240506232352/https://www.bnf.fr/fr/la-bibliotheque-nationale-archive-les-skyblogs
     accessed: 2024-09-06
-  - comment: The shutting down of Yahoo Answers is an example of the loss of content
-      from community board style web platforms.
+  - comment: The shutting down of Yahoo Answers is an example of the loss of content from community board style web platforms.
     authors: Tsavkko Garcia, R.
-    title: Deleting Yahoo Answers is a disastrous idea. For history's sake, we need
-      to preserve our digital record
+    title: Deleting Yahoo Answers is a disastrous idea. For history's sake, we need to preserve our digital record
     publisher: Business Insider
     year: 2021
     url: https://www.businessinsider.com/deleting-yahoo-answers-disastrous-idea-preserve-our-digital-record-2021-4?r=US&IR=T

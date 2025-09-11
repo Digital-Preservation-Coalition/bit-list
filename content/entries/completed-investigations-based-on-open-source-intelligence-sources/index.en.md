@@ -1,9 +1,7 @@
 ---
 id: B0RrrhqfS-
 title: Completed Investigations Based on Open Source Intelligence Sources
-description: Open source social media and web content that has been used to
-  support the conclusions of crowd-sourced investigation and fact-checking in
-  political or military conflict.
+description: Open source social media and web content that has been used to support the conclusions of crowd-sourced investigation and fact-checking in political or military conflict.
 examples: Social media sources relating to recent conflicts
 categories:
   - Legal Data
@@ -19,50 +17,33 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Encryption; loss of authenticity; lack of preservation agency; limited
-  or no digital preservation capability; Uncertainty over IPR or the presence of
-  orphaned works
-mitigations: Offline backup captured by a journalist or investigating authority;
-  materials presented and documented in court; court able to deliver
-  preservation; authenticity protected
+hazards: Encryption; loss of authenticity; lack of preservation agency; limited or no digital preservation capability; Uncertainty over IPR or the presence of orphaned works
+mitigations: Offline backup captured by a journalist or investigating authority; materials presented and documented in court; court able to deliver preservation; authenticity protected
 year-added: 2019
 published: 2025-08-25
-last-updated: 2025-08-25
+last-updated: "2024-11-07"
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-osint-completed
 case-studies:
-  - comment: The 2020 Medical Facilities Under Fire report by the Syrian Archive.,
-      which provides information on how The Syrian Archive and its partners
-      (Syrians for Truth and Justice, Justice for Life) analyzed and verified
-      pattern of attacks by cross referencing a combination of open-source
-      visual content, flight observation data, and witness statements. Through
-      collecting, verifying and reporting investigative findings from these
-      incidents, the authors hope to preserve critical information that may be
-      used for advocacy purposes or as evidence in future proceedings seeking
-      legal accountability.
+  - comment: The 2020 Medical Facilities Under Fire report by the Syrian Archive., which provides information on how The Syrian Archive and its partners (Syrians for Truth and Justice, Justice for Life) analyzed and verified pattern of attacks by cross referencing a combination of open-source visual content, flight observation data, and witness statements. Through collecting, verifying and reporting investigative findings from these incidents, the authors hope to preserve critical information that may be used for advocacy purposes or as evidence in future proceedings seeking legal accountability.
     url: https://syrianarchive.org/en/investigations/Medical-Facilities-Under-Fire
     authors: Syrian Archive
     title: Medical Facilities Under Fire
     year: 2017
     accessed: 2023-10-24
-  - title: Bellingcat and beyond. The future for Bellingcat and online open source
-      investigation
+  - title: Bellingcat and beyond. The future for Bellingcat and online open source investigation
     authors: Higgins, E.
     publisher: iPres Conference 2019,
     url: https://www.youtube.com/watch?v=kZAb7CVGmXM
     year: 2015
     accessed: 2023-10-24
-  - comment: European Human Rights Advocacy Centre (EHRAC) blog post providing a Q&A
-      on ‘Using Open Source Investigations in Human Rights Litigation,’ noting
-      their approach to gather and present evidence of Russian military presence
-      in and around Ilovaisk in August 2014.
+  - comment: European Human Rights Advocacy Centre (EHRAC) blog post providing a Q&A on ‘Using Open Source Investigations in Human Rights Litigation,’ noting their approach to gather and present evidence of Russian military presence in and around Ilovaisk in August 2014.
     url: https://ehrac.org.uk/en_gb/blog/qa-using-open-source-investigations-in-human-rights-litigation/
     accessed: 2023-10-24
     year: 2022
     authors: European Human Rights Advocacy Centre (EHRAC)
-    title: "Q&A: USING OPEN SOURCE INVESTIGATIONS IN HUMAN RIGHTS LITIGATION"
-  - title: Preserving Open Source Digital Evidence a Guide for Practitioners Working
-      on Dealing with the Past Essential
+    title: 'Q&A: USING OPEN SOURCE INVESTIGATIONS IN HUMAN RIGHTS LITIGATION'
+  - title: Preserving Open Source Digital Evidence a Guide for Practitioners Working on Dealing with the Past Essential
     authors: Baumhofer, E., and Reilly, B.
     publisher: Swiss Peace
     year: 2022
