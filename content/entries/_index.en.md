@@ -1,4 +1,6 @@
 ---
 outputs:
+- html
+- rss
 - markdown
 ---
