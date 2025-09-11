@@ -46,6 +46,12 @@
 
     {{ if ne .Kind "taxonomy" }}
 
+      <h1>{{ .Title }}</h1>
+
+      <p>{{ .Params.description }}</p>
+
+      {{ .Content }}
+
     <div class="row mb-3">
         {{ range sort .Pages ".Params.title" }}
             {{ partial "entry-card" . }}
