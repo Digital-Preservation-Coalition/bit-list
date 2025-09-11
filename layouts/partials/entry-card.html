@@ -21,11 +21,12 @@
         <div class="card-footer">
             <small class="text-muted">
                 <svg xmlns="http://www.w3.org/2000/svg" class="feather"><use href="{{ `images/feather/feather-sprite.svg#calendar` | relURL }}"/></svg>
-                <time class="ms-2" datetime="{{ .Date.Format `2006-01-02T15:04:05Z0700` | safeHTML }}">{{ .Date | time.Format ":date_long" }}</time>
+                <time class="ms-1" datetime="{{ .Date.Format `2006-01-02T15:04:05Z0700` | safeHTML }}">{{ .Date | time.Format ":date_long" }}</time>
                 {{ if isset .Params "categories" }}
                     <svg xmlns="http://www.w3.org/2000/svg" class="feather ms-4"><use href="{{ `images/feather/feather-sprite.svg#folder` | relURL }}"/></svg>
                     {{ range .Params.categories }}
-                        <a class="text-decoration-none text-muted ms-2" href="{{ `/categories/` | relLangURL }}{{ . | urlize}}/">{{ . }}</a>
+                        {{ $cat := $.GetPage ( printf "categories/%s" . ) }}
+                        <a class="text-decoration-none text-muted ms-1" href="{{ `/categories/` | relLangURL }}{{ . | urlize}}/">{{ $cat.Params.title }}</a>
                     {{end}}
                 {{ end }}
             </small>
