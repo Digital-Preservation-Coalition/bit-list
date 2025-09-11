@@ -1,4 +1,5 @@
 ---
+title: Entries
 outputs:
 - html
 - rss
