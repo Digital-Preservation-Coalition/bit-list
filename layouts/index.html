@@ -5,10 +5,10 @@
     <div class="col-md-8 mx-auto text-center my-5">
       {{ with resources.Get "images/classification/endangered.png" }}
         {{ with .Resize "x200" }}
-          <img class="d-block mx-auto p-2 my-4 float-end" src="{{ .RelPermalink }}" alt="{{ T "endangered" }}" width="{{ .Width }}" height="{{ .Height }}">
+          <img class="d-block mx-auto p-2 my-4" src="{{ .RelPermalink }}" alt="{{ T "endangered" }}" width="{{ .Width }}" height="{{ .Height }}">
         {{ end }}
       {{ end }}
-      <h1 class="display-4 fw-semibold mb-3">{{ .Site.Title }}</h1>
+      <h1 class="display-4 fw-semibold mb-3">{{ .Site.Params.longName }}</h1>
       <p class="lead mb-4">{{ .Site.Params.Description }}</p>
       <a class="btn btn-bd-primary btn-lg px-4 mb-3" href="./about" role="button">{{ T "about-tbl" }}</a>
       <a class="btn btn-secondary btn-lg px-4 mb-3" href="mailto:info@dpconline.org?subject=Add%20to%20the%20Bit%20List" role="button">{{ T "add-to-tbl" }}</a>
@@ -17,18 +17,18 @@
 </section>
 
 <section class="section container my-3 text-center">
-  <h3 class="text-secondary my-3">{{ T "search-tbl" }}</h3>
+  <h3 class="my-3">{{ T "search-tbl" }}</h3>
   {{ partial "search" . }}
 </section>
 
 <section class="section container my-3">
-  <h3 class="text-secondary text-center my-5">Featured Species</h3>
+  <h3 class="text-dark text-center my-5">Featured Entries</h3>
   {{ partial "featured-pages" . }}
 </section>
 
 
 <section class="section container mt-5">
-  <h3 class="text-secondary text-center">Classifications</h3>
+  <h3 class="text-center">Classifications</h3>
    <div class="row">
     {{ range (where .Site.Pages "Section" "classification") }}
       {{ range .Pages.ByWeight }}
