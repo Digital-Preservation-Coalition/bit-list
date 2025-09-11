@@ -1,6 +1,6 @@
 <!-- https://report-uri.com/home/generate -->
 <!-- Modifying this adding [script-src: 'unsafe-eval'] for PageFind WASM etc. -->
-<meta http-equiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+<meta http-equiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval' cloud.umami.is; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
 <!-- Also using this hook to add additional resources -->
 {{ $js := resources.Get "js/pretty-json.js" }}
 {{ with $js }}
@@ -12,3 +12,5 @@
   {{ $css := . | fingerprint "sha512" -}}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
+<!-- GDPR-compliant analytics -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="5e86171a-058a-4301-ae09-ca7642822d42"></script>
