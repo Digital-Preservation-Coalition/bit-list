@@ -10,6 +10,7 @@ category = "Category"
 threat = "Threat"
 status = "Status"
 classification = "Classification"
+no-entries = "There are currently no entries under this classification."
 
 endangered = "Endangered"
 

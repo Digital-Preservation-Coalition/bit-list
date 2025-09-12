@@ -42,7 +42,7 @@
 </section>
 
 <section class="section container my-3">
-  <h3 class="text-secondary text-center">Categories</h3>
+  <h3 class="text-center">Categories</h3>
    <div class="row">
     {{ range (where .Site.Pages "Section" "categories") }}
      {{ if ne .Title "Categories" }}
