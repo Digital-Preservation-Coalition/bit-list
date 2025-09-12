@@ -1,12 +1,17 @@
 ---
 id: VT_wDIIltu
 title: Oral Histories
-description: Oral histories including both audio and audiovisual (video and sound), and their accompanying transcripts and/or time-pointed summaries.
-examples: Examples are wide ranging but can generally include born-digital or digitized material produced as an output of oral history projects; video or oral histories; transcripts, summaries, and other accompanying materials
+description: Oral histories including both audio and audiovisual (video and
+  sound), and their accompanying transcripts and/or time-pointed summaries.
+examples: Examples are wide ranging but can generally include born-digital or
+  digitized material produced as an output of oral history projects; video or
+  oral histories; transcripts, summaries, and other accompanying materials
 categories:
   - Museum and Gallery
   - Community Archives
   - Sound and Vision
+threats:
+  - Sensitive Data
 classification: endangered
 imminence: 2
 effort: 2
@@ -14,26 +19,44 @@ trends:
   - year: 2024
     trend: towards-greater-risk
     classification: endangered
-hazards: Poor documentation; external dependencies; storage on old or degrading media; storage on consumer portable media; lack of preservation planning; lack of sustained funding; lack of ongoing investment in changing preservation requirements; lack of capability; poor documentation; dependence on small staff or volunteer resources; lack of standardized file naming; uncertainty over IPR or the presence of orphaned works
-mitigations: Preservation capability; high quality storage; meticulous and consistent replication; stored in a trusted repository; preservation requirement understood; intellectual property managed to enable preservation; good descriptive cataloguing; persistent identifiers
+hazards: Poor documentation; external dependencies; storage on old or degrading
+  media; storage on consumer portable media; lack of preservation planning; lack
+  of sustained funding; lack of ongoing investment in changing preservation
+  requirements; lack of capability; poor documentation; dependence on small
+  staff or volunteer resources; lack of standardized file naming; uncertainty
+  over IPR or the presence of orphaned works
+mitigations: Preservation capability; high quality storage; meticulous and
+  consistent replication; stored in a trusted repository; preservation
+  requirement understood; intellectual property managed to enable preservation;
+  good descriptive cataloguing; persistent identifiers
 year-added: 2023
 published: 2025-08-25
-last-updated: "2024-11-07"
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-oral-histories
-comments: There may be a need for clarifying what falls under oral histories in the context of preservation at the organization - whether it includes audio and/or video recordings recorded for the purposes of creating oral history recordings (to be added to an organization’s collection), or for internal-only use. In addition, there may be some misidentification of oral history recordings, where the intent may have been to capture the recording as a research interview or as vox pops.
+comments: There may be a need for clarifying what falls under oral histories in
+  the context of preservation at the organization - whether it includes audio
+  and/or video recordings recorded for the purposes of creating oral history
+  recordings (to be added to an organization’s collection), or for internal-only
+  use. In addition, there may be some misidentification of oral history
+  recordings, where the intent may have been to capture the recording as a
+  research interview or as vox pops.
 case-studies:
-  - comment: '‘Deadline 2025: collections at risk’ is the international consensus among audiovisual archives that the contents of magnetic audio and video tapes are at high risk of being lost forever due to not only the deterioration of magnetic tapes but also the obsolescence of machines, and parts, to play them.'
+  - comment: "‘Deadline 2025: collections at risk’ is the international consensus
+      among audiovisual archives that the contents of magnetic audio and video
+      tapes are at high risk of being lost forever due to not only the
+      deterioration of magnetic tapes but also the obsolescence of machines, and
+      parts, to play them."
     accessed: 2024-09-04
     url: https://www.nfsa.gov.au/corporate-information/publications/deadline-2025
-    title: 'Deadline 2025: collections at risk'
+    title: "Deadline 2025: collections at risk"
     authors: National Film and Sound Archive of Australia
   - title: Recording remote Oral History interviews
-    authors: ' Oral History NSW'
+    authors: " Oral History NSW"
     url: https://www.oralhistorynsw.org.au/equipment-remote
     accessed: 2023-10-24
   - title: Remote oral history interviewing
-    authors: ' Morgan, C. Perks, R., Stewart, M. and Johnston, C. '
+    authors: " Morgan, C. Perks, R., Stewart, M. and Johnston, C. "
     url: https://www.ohs.org.uk/covid-19-remote-recording/
     accessed: 2023-10-24
     publisher: Oral History Society.
