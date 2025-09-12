@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="container py-3">
+
+      <h1>{{ .Title }}</h1>
+
+      <p>{{ .Params.description }}</p>
+
+      {{ .Content }}
+
+      {{ with .Pages }}
+      <div class="row mb-3">
+        {{ range .ByTitle }}
+            {{ partial "grouping-card" . }}
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ $entries := ( where .Site.Pages "Section" "entries" ) }}
+      {{ $pages := ( where $entries "Params.categories" "intersect" (slice .Params.title ) ) }}
+    
+      <div class="row mb-3 clearfix">
+        {{ range $pages }}
+        {{ partial "entry-card" . }}
+        {{ end }}
+      </div>
+
+</div>
+{{ end }}

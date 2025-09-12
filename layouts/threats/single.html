@@ -19,13 +19,12 @@
 
   </div>
 
+  {{ $entries := ( where .Site.Pages "Section" "entries" ) }}
+  {{ $pages := ( where $entries "Params.threats" "intersect" (slice .Params.title ) ) }}
+  
   <div class="row mb-3 clearfix">
-    {{ range (where .Site.Pages "Section" "entries") }}
-      {{ range .Pages }}
-        {{ if in .Params.threats $.Params.title }}
-            {{ partial "entry-card" . }}
-        {{ end }}
-      {{ end }}
+    {{ range $pages }}
+      {{ partial "entry-card" . }}
     {{ end }}
   </div>
 

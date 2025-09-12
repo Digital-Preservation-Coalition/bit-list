@@ -52,11 +52,13 @@
 
       {{ .Content }}
 
-    <div class="row mb-3">
-        {{ range .Pages.ByTitle }}
+      {{ with .Pages }}
+      <div class="row mb-3">
+        {{ range .ByTitle }}
             {{ partial "grouping-card" . }}
         {{ end }}
-    </div>
+      </div>
+      {{ end }}
 
     {{ end }}
 
