@@ -26,7 +26,7 @@
 
 <div class="entries-factsheet container mb-3 text-center overflow-hidden">
   <div class="row">
-      <div class="col-6 col-sm-6 text-dark bg-primary p-2 border border-2 border-white" style="--bs-bg-opacity: .5;">
+      <div class="col-6 col-sm-6 text-dark bg-primary-subtle p-2 border border-2 border-white" style="--bs-bg-opacity: .5;">
         <h3 class="mb-1">Imminence</h3>
         <p class="mb-0">{{ range .Params.imminence }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.imminence ) }}<i class="bi bi-circle"></i> {{end}}</p>
         <p class="mb-2">{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
@@ -55,7 +55,7 @@
         </div>
         </div>
       <div class="col-12 col-sm-6 p-0">
-        <div class="p-3 h-100 text-dark bg-primary border border-2 border-white"  style="--bs-bg-opacity: .5;">
+        <div class="p-3 h-100 text-dark bg-primary-subtle border border-2 border-white"  style="--bs-bg-opacity: .5;">
         <h3 class="mb-2 text-center">Mitigations</h3>
         <p>{{ .Params.mitigations }}</p>
         </div>
