@@ -4,4 +4,5 @@ outputs:
 - html
 - rss
 - markdown
+- csv
 ---
