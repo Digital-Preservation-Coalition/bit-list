@@ -34,7 +34,7 @@
       {{ range .Pages.ByWeight }}
       <div class="col-sm-4 col-md-2 mx-auto text-center my-3">
         {{ $cd := dict "classification" .Params.id }}
-        {{ page.Store.Set "imageSize" "120x" }}{{ partial "classification-img" $cd }}
+        {{ page.Store.Set "imageSize" "120x" }}{{ partial "classification-img" $cd.classification }}
       </div>
       {{ end }}
     {{ end }}

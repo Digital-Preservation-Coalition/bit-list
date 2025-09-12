@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<div class="container py-3">
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    <div class="row mb-3">
+        {{ range .Pages.ByTitle }}
+            {{ partial "entry-card" . }}
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}

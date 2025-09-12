@@ -3,7 +3,7 @@
   <div class="entries-header clearfix" data-pagefind-filter="{{ T "classification" }}:{{ $classification.Params.title }}">
     
     <div class="float-end p-1">
-    {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" .Params }}
+    {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" .Params.classification }}
     </div>
 
     <h1 class="text-primary">{{ .Title }}</h1>  

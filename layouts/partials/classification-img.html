@@ -1,6 +1,6 @@
-{{ $classification := page.GetPage ( printf "classification/%s" .classification ) }}
+{{ $classification := page.GetPage ( printf "classification/%s" . ) }}
 
-{{ $img := printf "images/classification/%s.png" .classification }}
+{{ $img := printf "images/classification/%s.png" . }}
 {{ $imageSize := page.Store.Get "imageSize" | default "100x"}}
 {{ with resources.Get $img }}
   {{ with .Resize $imageSize }}

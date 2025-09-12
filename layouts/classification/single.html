@@ -6,7 +6,7 @@
 <!--
     <div class="float-end p-1">
       {{ $cd := dict "classification" .Params.id }}
-    {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" $cd }}
+    {{ .Store.Set "imageSize" "150x" }}{{ partial "classification-img" $cd.classification }}
     </div>
     -->
 
@@ -19,17 +19,18 @@
 
   </div>
 
+  {{ $entries := ( where .Site.Pages "Section" "entries" ) }}
+  {{ $pages := ( where $entries "Params.classification" .Params.id ) }}
+
+  {{ with $pages }}
   <div class="row mb-3 clearfix">
-    {{ range (where .Site.Pages "Section" "entries") }}
-      {{ range .Pages }}
-        {{ if eq .Params.classification $.Params.id }}
-            {{ partial "entry-card" . }}
-        {{ end }}
+      {{ range $pages }}
+        {{ partial "entry-card" . }}
       {{ end }}
-    {{ end }}
-    </ul>
-    
   </div>
+  {{ else }}
+  There are currently no entries in this classification.
+  {{ end }}
 
 </div>
 

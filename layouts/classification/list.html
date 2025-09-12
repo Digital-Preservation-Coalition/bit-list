@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div class="container py-3">
+    <h1>{{ .Title }}</h1>
+
+    <p>{{ .Params.description }}</p>
+
+    {{ .Content }}
+
+    <div class="row mb-3">
+        {{ range .Pages.ByWeight }}
+            {{ partial "grouping-card" . }}
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}
