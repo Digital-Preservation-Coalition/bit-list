@@ -5,4 +5,5 @@ outputs:
 - rss
 - markdown
 - csv
+- json
 ---
