@@ -46,7 +46,11 @@
       <div class="col-12 col-sm-6 p-0" >
         <div class="p-3 h-100 text-dark bg-primary-subtle border border-2 border-white">
         <h3 class="mb-2 text-center">Hazards</h3>
-        <p>{{ .Params.hazards }}</p>
+        {{ with .Params.hazards }}
+        <p>{{ .}}</p>
+        {{ else }}
+        <p>{{ T "no-hazards" }}</p>
+        {{ end }}
         {{ range ($.Site.GetPage "section" "threats").Pages.ByTitle }}
           {{ if in $.Params.threats .Title }}
         <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}" data-pagefind-filter="{{ T "threat" }}:{{ .Title }}">{{.Title}}</a>
@@ -57,7 +61,11 @@
       <div class="col-12 col-sm-6 p-0">
         <div class="p-3 h-100 text-dark bg-primary-subtle border border-2 border-white"  style="--bs-bg-opacity: .5;">
         <h3 class="mb-2 text-center">Mitigations</h3>
-        <p>{{ .Params.mitigations }}</p>
+        {{ with .Params.mitigations }}
+        <p>{{ .}}</p>
+        {{ else }}
+        <p>{{ T "no-mitigations" }}</p>
+        {{ end }}
         </div>
       </div>
   </div>

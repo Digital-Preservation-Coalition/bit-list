@@ -151,9 +151,11 @@ collections:
   - label: Hazards
     name: hazards
     widget: "text"
+    required: false
   - label: Mitigations
     name: mitigations
     widget: "text"
+    required: false
   - label: Year Added
     name: year-added
     widget: "number"

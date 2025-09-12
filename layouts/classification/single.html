@@ -24,7 +24,7 @@
 
   {{ with $pages }}
   <div class="row mb-3 clearfix">
-      {{ range $pages }}
+      {{ range $pages.ByTitle }}
         {{ partial "entry-card" . }}
       {{ end }}
   </div>

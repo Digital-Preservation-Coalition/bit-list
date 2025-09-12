@@ -1,7 +1,9 @@
 ---
 id: 7-WAOaKhTt
 title: Pre-WWW Videotex Data Services and Bulletin Board Services
-description: Pre WWW telephone and television information services that allowed a degree of user interaction and data retrieval with modem-based two-way communication.
+description: Pre WWW telephone and television information services that allowed
+  a degree of user interaction and data retrieval with modem-based two-way
+  communication.
 examples: Prestel, Minitel, VidiTel and Videotex NL, Alex, BelTel, FidoNet
 categories:
   - Sound and Vision
@@ -17,17 +19,23 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: TBC
+hazards: ""
 mitigations: Offline backup documented and available for recovery
 year-added: 2012
 published: 2025-08-21
-last-updated: "2024-11-07"
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-pre-www-videotex-and-bbs
-comments: |-
-  The value of this type of content has been questioned in previous entry reviews. It was noted that loss of this content would impact our understanding of pre WWW digital/electronic communications and whilst the loss in terms of impact on human life would be minimal, from a cultural studies point of view, loss would have a far higher impact.
+comments: >-
+  The value of this type of content has been questioned in previous entry
+  reviews. It was noted that loss of this content would impact our understanding
+  of pre WWW digital/electronic communications and whilst the loss in terms of
+  impact on human life would be minimal, from a cultural studies point of view,
+  loss would have a far higher impact.
+
 
   In terms of preservation, whilst there is no structured collection of this material, many individuals will have their own personal archives and a campaign of the nature of Missing Believed Wiped from the BFI might be effective in collating these disparate collections.
+
 
   This entry can also be linked to the Community Archives species as early online forums were a place of community development and community creation.
 ---

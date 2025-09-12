@@ -23,7 +23,7 @@
   {{ $pages := ( where $entries "Params.threats" "intersect" (slice .Params.title ) ) }}
   
   <div class="row mb-3 clearfix">
-    {{ range $pages }}
+    {{ range $pages.ByTitle }}
       {{ partial "entry-card" . }}
     {{ end }}
   </div>

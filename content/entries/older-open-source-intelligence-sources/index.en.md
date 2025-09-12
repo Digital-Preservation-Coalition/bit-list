@@ -1,7 +1,11 @@
 ---
 id: skfEy5zJwd
 title: Older Open Source Intelligence Sources
-description: Older open source intelligence produced, collected and analysed from publicly available social media and web content with the purpose of answering a specific intelligence question and that supports crowd-sourced investigation and fact-checking to verify or refute claims of state agencies and rebel groups in the context of historic political or military conflict.
+description: Older open source intelligence produced, collected and analysed
+  from publicly available social media and web content with the purpose of
+  answering a specific intelligence question and that supports crowd-sourced
+  investigation and fact-checking to verify or refute claims of state agencies
+  and rebel groups in the context of historic political or military conflict.
 examples: Social media sources relating to the Arab sprin
 categories:
   - Legal Data
@@ -17,24 +21,32 @@ trends:
   - year: 2024
     trend: no-change
     classification: practically-extinct
-hazards: TBC
-mitigations: Offline backup documented and available for recovery; clarity over IPR and no orphaned works
+hazards: ""
+mitigations: Offline backup documented and available for recovery; clarity over
+  IPR and no orphaned works
 year-added: 2019
 published: 2025-08-25
-last-updated: "2024-11-07"
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-osint-older
-comments: |-
-  he Council also added clarification to the meaning of ‘open source’ for this entry, to explain its meaning in relation to intelligence openly available online, noting that open source can also refer to a specific software or content licence that permits limited uses of IP so this distinction would be helpful for readers.
+comments: >-
+  he Council also added clarification to the meaning of ‘open source’ for this
+  entry, to explain its meaning in relation to intelligence openly available
+  online, noting that open source can also refer to a specific software or
+  content licence that permits limited uses of IP so this distinction would be
+  helpful for readers.
+
 
   This is important for social context but may be picked up inadvertently through other ways; it remains ambiguous about who has ultimate responsibility for collecting and preserving this.
 case-studies:
-  - title: 'Virtual Uprisings: On the Interaction of New Social Media, Traditional Media Coverage and Urban Space during the ‘Arab Spring.’’'
+  - title: "Virtual Uprisings: On the Interaction of New Social Media, Traditional
+      Media Coverage and Urban Space during the ‘Arab Spring.’’"
     authors: Al Sayyad, N. and Guvenc, M.
     publisher: Urban Studies
     year: 2010
     url: https://doi.org/10.1177/0042098013505881
-  - title: Preserving Open Source Digital Evidence a Guide for Practitioners Working on Dealing with the Past Essential
+  - title: Preserving Open Source Digital Evidence a Guide for Practitioners Working
+      on Dealing with the Past Essential
     authors: Baumhofer, E. and Reilly, B.
     publisher: Swiss Peace
     url: https://www.swisspeace.ch/assets/publications/Essentials/Essentials20221031_Preserving-Open-Source-Digital-Evidence.pdf
@@ -46,10 +58,12 @@ case-studies:
     publisher: Focus on Global Resources, CRL
     url: https://www.crl.edu/focus/article/7437
     accessed: 2023-10-24
-  - title: Bellingcat and beyond. The future for Bellingcat and online open source investigation
+  - title: Bellingcat and beyond. The future for Bellingcat and online open source
+      investigation
     authors: Higgins, E.
     year: 2019
-    url: Bellingcat and beyond. The future for Bellingcat and online open source investigation
+    url: Bellingcat and beyond. The future for Bellingcat and online open source
+      investigation
     accessed: 2023-10-24
 ---
 **2023 Review**

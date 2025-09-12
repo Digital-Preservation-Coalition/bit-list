@@ -14,6 +14,9 @@ no-entries = "There are currently no entries under this classification."
 
 endangered = "Endangered"
 
+no-hazards = "There are no additional hazards in this case. See below for details."
+no-migitations = "There are no known mitigations in this case. See below for details."
+
 towards-greater-risk = "Towards greater risk."
 no-change = "No change."
 material-improvement = "Material improvement."
