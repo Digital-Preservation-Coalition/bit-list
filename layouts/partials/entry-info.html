@@ -47,11 +47,11 @@
         <div class="p-3 h-100 text-dark bg-primary-subtle border border-2 border-white">
         <h3 class="mb-2 text-center">Hazards</h3>
         <p>{{ .Params.hazards }}</p>
-        {{range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}
-          {{ if in $.Params.threats .Params.id }}
-          <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}">{{.Title}}</a>
+        {{ range ($.Site.GetPage "section" "threats").Pages.ByTitle }}
+          {{ if in $.Params.threats .Title }}
+        <a class="badge text-bg-light nav-link" href="{{.RelPermalink}}" data-pagefind-filter="{{ T "threat" }}:{{ .Title }}">{{.Title}}</a>
           {{ end }}
-        {{end}}
+        {{ end }}
         </div>
         </div>
       <div class="col-12 col-sm-6 p-0">
