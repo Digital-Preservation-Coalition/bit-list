@@ -1,4 +1,8 @@
-title,link
-{{ range.RegularPages -}}
-"{{- .LinkTitle -}}",{{- .Permalink }}
-{{ end -}}
+title,link,description
+{{/* Loop through pages and generate rows */}}
+{{- range .RegularPages.ByTitle -}}
+{{- $title := replace .LinkTitle "\"" "\"\"" -}}
+{{- $link := replace .Permalink "\"" "\"\"" -}}
+{{- $description := replace .Params.description "\"" "\"\"" -}}
+{{- printf "\"%s\",\"%s\",\"%s\"\n" $title $link $description -}}
+{{- end -}}

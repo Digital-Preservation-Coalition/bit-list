@@ -2,16 +2,18 @@
 
 {{- $page.Scratch.Add "page_index" slice -}}
 
-{{- range $page.RegularPages -}}
+{{- range $page.RegularPages.ByTitle -}}
     {{- $page.Scratch.Add "page_index" (dict
-        "categories" .Params.categories
-        "date" .PublishDate
-        "description" (.Description | markdownify | plainify | htmlUnescape)
-        "keywords" .Params.keywords
+        "title" (.Title | markdownify | plainify | htmlUnescape)
         "link" .RelPermalink
-        "tags" .Params.tags
-        "text" (strings.TrimRight " " (replace (.Plain | htmlUnescape) "\n" " "))
-        "title" (.Title | markdownify | plainify | htmlUnescape)) -}}
+        "classification" .Params.classification
+        "categories" .Params.categories
+        "threats" .Params.threats
+        "published_date" .PublishDate
+        "updated_date" .Lastmod
+        "description" (.Description | markdownify | plainify | htmlUnescape)
+        "review" (strings.TrimRight " " (replace (.Plain | htmlUnescape) "\n" " "))
+     ) -}}
 {{- end -}}
 
 {{- $page.Scratch.Get "page_index" | jsonify -}}
