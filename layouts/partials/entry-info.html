@@ -28,16 +28,36 @@
   <div class="row">
       <div class="col-6 col-sm-6 text-dark bg-primary-subtle p-2 border border-2 border-white" style="--bs-bg-opacity: .5;">
         <h3 class="mb-1">Imminence</h3>
-        <p class="mb-0">{{ range .Params.imminence }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.imminence ) }}<i class="bi bi-circle"></i> {{end}}</p>
-        <p class="mb-2">{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
+        <p class="mb-0">
+          {{ range seq 5 }}
+          <a data-bs-toggle="tooltip" title="{{ T ( printf "imm%d" . ) }}">
+            {{- if ge $.Params.imminence . -}}
+          <i class="bi bi-circle-fill"></i>
+            {{- else -}}
+          <i class="bi bi-circle"></i>
+            {{- end -}}
+          </a>
+          {{ end }}
+        </p>
+        <p class="mb-2"><b>{{ .Params.imminence }}/5</b><br>{{ T ( printf "imminence-%d" .Params.imminence ) }}</p>
       </div>
       <!-- Effort -->
       <div class="col-6 col-sm-6 text-dark bg-primary-subtle border border-2 border-white">
         <div class="h-100 d-flex justify-content-center align-items-center">
         <div class="pt-1">
         <h3 class="mb-1">Effort</h3>
-        <p class="mb-0">{{ range .Params.effort }}<i class="bi bi-circle-fill"></i> {{end}}{{ range (sub 5 .Params.effort ) }}<i class="bi bi-circle"></i> {{end}}</p>
-        <p class="mb-2">{{ T ( printf "effort-%d" .Params.effort ) }}</p>
+        <p class="mb-0">
+          {{ range seq 5 }}
+          <a data-bs-toggle="tooltip" title="{{ T ( printf "eff%d" . ) }}">
+            {{- if ge $.Params.effort . -}}
+          <i class="bi bi-circle-fill"></i>
+            {{- else -}}
+          <i class="bi bi-circle"></i>
+            {{- end -}}
+          </a>
+          {{ end }}
+        </p>
+        <p class="mb-2"><b>{{ .Params.effort }}/5</b><br>{{ T ( printf "effort-%d" .Params.effort ) }}</p>
         </div>
         </div>
       </div>
