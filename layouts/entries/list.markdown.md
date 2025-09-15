@@ -1,4 +1,5 @@
 # The Bit List
+{{- $entries := ( where .Site.Pages "Section" "entries" ) }}
 
 # Threats
 
@@ -10,11 +11,13 @@
 
 ## {{ . }}
 {{ range (where $tax.Pages ".Params.class" "eq" . ) }}
+{{- $pages := ( where $entries "Params.threats" "intersect" (slice .Title ) ) }}
+{{- if $pages }}
 ### {{ .Title }}
 
 {{ with .Params.description }}{{ . }}{{ end -}}
 
-{{- range $p := sort .Pages ".Params.classification" }}
+{{- range $p := sort $pages ".Params.classification" }}
 
 {{ if $s.Get $p.Path }}{{ else }}{{ $s.Set $p.Path "ADDED" -}}
 #### {{ .Title }}
@@ -35,11 +38,6 @@ __Imminence__ | __Effort__
 {{ range .Params.imminence }}⬤{{end}}{{ range (sub 5 .Params.imminence ) }}〇{{end}} | {{ range .Params.effort }}⬤{{end}}{{ range (sub 5 .Params.effort ) }}〇{{end}}
 {{ T ( printf "imminence-%d" .Params.imminence ) }} | {{ T ( printf "effort-%d" .Params.effort ) }}
 
-##### Threats
-
-{{ range ($.Site.GetPage "taxonomyTerm" "threats").Pages.ByTitle }}{{ if in $p.Params.threats .Params.id -}}
-- {{ .Title }}
-{{ end }}{{ end }}
 ##### Hazards
 
 {{ .Params.hazards }}
@@ -62,6 +60,7 @@ __Added to list:__ {{ index .Params "year-added" }}
 
 ###### Last Review    
 
+
 {{ .Content }}
 
 
@@ -82,6 +81,7 @@ __Added to list:__ {{ index .Params "year-added" }}
 {{ end }}
 
 
+{{ end }}
 {{ end }}
 
 {{ end }}
