@@ -221,12 +221,15 @@ collections:
   #   search_fields: [ 'title' ] 
   #   display_fields: ['title']
   #   i18n: duplicate
-  # - label: 'Image'
-  #   name: 'image'
+  # - label: 'Images'
+  #   name: 'images' # Hugo will automatically use an array called images
   #   widget: 'image'
   #   required: false
   #   hint: "??? This is a new field - is it a good idea to have to have an image for every entry?"
   #   i18n: duplicate
+  #    media_library:
+  #    config:
+  #      multiple: true
 
 
 - name: classifications

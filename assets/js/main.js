@@ -1,1 +1,1 @@
-console.log("Nowt");
+console.log("X-Clacks-Overhead: GNU Terry Pratchett");

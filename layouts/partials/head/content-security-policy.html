@@ -1,6 +1,6 @@
 <!-- https://report-uri.com/home/generate -->
 <!-- Modifying this adding [script-src: 'unsafe-eval'] for PageFind WASM etc. -->
-<meta http-equiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval' cloud.umami.is; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'">
+<meta http-equiv='Content-Security-Policy' content="script-src 'self' 'unsafe-eval' cloud.umami.is; style-src 'self' 'unsafe-inline'; object-src 'none'; base-uri 'none'; default-src 'self' api-gateway.umami.dev data: mailto:;">
 <!-- Also using this hook to add additional resources -->
 {{ $js := resources.Get "js/pretty-json.js" }}
 {{ with $js }}
