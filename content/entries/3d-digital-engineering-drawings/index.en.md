@@ -35,8 +35,8 @@ mitigations: Well managed data infrastructure; preservation from the point
   management processes; recognition of preservation requirements at highest
   levels; strategic investment in digital preservation; host clearly identified;
   participation in the digital preservation community.
-year-added: 2017
-published: 2017-11-30
+year-added: 2019
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-3d-digital-engineering
