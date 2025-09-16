@@ -28,7 +28,7 @@ mitigations: Robust and extensive web archives with strong documentation of
   (where available); ranking and personalization of interfaces; awareness of IPR
   and the presence of orphaned works
 year-added: 2019
-published: 2025-08-21
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-legacy-interfaces-and-services
