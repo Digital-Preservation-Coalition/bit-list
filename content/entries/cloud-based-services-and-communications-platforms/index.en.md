@@ -32,8 +32,8 @@ hazards: Unstable business model from service providers; abandonment of the
 mitigations: Clear export and migration pathways; preservation responsibility
   shouldered by the service provider; offline backup for key media; fit to
   preservation and records management plan; strategic roadmap for adoption.
-year-added: 2019
-published: 2019-11-07
+year-added: 2021
+published: 2021-11-04
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-cloud-services-comms-platforms
