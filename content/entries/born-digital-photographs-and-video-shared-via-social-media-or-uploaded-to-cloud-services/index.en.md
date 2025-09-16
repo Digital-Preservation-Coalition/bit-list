@@ -1,8 +1,15 @@
 ---
 id: Tr0BaKBCL1
-title: Born Digital Photographs and Video shared via Social Media or Uploaded to Cloud Services
-description: Digital images or video with no analogue equivalent and where the only copy is online with a social media platform. This entry includes images or videos created and shared as part of personal digital archiving, but also for businesses and others publishing data only via these services. Users of these services will likely lose their data if social media companies fold or make extracting or downloading data difficult.
-examples: Flickr; Vimeo; YouTube; Instagram; Periscope; Snapchat; TikTok; Vine; Facebook; X (previously Twitter).
+title: Born Digital Photographs and Video shared via Social Media or Uploaded to
+  Cloud Services
+description: Digital images or video with no analogue equivalent and where the
+  only copy is online with a social media platform. This entry includes images
+  or videos created and shared as part of personal digital archiving, but also
+  for businesses and others publishing data only via these services. Users of
+  these services will likely lose their data if social media companies fold or
+  make extracting or downloading data difficult.
+examples: Flickr; Vimeo; YouTube; Instagram; Periscope; Snapchat; TikTok; Vine;
+  Facebook; X (previously Twitter).
 categories:
   - Social Media
 threats:
@@ -17,19 +24,41 @@ trends:
   - year: 2023
     trend: no-change
     classification: endangered
-hazards: Lack of skills, commitment or policy from corporate owners; lack of storage replication by provider; dependence on proprietary products or formats; poor management of data protection; inaccessibility to automated web crawlers; political or commercial interference; lack of offline equivalent; over-abundance; Uncertainty over IPR or the presence of orphaned works; lossy compression applied in upload scripts.
-mitigations: Offline backup; lossless compression; good documentation; access to web harvesting; clarity of intellectual property rights that enable preservation; credible preservation commitment from service provider; export pathway.
+hazards: Lack of skills, commitment or policy from corporate owners; lack of
+  storage replication by provider; dependence on proprietary products or
+  formats; poor management of data protection; inaccessibility to automated web
+  crawlers; political or commercial interference; lack of offline equivalent;
+  over-abundance; Uncertainty over IPR or the presence of orphaned works; lossy
+  compression applied in upload scripts.
+mitigations: Offline backup; lossless compression; good documentation; access to
+  web harvesting; clarity of intellectual property rights that enable
+  preservation; credible preservation commitment from service provider; export
+  pathway.
 year-added: 2018
-published: 2025-08-08
-last-updated: "2024-11-07"
+published: 2018-11-29
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-digital-photographs-and-video-on-social-media
-comments: |-
-  We can point to some examples of content only on YouTube, for instance, that may be desired for acquisition for a library. Typically, YouTube would be acquired through web archiving, but with recent and ongoing challenges capturing this content, it may require contacting the creator to try to acquire the original video files to preserve through other workflows. This creates the challenge of determining who to reach out to, how to transfer those files and, if the files only exist on the social media platform, how to extract them to transfer to an organization for preservation. With crawling capabilities limited these days, Libraries will have to rely more on individuals archiving their own content and donating it to organizations. It's not clear what that workflow looks like and if there are adequate methods to support it.
+comments: >-
+  We can point to some examples of content only on YouTube, for instance, that
+  may be desired for acquisition for a library. Typically, YouTube would be
+  acquired through web archiving, but with recent and ongoing challenges
+  capturing this content, it may require contacting the creator to try to
+  acquire the original video files to preserve through other workflows. This
+  creates the challenge of determining who to reach out to, how to transfer
+  those files and, if the files only exist on the social media platform, how to
+  extract them to transfer to an organization for preservation. With crawling
+  capabilities limited these days, Libraries will have to rely more on
+  individuals archiving their own content and donating it to organizations. It's
+  not clear what that workflow looks like and if there are adequate methods to
+  support it.
+
 
   The types of users for these services vary greatly - from a private individual uploading a few videos to share with friends to major agencies who use the platform to disseminate important information or research. The extent to which private individuals and even large institutions are aware of digital preservation risks is unclear, though anecdotal evidence suggests that awareness is extremely low. Therefore, it can be assumed that most users (regardless of the significance of their content) do not keep local copies or take other measures to mitigate the risk of loss from these types of platforms. Additionally, risk varies from platform to platform. YouTube, for example, only allows low-quality downloads even for content owners. Therefore, if a content owner lost or deleted an original video file, it would be impossible to recover a high-quality copy from YouTube.
 
+
   The vast majority of content may be accessible for as long as the platform where it is hosted is popular (and has a viable business model); however, more insidious content (such as malicious misinformation or hate speech) may be deleted by content creators (potentially backed by hostile governments) to avoid prosecution or tracing. It is unclear to what extent these platform providers are compelled to provide access to servers / deleted content or private content for evidential purposes in the course of legal or criminal investigations. The lack of transparency and standardized international regulation of these platforms make their content vulnerable to exploitation and malicious use by individuals, corporations, and hostile governments.
+
 
   With digital materials from premium or institutional social media services, the business model and sustainability are more obvious, and contracts may be enforceable more readily. Moreover, because these services have a slightly higher barrier to entry, they may be favoured by agencies better able to respond to closure or loss. Traditional web archiving can be employed where the user pays for a service, but the content is ultimately publicly available (such as Flickr). But much is unclear about how to preserve internal social media / closed networks that web archiving cannot get to, or existing tools do not cover.
 case-studies:
@@ -40,13 +69,14 @@ case-studies:
     url: https://arstechnica.com/information-technology/2024/05/stack-overflow-users-sabotage-their-posts-after-openai-deal/
     accessed: 2024-09-06
     comment: Mentioned examples relating to AI and ML concerns
-  - title: How We’re Trying to Protect MacStories from AI Bots and Web Crawlers – And How You Can, Too
+  - title: How We’re Trying to Protect MacStories from AI Bots and Web Crawlers –
+      And How You Can, Too
     authors: Voorhees, J.
     year: 2023
     url: https://www.macstories.net/stories/ways-you-can-protect-your-website-from-ai-web-crawlers/
     accessed: 2024-09-06
-    comment: |2-
-
+    comment: |-
+      
       Mentioned examples relating to AI and ML concerns
   - title: Periscope shuts down today
     authors: Kastrenakes, J.
@@ -61,21 +91,27 @@ case-studies:
     year: 2019
     url: https://www.theguardian.com/technology/2019/mar/18/myspace-loses-all-content-uploaded-before-2016
     accessed: 2023-10-24
-    comment: Example of loss of users’ content with social media platforms such as MySpace.
-  - title: Ever, once accused of building facial recognition tech using customer data, shuts down consumer app
+    comment: Example of loss of users’ content with social media platforms such as
+      MySpace.
+  - title: Ever, once accused of building facial recognition tech using customer
+      data, shuts down consumer app
     authors: Perez, S.
     publisher: TechCrunch
     year: 2019
     url: https://techcrunch.com/2020/08/24/ever-once-accused-of-building-facial-recognition-tech-using-customer-data-shuts-down-consumer-app/
     accessed: 2023-10-24
-    comment: Examples of the short turnaround of closures within the photo-sharing community and point to the volatility in this market, such as the closure of the Ever photo storage service.
+    comment: Examples of the short turnaround of closures within the photo-sharing
+      community and point to the volatility in this market, such as the closure
+      of the Ever photo storage service.
   - title: Flickr will end 1TB of free storage and limit free users to 1,000 photos
     authors: Gartenberg, C.
     publisher: The Verge
     year: ""
     url: https://www.theverge.com/2018/11/1/18051950/flickr-1000-photo-limit-free-accounts-changes-pro-subscription-smugmug
     accessed: 2023-10-24
-    comment: The changes to the Flickr free service also provides an example. However, they have since given thought to the issue, referred to as the ‘data lifeboat’.
+    comment: The changes to the Flickr free service also provides an example.
+      However, they have since given thought to the issue, referred to as the
+      ‘data lifeboat’.
   - title: Designing a Data Lifeboat
     publisher: Flickr Foundation
     year: 2023
@@ -86,13 +122,17 @@ case-studies:
     year: 2012
     url: https://tosdr.org/
     accessed: 2023-10-04
-    comment: The Terms of Service; Didn't Read (ToS;DR) project, started in June 2012 provides a useful resource and reference for issues relating to content sharing platforms and social media terms of service.
+    comment: The Terms of Service; Didn't Read (ToS;DR) project, started in June
+      2012 provides a useful resource and reference for issues relating to
+      content sharing platforms and social media terms of service.
   - title: Collecting Social Photo
     publisher: The Finnish Museum of Photography
     year: ""
     url: https://www.valokuvataiteenmuseo.fi/en/projects/collecting-social-photo
     accessed: 2023-10-24
-    comment: Museums, Libraries, and Archives have begun to pay attention to this content through projects like Collecting Social Photo (CoSoPho), but no breakthroughs have been made.
+    comment: Museums, Libraries, and Archives have begun to pay attention to this
+      content through projects like Collecting Social Photo (CoSoPho), but no
+      breakthroughs have been made.
   - title: Slop is the new name for unwanted AI-generated content
     authors: Willison, S.
     year: 2024
