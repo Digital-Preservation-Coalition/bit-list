@@ -29,7 +29,7 @@ mitigations: >+
 
 
 year-added: 2023
-published: 2025-08-25
+published: 2023-11-02
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-non-current-rare-portable-magnetic-media
