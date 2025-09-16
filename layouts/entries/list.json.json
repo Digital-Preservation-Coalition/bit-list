@@ -6,13 +6,21 @@
     {{- $page.Scratch.Add "page_index" (dict
         "title" (.Title | markdownify | plainify | htmlUnescape)
         "link" .RelPermalink
-        "classification" .Params.classification
+        "description" (.Description | markdownify | plainify | htmlUnescape)
+        "examples" .Params.examples
         "categories" .Params.categories
         "threats" .Params.threats
-        "published_date" .PublishDate
-        "updated_date" .Lastmod
-        "description" (.Description | markdownify | plainify | htmlUnescape)
+        "classification" .Params.classification
+        "imminence" .Params.imminence
+        "effort" .Params.effort
+        "trends" .Params.trends
+        "hazards" .Params.hazards
+        "mitigations" .Params.mitigations
+        "year_added" (index .Params "year-added" )
+        "published_date" .Params.published
+        "updated_date" (index .Params "last-updated" )
         "review" (strings.TrimRight " " (replace (.Plain | htmlUnescape) "\n" " "))
+        "comments" (.Params.comments | markdownify | plainify | htmlUnescape)
      ) -}}
 {{- end -}}
 
