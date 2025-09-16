@@ -25,7 +25,7 @@ hazards: ""
 mitigations: Migration plan initiated; supported in multiple browsers; security
   vetted; emulation pathway; clear licensing that enables preservation.
 year-added: 2019
-published: 2019-11-04
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-adobe-flash-and-applets
