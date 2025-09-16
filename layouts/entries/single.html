@@ -8,26 +8,10 @@
   <hr>
 
   <p class="float-end p-1">
+  <a class="btn btn-sm btn-primary" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Me Informed</a>
+  </p>
   {{ $edit_url := printf "admin/#/collections/entries/entries/%s/index" ( path.BaseName .Path ) }}
-  <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-primary">Edit This Entry</a>
-  <a class="btn btn-sm btn-primary" href="mailto:info@dpconline.org?subject={{ printf "Please keep me informed about this Bit List entry: %s" .Title | safeHTMLAttr }}">Keep Informed</a>
-  </p>
-
-  <details data-pagefind-ignore class="clearfix">
-  <summary><strong>Raw Metadata</strong></summary>
-  <pretty-json>
-  {{ .Params | jsonify (dict "indent" "  ") }}
-  </pretty-json>
-  </details>
-
-  {{ with index (.Params.aliases) 0 }}
-  <p class="float-end p-1">
-  <a class="btn btn-sm btn-secondary" target="_blank" href="https://www.dpconline.org{{ . }}">
-    Click Here To Open The Current Live Page For This Entry On The DPC Website
-  </a>
-  {{ end }}
-  </p>
-
+  <a href="{{ .Site.BaseURL }}{{ $edit_url }}" target="_blank" class="btn btn-sm btn-light" title="Edit this entry (DPC staff and Bit List team members only.)"><i class="bi bi-pencil-square"></i></a>
 
 </div>
 
