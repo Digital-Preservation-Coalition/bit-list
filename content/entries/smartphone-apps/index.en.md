@@ -1,8 +1,13 @@
 ---
 id: iMZzaltmB
 title: Smartphone Apps
-description: Applications created for smartphones. Many are deprecated quickly but others survive through multiple update cycles. It is hard to maintain version control and is often dependent upon the company that publishes them. There is no clear agency or mandate to record or collect.
-examples: London 2012 app; BBC Olympic app; apps published for Apple iOS 10 or earlier; apps for less-common operating systems such as Palm OS, Symbian, Blackberry OS
+description: Applications created for smartphones. Many are deprecated quickly
+  but others survive through multiple update cycles. It is hard to maintain
+  version control and is often dependent upon the company that publishes them.
+  There is no clear agency or mandate to record or collect.
+examples: London 2012 app; BBC Olympic app; apps published for Apple iOS 10 or
+  earlier; apps for less-common operating systems such as Palm OS, Symbian,
+  Blackberry OS
 categories:
   - Apps
 threats:
@@ -17,17 +22,30 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Device dependence; poor documentation; uncertainty over IPR or the presence of orphaned works; short-term contracts; lack of skills, commitment or policy from corporate owners; rapid churn of OS; shifting business requirements of app resellers; dependence on exotic or obsolete formats or OS processes
-mitigations: Strong documentation; version control for code and compiled app; emulation enabled; designated repository taking preservation responsibility and capacity to deliver
+hazards: Device dependence; poor documentation; uncertainty over IPR or the
+  presence of orphaned works; short-term contracts; lack of skills, commitment
+  or policy from corporate owners; rapid churn of OS; shifting business
+  requirements of app resellers; dependence on exotic or obsolete formats or OS
+  processes
+mitigations: Strong documentation; version control for code and compiled app;
+  emulation enabled; designated repository taking preservation responsibility
+  and capacity to deliver
 year-added: 2017
-published: 2025-08-21
-last-updated: "2024-11-07"
+published: 2017-11-30
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-smart-phone-apps
-comments: |-
-  Old versions of apps are completely lost to most users: once you upgrade an app, you typically cannot go back. Perhaps iOS is more critical - at least with Android, you can often get .apk from the internet separate from the marketplace. The NSRL contains hundreds of thousands of mobile applications which are not being actively preserved but could be if a mandate existed. An extension to Legal Deposit might be possible.
+comments: >-
+  Old versions of apps are completely lost to most users: once you upgrade an
+  app, you typically cannot go back. Perhaps iOS is more critical - at least
+  with Android, you can often get .apk from the internet separate from the
+  marketplace. The NSRL contains hundreds of thousands of mobile applications
+  which are not being actively preserved but could be if a mandate existed. An
+  extension to Legal Deposit might be possible.
+
 
   The faster we act, the less we will lose. It is unlikely that there will ever be one agent with a mandate to collect different apps available in different countries, so a network of national organizations would be needed. The companies that create these apps are the key to the licensing challenges, and conversation with them is necessary, though it would need to happen immediately in order to negotiate the right to preserve/escrow both apps, operating systems, documentation, and phone development emulators.
+
 
   Messaging apps such as WhatsApp or Telegram have had an increased media presence in the last couple of years due to their role in a number of politics-related issues that have arisen, such as concerns about UK Cabinet Ministers using the auto-delete function which could compromise accountability and transparency of the UK government. Telegram has also gained importance due to its use in the Russia-Ukraine war for sharing news.
 case-studies:
@@ -37,25 +55,26 @@ case-studies:
     publisher: British Library
     year: 2022
     url: https://www.bl.uk/projects/emerging-formats
-  - title: 'Collecting complex digital publications: testing an enhanced curation method'
+  - title: "Collecting complex digital publications: testing an enhanced curation
+      method"
     authors: Smith Nicholls, F.
     publisher: British Library
     year: 2023
     url: https://doi.org/10.23636/kff3-jv09
     accessed: 2023-10-24
-  - title: 'EaaSI Software Development: Considerations, Priorities, and Commitment'
+  - title: "EaaSI Software Development: Considerations, Priorities, and Commitment"
     authors: Rechert, K., Gates, E., Cochrane and E., Anderson, S.
     publisher: Software Preservation Network
     year: 2021
     url: https://www.softwarepreservationnetwork.org/eaasi-software-development-considerations-priorities-and-commitments/
     accessed: 2023-10-24
   - title: Towards a preservation workflow for mobile apps
-    authors: 'Van der Knijff, J. '
+    authors: "Van der Knijff, J. "
     year: 2021
     url: https://www.bitsgalore.org/2021/02/24/towards-a-preservation-workflow-for-mobile-apps
     accessed: 2023-10-24
     publisher: BitsGalore
-  - authors: 'Siddique, H. '
+  - authors: "Siddique, H. "
     title: Cabinet policy obliges ministers to delete instant messages
     publisher: The Guardian
     year: 2021
@@ -67,14 +86,15 @@ case-studies:
     year: 2019
     url: https://cyber.harvard.edu/sites/default/files/2019-12/Tattle_Disinformation_Workshop_revised.pdf
     accessed: 2023-10-24
-  - authors: 'Allegretti, A. '
+  - authors: "Allegretti, A. "
     publisher: The Guardian
     title: Experts recover messages from Boris Johnson’s old mobile phone
     year: 2023
     url: https://www.theguardian.com/politics/2023/jul/21/boris-johnson-experts-recover-messages-old-phone-covid-inquiry
     accessed: 2023-10-24
-  - title: Telegram is the app of choice in the war in Ukraine despite experts' privacy concerns
-    authors: 'Allyn, B. '
+  - title: Telegram is the app of choice in the war in Ukraine despite experts'
+      privacy concerns
+    authors: "Allyn, B. "
     publisher: NPR
     url: https://www.npr.org/2022/03/14/1086483703/telegram-ukraine-war-russia
     year: 2022
