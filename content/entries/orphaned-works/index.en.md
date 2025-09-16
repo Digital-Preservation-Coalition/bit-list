@@ -1,9 +1,14 @@
 ---
-hazards: Lack of understanding of copyright; lack of documentation; dependencies resulting from hardware, software or media; lack of use resulting in lack of priority; lack of strategic investment in digital preservation; workflows that inhibit preservation of content that has not been licensed; encryption; poor storage.
+hazards: Lack of understanding of copyright; lack of documentation; dependencies
+  resulting from hardware, software or media; lack of use resulting in lack of
+  priority; lack of strategic investment in digital preservation; workflows that
+  inhibit preservation of content that has not been licensed; encryption; poor
+  storage.
 significance: 6
 id: f_d-IZHbLC
 title: Orphaned Works
-description: Digital materials where copyright is uncertain, disputed or unknowable, meaning that preservation actions are constrained or prevented.
+description: Digital materials where copyright is uncertain, disputed or
+  unknowable, meaning that preservation actions are constrained or prevented.
 examples: Photographs, music recordings, literature.
 categories:
   - orphaned-works
@@ -19,28 +24,42 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-mitigations: Preservation pathway enabled; proven preservation plan applied; active effort to resolve IPR issues; institutional willingness to take risks for preservation.
+mitigations: Preservation pathway enabled; proven preservation plan applied;
+  active effort to resolve IPR issues; institutional willingness to take risks
+  for preservation.
+year-added: 2017
+published: 2017-11-30
+last-updated: 2024-11-07
+impact: 9
+classification: endangered
+comments: >-
+  A risk-based approach is recommended for organizations. Copyright
+  infringements are only likely to become a significant issue in the context of
+  access, and in most cases, the likelihood of any specific action is small.
+  Preservation needs to be presented as a social good, one without which
+  copyright holders would simply be unable to benefit from the property rights
+  they seek to protect.
+
+
+  For UK institutions, the 2021 Jury recommended commentary by Naomi Korn on the status of orphan works and the impact of Brexit – that UK institutions are no longer able to make use of the EU Orphan Works Directive and the alternative Orphan Works Licensing Scheme is costly*.* A list of resources is available at [](<>)[https://naomikorn.com/resources/](<>). For those in the UK, there is also the UK Copyright and Creative Economy Centre (CREATe) for resources on orphan works and copyright more broadly at [](<>)[https://www.create.ac.uk/resources/](<>).
 case-studies:
-  - comment: The National Disc of the BBC Domesday Project offers an example of loss outside of the legal deposit mandate where the copyright owner cannot be traced.
+  - comment: The National Disc of the BBC Domesday Project offers an example of loss
+      outside of the legal deposit mandate where the copyright owner cannot be
+      traced.
     url: https://www.atsf.co.uk/dottext/domesday.html
     accessed: 2023-10-24
     authors: Finnay, A.
-    title: 'Domesday '
+    title: "Domesday "
     publisher: BBC
-  - comment: Archive of Our Own is a non-commercial and nonprofit central hosting place for fanworks using open-source archiving software. As part of their system, there is a way for users to orphan works to keep the work active but delete any identifying data and transfer the work to a special account.
+  - comment: Archive of Our Own is a non-commercial and nonprofit central hosting
+      place for fanworks using open-source archiving software. As part of their
+      system, there is a way for users to orphan works to keep the work active
+      but delete any identifying data and transfer the work to a special
+      account.
     title: Orphaning
     url: https://archiveofourown.org/faq/orphaning?language_id=en
     publisher: Archive of Our Own
     accessed: 2023-10-24
-last-updated: "2024-11-07"
-impact: 9
-classification: endangered
-year-added: 2017
-published: 2017-06-10
-comments: |-
-  A risk-based approach is recommended for organizations. Copyright infringements are only likely to become a significant issue in the context of access, and in most cases, the likelihood of any specific action is small. Preservation needs to be presented as a social good, one without which copyright holders would simply be unable to benefit from the property rights they seek to protect.
-
-  For UK institutions, the 2021 Jury recommended commentary by Naomi Korn on the status of orphan works and the impact of Brexit – that UK institutions are no longer able to make use of the EU Orphan Works Directive and the alternative Orphan Works Licensing Scheme is costly*.* A list of resources is available at [](<>)[https://naomikorn.com/resources/](<>). For those in the UK, there is also the UK Copyright and Creative Economy Centre (CREATe) for resources on orphan works and copyright more broadly at [](<>)[https://www.create.ac.uk/resources/](<>).
 threat: social-media-cloud
 decision: consensus
 aliases:
