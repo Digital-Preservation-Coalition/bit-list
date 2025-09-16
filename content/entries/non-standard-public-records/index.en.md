@@ -30,7 +30,7 @@ mitigations: Lack of skills, commitment or policy from corporate owners;
   services administered transparently; export functions; ; Uncertainty over IPR
   or the presence of orphaned works
 year-added: 2019
-published: 2025-08-25
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-non-standard-public-records
@@ -47,9 +47,6 @@ comments: >-
 
 
   Obviously, these records should not be created using these channels in the first place. It is probably unlawful for those in public office. However, we know there has and always will be this kind of backdoor activity and pretty much always a scandal when it is revealed. The challenge is managing to collect it.
-
-
-  Maybe at the time of creating this entry, the Jury was thinking of legal data examples, but at this point, in time, I think the species best belongs under "Public Records" and so should be moved there.
 ---
 **2023 Review**
 
@@ -65,4 +62,4 @@ The 2023 Council agreed with the Practically Extinct classification and noted a 
 
 The 2024 Council agreed These risks remain on the same basis as before, with no significant trend towards even greater or reduced risk (‘No change’ to trend).
 
-While scores should remain as is currently, the Council recommended the entry be revisited in the next review to consider whether it is better suited under the Public Records digital species instead of Legal Data.
+While scores should remain as is currently, the Council recommended the entry be revisited in the next review to consider whether it is better suited under the Public Records category instead of Legal Data.
