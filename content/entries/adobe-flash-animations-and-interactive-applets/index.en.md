@@ -21,7 +21,7 @@ trends:
   - year: 2024
     trend: no-change
     classification: practically-extinct
-hazards: No additional hazards noted due to Practically Extinct classification.
+hazards: ""
 mitigations: Migration plan initiated; supported in multiple browsers; security
   vetted; emulation pathway; clear licensing that enables preservation.
 year-added: 2019
