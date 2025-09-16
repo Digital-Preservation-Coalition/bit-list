@@ -1,8 +1,12 @@
 ---
 id: ygZfhZTFFS
 title: Collections Information Management Data and Systems
-description: Descriptive information and data, covering both the systems (databases) and the data they contain. This includes information made publicly available, and information only available for internal use.
-examples: Covered under this entry are third-party and in-house collections information management systems and databases, current and legacy, both large and small (e.g., Microsoft Access, FileMaker Pro)
+description: Descriptive information and data, covering both the systems
+  (databases) and the data they contain. This includes information made publicly
+  available, and information only available for internal use.
+examples: Covered under this entry are third-party and in-house collections
+  information management systems and databases, current and legacy, both large
+  and small (e.g., Microsoft Access, FileMaker Pro)
 categories:
   - Museum and Gallery
 threats:
@@ -14,16 +18,28 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Poor or no documentation; lack of technical and preservation infrastructure; complex interdependencies on specific hardware, software or operating systems; significant volumes or diversity of data; conflation of access with preservation; dependence on proprietary products; lack of preservation capacity in museum or gallery; poorly developed or no processes for migration or normalization; uncertainty over IPR or the presence of orphaned works
-mitigations: Strong documentation; preservation capability; strong repository and preservation technical infrastructure; good descriptive cataloguing; use of open formats and open source software; considered data management planning; licencing that enables preservation
+hazards: Poor or no documentation; lack of technical and preservation
+  infrastructure; complex interdependencies on specific hardware, software or
+  operating systems; significant volumes or diversity of data; conflation of
+  access with preservation; dependence on proprietary products; lack of
+  preservation capacity in museum or gallery; poorly developed or no processes
+  for migration or normalization; uncertainty over IPR or the presence of
+  orphaned works
+mitigations: Strong documentation; preservation capability; strong repository
+  and preservation technical infrastructure; good descriptive cataloguing; use
+  of open formats and open source software; considered data management planning;
+  licencing that enables preservation
 year-added: 2023
-published: 2025-08-25
-last-updated: "2024-11-07"
+published: 2023-11-02
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-collections-information-management-data-systems
-comments: Databases and catalogues can have a knock-on effect. The information they contain is valuable for contextualizing and understanding the resources they describe. Without them, meaning may be lost even if bits are not.
+comments: Databases and catalogues can have a knock-on effect. The information
+  they contain is valuable for contextualizing and understanding the resources
+  they describe. Without them, meaning may be lost even if bits are not.
 case-studies:
-  - title: 'Learning Lessons from the Cyber-attack: British Library cyber incident review'
+  - title: "Learning Lessons from the Cyber-attack: British Library cyber incident
+      review"
     authors: The British Library
     year: 2024
     url: https://www.bl.uk/home/british-library-cyber-incident-review-8-march-2024.pdf/
