@@ -36,7 +36,7 @@ mitigations: Backup to different technology; backup to diverse locations;
   resilient funding; technology watch; enforceable contract; disaster planning
   and documentation; stable pricing; budgeted removal costs.
 year-added: 2019
-published: 2019-09-07
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/vulnerable/bitlist-cloud-storage
