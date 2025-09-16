@@ -1,8 +1,14 @@
 ---
 id: Qfr0EdY5id
 title: Electronic Hospital and Medical Records
-description: Personal medical records and records of hospital treatment are increasingly—if not uniformly—born digital. By implication, those records should be retained through the lifetime of the patient, or in some instances longer as required for intergenerational study; and yet there is little evidence of the medical profession participating in the digital preservation community.
-examples: Medical scans; records of treatment and care plans; health advice and notifications
+description: Personal medical records and records of hospital treatment are
+  increasingly—if not uniformly—born digital. By implication, those records
+  should be retained through the lifetime of the patient, or in some instances
+  longer as required for intergenerational study; and yet there is little
+  evidence of the medical profession participating in the digital preservation
+  community.
+examples: Medical scans; records of treatment and care plans; health advice and
+  notifications
 categories:
   - Sensitive Data
 threats:
@@ -17,15 +23,30 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Loss of context; loss of authenticity or integrity; poor storage; lack of understanding; churn of staff; significant volumes of data; significant diversity of data; ill-informed records management; poorly developed transfer and integrity checking; poorly developed migration or normalizations specifications; long standing protocols or procedures that apply unsuitable paper processes to digital materials; encryption; Uncertainty over IPR or the presence of orphaned works owners
-mitigations: Well-managed data infrastructure; preservation enabled at the point of creation; carefully managed authenticity; use of persistent identifiers; well-managed records management processes; application of records management standards; recognition of preservation requirements at highest levels; strategic investment in digital preservation; preservation roadmap; participation in the digital preservation community
+hazards: Loss of context; loss of authenticity or integrity; poor storage; lack
+  of understanding; churn of staff; significant volumes of data; significant
+  diversity of data; ill-informed records management; poorly developed transfer
+  and integrity checking; poorly developed migration or normalizations
+  specifications; long standing protocols or procedures that apply unsuitable
+  paper processes to digital materials; encryption; Uncertainty over IPR or the
+  presence of orphaned works owners
+mitigations: Well-managed data infrastructure; preservation enabled at the point
+  of creation; carefully managed authenticity; use of persistent identifiers;
+  well-managed records management processes; application of records management
+  standards; recognition of preservation requirements at highest levels;
+  strategic investment in digital preservation; preservation roadmap;
+  participation in the digital preservation community
 year-added: 2017
-published: 2025-08-25
-last-updated: "2024-11-07"
+published: 2017-11-30
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-electronic-hospital-medical-records
-comments: |-
-  Increasing sensitivity and awareness of data protection requirements could act inadvertently as a barrier to lifecycle data management. It is striking how little evidence is of the health technology companies participating in the global digital preservation community.
+comments: >-
+  Increasing sensitivity and awareness of data protection requirements could act
+  inadvertently as a barrier to lifecycle data management. It is striking how
+  little evidence is of the health technology companies participating in the
+  global digital preservation community.
+
 
   The processes implemented by Sao Joao hospital (see below) are encouraging, but too many medical establishments are operating in an excessively ad-hoc way when it comes to records management. As well as preservation, issues of data protection and ethical obligations are to the forefront when working with this kind of material.
 case-studies:
@@ -35,15 +56,28 @@ case-studies:
     publisher: Digital Preservation Awards 2022
     year: 2022
     accessed: 2023-10-24
-    comment: The São João University Hospital Center (SJUHC) Health Records Repository project offers an example of changing practices relating to the project’s implementation of a long-term digital preservation repository capable of ingesting, preserving and providing access to digital clinical information. As part of the Hospital’s digital transformation strategy, the Health Records Repository promotes change in the management of daily medical records through the implementation of procedures for preparation, digitization and preservation of health records. The results of the last two years of activity of the Health Records Digital Repository reveal a higher efficiency in the access and reuse of clinical information in the context of healthcare. This initiative was nominated for a 2022 Digital Preservation Award.
+    comment: The São João University Hospital Center (SJUHC) Health Records
+      Repository project offers an example of changing practices relating to the
+      project’s implementation of a long-term digital preservation repository
+      capable of ingesting, preserving and providing access to digital clinical
+      information. As part of the Hospital’s digital transformation strategy,
+      the Health Records Repository promotes change in the management of daily
+      medical records through the implementation of procedures for preparation,
+      digitization and preservation of health records. The results of the last
+      two years of activity of the Health Records Digital Repository reveal a
+      higher efficiency in the access and reuse of clinical information in the
+      context of healthcare. This initiative was nominated for a 2022 Digital
+      Preservation Award.
   - title: Archive of Tomorrow
     year: ""
-    comment: 'The National Library of Scotland ‘The Archive of Tomorrow: Health Information and Misinformation in the UK Web Archive’ project as it relates to capture of health advice published on the web.'
+    comment: "The National Library of Scotland ‘The Archive of Tomorrow: Health
+      Information and Misinformation in the UK Web Archive’ project as it
+      relates to capture of health advice published on the web."
     url: https://www.nls.uk/about-us/working-with-others/archive-of-tomorrow/
     accessed: 2023-10-24
     publisher: National Library of Scotland
-  - title: 'Conti cyber attack on the HSE: Independent Post Incident Review'
-    authors: 'Health Service Executive Ireland '
+  - title: "Conti cyber attack on the HSE: Independent Post Incident Review"
+    authors: "Health Service Executive Ireland "
     url: https://www.hse.ie/eng/services/publications/conti-cyber-attack-on-the-hse-full-report.pdf
     year: 2018
     accessed: 2023-10-24
@@ -56,4 +90,4 @@ The 2023 Council agreed with the previous Endangered classification with the ove
 
 **2024 Interim Review**
 
-The 2024 Council recommends that a major rescoping of the Sensitive Data species is necessary, with plans to remove it as a species and incorporate key elements and examples to relevant entries for the next 2025 Bit List. This is because it is not clear how sensitive data works as a species, when many of the other species mentioned could have sensitive data concerns, and the sensitivity of the data is more like an extra category of risk that potentially applies across any species.
+The 2024 Council recommends that a major rescoping of the Sensitive Data category is necessary, with plans to remove it as a category and incorporate key elements and examples to relevant entries for the next 2025 Bit List. This is because it is not clear how sensitive data works as a category, when many of the other categories mentioned could have sensitive data concerns, and the sensitivity of the data is more like an extra category of risk that potentially applies across any categories.
