@@ -1,8 +1,16 @@
 ---
 id: euoUDEL5EL
 title: Contractual Documents and Related Records
-description: Documents, correspondence and other records created in the course of contractual dealings between individuals and agencies, especially where the subjects are of long duration and may be subject to legal scrutiny at undefined points in the distant future.
-examples: Contracts, receipts, correspondence, licence agreements, building consent, warranties, and any other document or record that represents a legally binding transaction or permission. Such records may be useful in the avoidance or resolution of disputes, whether in court or prior to proceedings. Includes Online Terms and Conditions for e-commerce or end-user agreements for services
+description: Documents, correspondence and other records created in the course
+  of contractual dealings between individuals and agencies, especially where the
+  subjects are of long duration and may be subject to legal scrutiny at
+  undefined points in the distant future.
+examples: Contracts, receipts, correspondence, licence agreements, building
+  consent, warranties, and any other document or record that represents a
+  legally binding transaction or permission. Such records may be useful in the
+  avoidance or resolution of disputes, whether in court or prior to proceedings.
+  Includes Online Terms and Conditions for e-commerce or end-user agreements for
+  services
 categories:
   - Legal Data
 threats:
@@ -17,15 +25,30 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Loss of context; loss of authenticity or integrity; external dependencies; poor storage; lack of understanding; churn of staff; poorly framed or over-zealous disposal; ill-informed records management; misplaced fears with respect to data protection, encryption; Uncertainty over IPR or the presence of orphaned works
-mitigations: Managed appraisal; well managed data governance and infrastructure; preservation and appropriate retention strategies enabled at the point of creation; carefully managed authenticity; use of persistent identifiers; finding aids; well managed records management processes; application of records management standards
-year-added: 2014
-published: 2025-08-21
-last-updated: "2024-11-07"
+hazards: Loss of context; loss of authenticity or integrity; external
+  dependencies; poor storage; lack of understanding; churn of staff; poorly
+  framed or over-zealous disposal; ill-informed records management; misplaced
+  fears with respect to data protection, encryption; Uncertainty over IPR or the
+  presence of orphaned works
+mitigations: Managed appraisal; well managed data governance and infrastructure;
+  preservation and appropriate retention strategies enabled at the point of
+  creation; carefully managed authenticity; use of persistent identifiers;
+  finding aids; well managed records management processes; application of
+  records management standards
+year-added: 2019
+published: 2019-11-07
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-contractual-documents
-comments: |-
-  Closer collaboration over the digital record lifecycle with recordkeeping organizations such as IRMS/ARA and digital preservation organizations would help to ensure best practice from (before) record creation to its long-term preservation and would help to identify any risks and bridge gaps ‘from the cradle to the grave’. Joining forces and resources will enable the community to raise awareness of the impact of best practices on the organizational governance and related efficiencies. 
+comments: >-
+  Closer collaboration over the digital record lifecycle with recordkeeping
+  organizations such as IRMS/ARA and digital preservation organizations would
+  help to ensure best practice from (before) record creation to its long-term
+  preservation and would help to identify any risks and bridge gaps ‘from the
+  cradle to the grave’. Joining forces and resources will enable the community
+  to raise awareness of the impact of best practices on the organizational
+  governance and related efficiencies. 
+
 
   Managed appraisal of these documents and records would also aid in lowering the risk of this entry.
 case-studies:
@@ -34,7 +57,9 @@ case-studies:
     year: 2021
     url: https://www.dpconline.org/digipres/implement-digipres/edrms-preservation-toolkit
     accessed: 2023-10-24
-    comment: The work and outputs of the EDRMS Preservation Taskforce, such as the EDRMS Preservation Toolkit, may be helpful for guidance as many of these records will be held in EDRMS type systems.
+    comment: The work and outputs of the EDRMS Preservation Taskforce, such as the
+      EDRMS Preservation Toolkit, may be helpful for guidance as many of these
+      records will be held in EDRMS type systems.
 ---
 **2023 Review**
 
