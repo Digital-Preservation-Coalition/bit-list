@@ -1,19 +1,27 @@
 ---
-hazards: Lack of skills, commitment or policy from corporate owners; conflating backup with preservation; loss of original multitrack recordings; poor planning and roadmap for corporate infrastructure; slapdash procurement or migration to new systems; mergers and acquisitions; profusion of corporate systems; uncertainty over IPR or the presence of orphaned works; single point of failure; technical protection measures that inhibit preservation actions; encryption.
+hazards: Lack of skills, commitment or policy from corporate owners; conflating
+  backup with preservation; loss of original multitrack recordings; poor
+  planning and roadmap for corporate infrastructure; slapdash procurement or
+  migration to new systems; mergers and acquisitions; profusion of corporate
+  systems; uncertainty over IPR or the presence of orphaned works; single point
+  of failure; technical protection measures that inhibit preservation actions;
+  encryption.
 significance: 10
-description: Music licensed and playable through corporate platforms protected by rights management and subscription revenues and presented as compressed single-track recordings.
-threats:
-  - proprietary-data
-last-updated: "2024-11-07"
+id: EkCh9cvCW
+last-updated: 2024-11-07
 impact: 9
 classification: endangered
 previous-status: endangered
-id: EkCh9cvCW
 title: Digital Recordings Published via Cloud-based Music Sharing Platforms
+description: Music licensed and playable through corporate platforms protected
+  by rights management and subscription revenues and presented as compressed
+  single-track recordings.
 examples: Spotify, iTunes, Bandcamp, SoundCloud.
 categories:
   - sound-and-vision
   - cloud
+threats:
+  - proprietary-data
 tags:
   - featured
 imminence: 4
@@ -25,13 +33,26 @@ trends:
   - year: 2023
     trend: no-change
     classification: endangered
-mitigations: Strong backup and documentation; use of open formats and open source software; data management planning for preservation; licensing that enables preservation; corporate preservation capability; resilient to hacking; authenticity and integrity managed; recognition of preservation functions at executive level; technology watch; regular preservation audits; accreditation and participation in the professional preservation community.
+mitigations: Strong backup and documentation; use of open formats and open
+  source software; data management planning for preservation; licensing that
+  enables preservation; corporate preservation capability; resilient to hacking;
+  authenticity and integrity managed; recognition of preservation functions at
+  executive level; technology watch; regular preservation audits; accreditation
+  and participation in the professional preservation community.
 year-added: 2019
-published: 2019-01-01
+published: 2019-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-published-digital-recordings
-comments: |-
-  The preservation of recorded music is one of our generation’s most important jobs, but it is unclear where responsibility lies. There are commercial incentives to do so, but also incentives to reduce costs. Whilst public archives are permitted to keep this material in some jurisdictions, they typically do not have the resources to do so. Consequently, there is an expectation that rights holders will maintain their own archival copies but may not do so. National collecting organizations may need to develop a role to address this.
+comments: >-
+  The preservation of recorded music is one of our generation’s most important
+  jobs, but it is unclear where responsibility lies. There are commercial
+  incentives to do so, but also incentives to reduce costs. Whilst public
+  archives are permitted to keep this material in some jurisdictions, they
+  typically do not have the resources to do so. Consequently, there is an
+  expectation that rights holders will maintain their own archival copies but
+  may not do so. National collecting organizations may need to develop a role to
+  address this.
+
 
   If managed well, there is hope. It may not be an issue in the cases where the production company would hold original recordings and, if a streaming service lost a track (e.g., Spotify), they would go to the production company and ask for a copy. However, it is an issue for those outside of production companies and platforms such as SoundCloud and Bandcamp, which are more community-driven.
 ---
