@@ -1,8 +1,13 @@
 ---
 id: AhHUt9xNcq
 title: Pre-Production TV and Movie Materials
-description: Digital records of the creative and production process for film and television, such as initial designs, screenplay and script, on set still photography, rushes or out-takes that are not included in the final production and therefore not available to on-air broadcast archives or film libraries.
-examples: TV and Movie production archives in digital form; outputs of script management software; drafts of a screenplay; continuity photography; costume design; set design; lighting and sound design
+description: Digital records of the creative and production process for film and
+  television, such as initial designs, screenplay and script, on set still
+  photography, rushes or out-takes that are not included in the final production
+  and therefore not available to on-air broadcast archives or film libraries.
+examples: TV and Movie production archives in digital form; outputs of script
+  management software; drafts of a screenplay; continuity photography; costume
+  design; set design; lighting and sound design
 categories:
   - Sound and Vision
 threats:
@@ -17,14 +22,21 @@ trends:
   - year: 2024
     trend: no-change
     classification: endangered
-hazards: Lack of custodial responsibility; Uncertainty over IPR or the presence of orphaned works; lack of appraisal; lack of recognition of preservation at executive level
-mitigations: Preservation responsibility understood and acted upon; preservation infrastructure and planning for key items; access and use of collections to inform subsequent productions
+hazards: Lack of custodial responsibility; Uncertainty over IPR or the presence
+  of orphaned works; lack of appraisal; lack of recognition of preservation at
+  executive level
+mitigations: Preservation responsibility understood and acted upon; preservation
+  infrastructure and planning for key items; access and use of collections to
+  inform subsequent productions
 year-added: 2017
-published: 2025-08-21
-last-updated: "2024-11-07"
+published: 2017-11-30
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-pre-prod-tv-and-movies
-comments: With the importance of advocacy in mind, it is important to raise awareness and educate directors and filmmakers about managing their digital archive so that it is still accessible if donated to a cultural institution in the future.
+comments: With the importance of advocacy in mind, it is important to raise
+  awareness and educate directors and filmmakers about managing their digital
+  archive so that it is still accessible if donated to a cultural institution in
+  the future.
 ---
 **2023 Review**
 
