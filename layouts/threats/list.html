@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="container py-3">
+    <h1 class="text-primary">{{ .Title }}</h1>
+
+    <p>{{ .Params.description }}</p>
+
+    {{ .Content }}
+
+{{- $threat_classes := slice  "Organisational" "Complexity" "Content" "Technological" -}}
+{{- $tax := $.Site.GetPage "taxonomyTerm" "threats" -}}
+{{- $s := newScratch -}}
+
+{{ range $threat_classes }}
+
+<h2 class="text-primary">{{ . }} {{ $.Title }}</h2>
+<div class="row mb-3">
+    {{ range (where $tax.Pages ".Params.class" "eq" . ) }}
+        {{ partial "grouping-card" . }}
+    {{ end }}
+</div>
+
+{{ end }}
+
+
+
+</div>
+{{ end }}
