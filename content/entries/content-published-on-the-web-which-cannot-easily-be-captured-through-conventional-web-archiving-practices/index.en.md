@@ -34,8 +34,8 @@ mitigations: Continued development of tools that can capture some types of this
   material; continued resourcing of the web archiving community and developers
   working in this space; longer-term work towards a cultural change that
   prioritizes accessibility and achievability
-year-added: 2019
-published: 2019-11-07
+year-added: 2023
+published: 2023-11-02
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-content-published-web-not-easily-captured
