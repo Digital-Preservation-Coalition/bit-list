@@ -25,8 +25,8 @@ hazards: Closure of platform; lack of offline equivalent; lack of export
   orphaned works.
 mitigations: Offline Replication; clear notice periods and alerts; committed
   ongoing maintenance of service.
-year-added: 2018
-published: 2018-11-29
+year-added: 2019
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-data-on-defunct-social-media
