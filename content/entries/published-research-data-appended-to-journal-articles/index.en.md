@@ -1,8 +1,15 @@
 ---
 id: EcBRdfzDMG
 title: Published Research Data Appended to Journal Articles
-description: Closed research data sets produced and documented in accordance with good practice and appended to a journal article or transferred to a repository that does not have sufficient subject-matter expertise or funding commitment to ensure reliable or ongoing preservation for the long term.
-examples: Supplementary data sets added to formally published papers in repositories that are designed primarily for papers; electronic journals offering data sets without obvious preservation capacity; institutional repositories servicing highly complex scientific data sets with insufficient subject-matter expertise
+description: Closed research data sets produced and documented in accordance
+  with good practice and appended to a journal article or transferred to a
+  repository that does not have sufficient subject-matter expertise or funding
+  commitment to ensure reliable or ongoing preservation for the long term.
+examples: Supplementary data sets added to formally published papers in
+  repositories that are designed primarily for papers; electronic journals
+  offering data sets without obvious preservation capacity; institutional
+  repositories servicing highly complex scientific data sets with insufficient
+  subject-matter expertise
 categories:
   - Research Outputs
 threats:
@@ -17,49 +24,89 @@ trends:
   - year: 2024
     trend: no-change
     classification: vulnerable
-hazards: Complex mix of formats; deposit in repositories that lack relevant expertise or knowledge or funding; poorly designed migration or normalization processes; poorly formed ingest and quality assurance procedures; rapid churn of staff; incoherent patterns of subject matter; lack of domain knowledge; no or very small numbers of users; weak or absent collecting policy; deposit to ensure minimal compliance with funder mandate; limited or dysfunctional data management planning and documentation; uncertainty over IPR or the presence of orphaned works
-mitigations: Clear data management planning and documentation; deposit by publisher in a trusted repository; deposit by author/s in appropriate repositories with digital preservation expertise and mandate; clear licensing to enable digital preservation and access; strong user base; development roadmap; ability to transfer collections or share metadata with subject repositories or portals; demonstrable re-use of data; clear collecting policy; data management planning early in the data lifecycle
+hazards: Complex mix of formats; deposit in repositories that lack relevant
+  expertise or knowledge or funding; poorly designed migration or normalization
+  processes; poorly formed ingest and quality assurance procedures; rapid churn
+  of staff; incoherent patterns of subject matter; lack of domain knowledge; no
+  or very small numbers of users; weak or absent collecting policy; deposit to
+  ensure minimal compliance with funder mandate; limited or dysfunctional data
+  management planning and documentation; uncertainty over IPR or the presence of
+  orphaned works
+mitigations: Clear data management planning and documentation; deposit by
+  publisher in a trusted repository; deposit by author/s in appropriate
+  repositories with digital preservation expertise and mandate; clear licensing
+  to enable digital preservation and access; strong user base; development
+  roadmap; ability to transfer collections or share metadata with subject
+  repositories or portals; demonstrable re-use of data; clear collecting policy;
+  data management planning early in the data lifecycle
 year-added: 2019
-published: 2025-08-25
-last-updated: "2024-11-07"
+published: 2019-11-07
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/vulnerable/bitlist-published-research-data-appended-to-journals
-comments: |-
-  A number of aggravating conditions—those relating to poorly formed ingest and quality assurance procedures, rapid churn of staff, incoherent patterns of subject matter, lack of domain knowledge, no or very small numbers of users, weak or absent collecting policy, and deposit to ensure minimal compliance with funder mandate—are problems with some repositories, not all repositories.
+comments: >-
+  A number of aggravating conditions—those relating to poorly formed ingest and
+  quality assurance procedures, rapid churn of staff, incoherent patterns of
+  subject matter, lack of domain knowledge, no or very small numbers of users,
+  weak or absent collecting policy, and deposit to ensure minimal compliance
+  with funder mandate—are problems with some repositories, not all repositories.
+
 
   Presenting different use cases can tease apart the use case for supplementary materials appended to journals (e.g., which CLOCKSS and Portico preserve) and those in repositories that are perhaps not tailored for this use case. Cases where data is transferred to a repository that does not have sufficient subject-matter expertise or funding commitment to ensure reliable or ongoing preservation for the long term are far more at risk.
 
+
   Research data is complex and has specific requirements for documentation which may only be known to subject matter experts. However well intended, it is risky for institutions to attempt to replicate that level of expertise across all the domains within the institution, and it can be hard for smaller publishers to make commitments to sustain data in the long term.
+
 
   The loss of tools, data or services within this group would impact on people and sectors around the world. Particularly those involved with reproducibility and those wishing to use the datasets for further research.
 
+
   Although there have been improvements in current practice, policies and workflows, there is still a significant corpus of information that was deposited before these improvements came into force. It is unlikely that there will be the time, will or resource to bring this information up to current standards.
+
 
   UK funders e.g. UKRI-NERC Environmental Data Service are educating researchers about data policies which mandate depositing master and raw data at the funder disciplinary repository. These repositories have a strong expertise in the research discipline ensuring data and metadata standardization and quality assurance. Any copies of datasets published in journal articles or similar are considered secondary copies and do not comply with data policy, hence risking obtaining future research funding by the institute attempting to use journal outputs as their funder-acknowledged datasets.
 
+
   The significance and impact of this entry specifically depends on whether it is the only copy of the dataset in existence, or whether there is another copy hosted in a data repository.
 case-studies:
-  - title: 'Digital Scholarly Journals Are Poorly Preserved: A Study of 7 Million Articles'
+  - title: "Digital Scholarly Journals Are Poorly Preserved: A Study of 7 Million
+      Articles"
     authors: Eve, M. P.
     url: https://doi.org/10.31274/jlsc.16288
     publisher: Journal of Librarianship and Scholarly Communication
     year: 2024
-    comment: Analysis from Martin Eve of CrossRef shows scholarly content at risk. The findings, based on the assessment of around 7.5 million of the e-books and articles for which CrossRef provides a fixed identifier or Digital Object Identifier, suggest that around a quarter of academic publications are not being preserved for the future. For c. 2 million articles in the study there were no evidence of them being preserved, and 4.3 of works studied were preserved in at least one place.
+    comment: Analysis from Martin Eve of CrossRef shows scholarly content at risk.
+      The findings, based on the assessment of around 7.5 million of the e-books
+      and articles for which CrossRef provides a fixed identifier or Digital
+      Object Identifier, suggest that around a quarter of academic publications
+      are not being preserved for the future. For c. 2 million articles in the
+      study there were no evidence of them being preserved, and 4.3 of works
+      studied were preserved in at least one place.
   - comment: The FAIRsharing Collaboration with DataCite and Publishers.
-    authors: McQuilton, P., Sansone, S.A., Cousijn, H., Cannon, M., Chan, W.M., Carnevale, I., Cranston, I., Edmunds, S., Everitt, N. and Ganley, E.
-    title: 'FAIRsharing Collaboration with DataCite and Publishers: Data Repository Selection, Criteria That Matter'
+    authors: McQuilton, P., Sansone, S.A., Cousijn, H., Cannon, M., Chan, W.M.,
+      Carnevale, I., Cranston, I., Edmunds, S., Everitt, N. and Ganley, E.
+    title: "FAIRsharing Collaboration with DataCite and Publishers: Data Repository
+      Selection, Criteria That Matter"
     url: https://doi.org/10.17605/OSF.IO/N9QJ7
     year: 2019
-  - comment: Resources and research outputs from the Enhancing Services to Preserve New Forms of Scholarship project, which examined a variety of enhanced eBooks and identified which features can be preserved at scale using tools currently available. Of particular note is the published guidelines for preserving new forms of scholarship.
+  - comment: Resources and research outputs from the Enhancing Services to Preserve
+      New Forms of Scholarship project, which examined a variety of enhanced
+      eBooks and identified which features can be preserved at scale using tools
+      currently available. Of particular note is the published guidelines for
+      preserving new forms of scholarship.
     title: Guidelines for Preserving New Forms of Scholarship
     authors: Greenberg, J., Hanson, K., & Verhoff, D
     publisher: NYU Libraries
     year: 2021
     url: https://doi.org/10.33682/221c-b2xj
-  - comment: The work by the Centre pour la Communication Scientifique Directe (CCSD) of France and the Confederation of Open Access Repositories (COAR) in creating a preprint repository directory which has been relevant to building a user community).
+  - comment: The work by the Centre pour la Communication Scientifique Directe
+      (CCSD) of France and the Confederation of Open Access Repositories (COAR)
+      in creating a preprint repository directory which has been relevant to
+      building a user community).
     url: https://doapr.coar-repositories.org/
     accessed: 2023-10-24
-    authors: Centre pour la Communication Scientifique Directe (CCSD) of France and the Confederation of Open Access Repositories (COAR)
+    authors: Centre pour la Communication Scientifique Directe (CCSD) of France and
+      the Confederation of Open Access Repositories (COAR)
     title: Directory of Open Access Preprint Repositories
 ---
 **2023 Review**
