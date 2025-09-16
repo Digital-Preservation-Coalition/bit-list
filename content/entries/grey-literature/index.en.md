@@ -1,7 +1,11 @@
 ---
 id: unUWTohxAd
 title: Grey Literature
-description: Semi-published research outputs such as blogs, dissertations, informal conference papers or commissioned reports which are not formally published but which can contain original and insightful contributions within scholarly communications. This entry covers a wide spectrum of very diverse types of materials which all have different preservation considerations.
+description: Semi-published research outputs such as blogs, dissertations,
+  informal conference papers or commissioned reports which are not formally
+  published but which can contain original and insightful contributions within
+  scholarly communications. This entry covers a wide spectrum of very diverse
+  types of materials which all have different preservation considerations.
 examples: Blogs, technical reports, conference papers, dissertations, commercial research
 categories:
   - Research Outputs
@@ -17,24 +21,39 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Originating researcher no longer active or changed research focus; staff on temporary contracts; dependence on single student or staff member; weak or fluid institutional commitment to subject matter; weak institutional commitment to data sharing; uncertainty over IPR or the presence of orphaned works; encryption; lack of recognition; non-disclosure agreements
-mitigations: Use of persistent identifiers; embedded within repository infrastructure; quality assurance
+hazards: Originating researcher no longer active or changed research focus;
+  staff on temporary contracts; dependence on single student or staff member;
+  weak or fluid institutional commitment to subject matter; weak institutional
+  commitment to data sharing; uncertainty over IPR or the presence of orphaned
+  works; encryption; lack of recognition; non-disclosure agreements
+mitigations: Use of persistent identifiers; embedded within repository
+  infrastructure; quality assurance
 year-added: 2019
-published: 2025-08-25
-last-updated: "2024-11-07"
+published: 2019-11-07
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-grey-literature
-comments: |-
-  Loss of material like this would be common in the analogue world, but in the digital age, we have the capacity and perhaps something of a responsibility to ensure that it is captured: more of an opportunity lost to extend the available research resource. The ADS’s Grey Literature Library demonstrates what could be done if information architectures are deployed to mirror and extend professional practice.
+comments: >-
+  Loss of material like this would be common in the analogue world, but in the
+  digital age, we have the capacity and perhaps something of a responsibility to
+  ensure that it is captured: more of an opportunity lost to extend the
+  available research resource. The ADS’s Grey Literature Library demonstrates
+  what could be done if information architectures are deployed to mirror and
+  extend professional practice.
+
 
   Workflows and policies regarding tagging, collecting and EDRMS may help protect such data into the future. Past materials are almost certainly partially lost.
+
 
   Not all funder-maintained specialist repositories accept grey literature for long-term storage (e.g., UKRI-NERC EDS). These are redirected to generic open data repositories such as Zenodo which mint DOIs but do not offer data quality assurance for different data types.
 case-studies:
   - title: Policy Commons
     url: https://policycommons.net/
     accessed: 2023-10-24
-    comment: The Policy Commons has a mission to index and preserve grey literature from IGOs, NGOs, think tanks, governments and, to date, indexing and preserving around 4 million items from c.11,000 institutions from across the world.
+    comment: The Policy Commons has a mission to index and preserve grey literature
+      from IGOs, NGOs, think tanks, governments and, to date, indexing and
+      preserving around 4 million items from c.11,000 institutions from across
+      the world.
 ---
 **2023 Review**
 
