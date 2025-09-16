@@ -1,8 +1,11 @@
 ---
 id: NltYdUaHkB
 title: Native Cloud Formats
-description: This entry covers all native cloud formats that exist within a cloud system but cannot be exported in their native format. The data for these formats is held within the system and they are rendered within a browser.
-examples: The most widely known example of this is Google formats such as Google Docs, Sheets, Slides and Jamboard.
+description: This entry covers all native cloud formats that exist within a
+  cloud system but cannot be exported in their native format. The data for these
+  formats is held within the system and they are rendered within a browser.
+examples: The most widely known example of this is Google formats such as Google
+  Docs, Sheets, Slides and Jamboard.
 categories:
   - Formats
   - Cloud
@@ -15,22 +18,36 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Lack of skills, commitment or policy from corporate owners; dependence on proprietary products or formats; lack of export functionality; insufficient documentation; lack of conformance or validation; lack of preservation commitment or planning; inaccessibility to automated web crawlers; uncertainty over IPR or the presence of orphaned works.
-mitigations: Reduction of dependencies; improved export functionality; clear migration pathways; application of records management standards; version control; integrity checking; comprehensive documentation; access to web harvesting; technology watch.
+hazards: Lack of skills, commitment or policy from corporate owners; dependence
+  on proprietary products or formats; lack of export functionality; insufficient
+  documentation; lack of conformance or validation; lack of preservation
+  commitment or planning; inaccessibility to automated web crawlers; uncertainty
+  over IPR or the presence of orphaned works.
+mitigations: Reduction of dependencies; improved export functionality; clear
+  migration pathways; application of records management standards; version
+  control; integrity checking; comprehensive documentation; access to web
+  harvesting; technology watch.
 year-added: 2023
-published: 2025-08-06
-last-updated: "2024-11-07"
+published: 2023-11-02
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-native-cloud-formats
 case-studies:
-  - comment: Case studies demonstrating good progress in this area, for example from the TNA and University of Sheffield,shared as part of a DPC event on 14th November 2023.
-    authors: Beking, A., Hooper, B., Leming, R., Tilbury, J., Oeyen, Q., Young, P. and Gardner, R.
+  - comment: Case studies demonstrating good progress in this area, for example from
+      the TNA and University of Sheffield,shared as part of a DPC event on 14th
+      November 2023.
+    authors: Beking, A., Hooper, B., Leming, R., Tilbury, J., Oeyen, Q., Young, P.
+      and Gardner, R.
     year: 2023
     url: https://www.dpconline.org/events/previous-events/eventdetail/221/-/does-it-have-to-be-this-hard-preserving-content-from-microsoft-365-and-google-workspace
     accessed: 2024-09-06
-    title: Does it have to be this hard? Preserving content from Microsoft 365 and Google Workspace
+    title: Does it have to be this hard? Preserving content from Microsoft 365 and
+      Google Workspace
     publisher: Digital Preservation Coalition Event
-  - comment: One example, which is part of the Google Workspace and illustrates how quickly things can become unsupported, is the announced closure of the ‘Jamboard’ collaborative online whiteboard platform, which will be discontinued from the end of 2024.
+  - comment: One example, which is part of the Google Workspace and illustrates how
+      quickly things can become unsupported, is the announced closure of the
+      ‘Jamboard’ collaborative online whiteboard platform, which will be
+      discontinued from the end of 2024.
     authors: Shakir, U.
     publisher: Verge
     title: Google’s whiteboarding app is joining the graveyard
@@ -66,7 +83,8 @@ case-studies:
     publisher: Digital Investigation Vol. 16
     url: https://doi.org/10.1016/j.diin.2016.01.013
     year: 2016
-  - title: How I Reverse Engineered Google Docs To Play Back Any Document’s Keystrokes.
+  - title: How I Reverse Engineered Google Docs To Play Back Any Document’s
+      Keystrokes.
     authors: Somers, J.
     year: 2014
     url: https://features.jsomers.net/how-i-reverse-engineered-google-docs/
