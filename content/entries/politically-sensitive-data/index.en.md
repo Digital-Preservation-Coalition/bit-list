@@ -29,7 +29,7 @@ hazards: Opaque terms and conditions that facilitate deletion or obfuscation;
 mitigations: Robust political archives; robust preservation services for
   investigative journalists
 year-added: 2017
-published: 2025-08-25
+published: 2017-11-30
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-politically-sensitive-data
