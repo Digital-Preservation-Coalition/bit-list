@@ -30,7 +30,7 @@ mitigations: Preservation capability; high quality storage; meticulous and
   requirement understood; intellectual property managed to enable preservation;
   good descriptive cataloguing; persistent identifiers
 year-added: 2023
-published: 2025-08-25
+published: 2023-11-02
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-oral-histories
@@ -74,4 +74,4 @@ The 2024 Council identified a trend towards even greater risk, in light of incre
 
 The Council recommend that in 2025, the full review considers whether in light of Deadline 2025, if the museums and galleries have not started (or who have made minimal progress towards) digitising audiovisual recordings (and whether the balance between oral histories as born-digital and those remaining on physical format carriers justifies this) if the classification might be raised to Critically Endangered.
 
-They also note how have discovered over the past year that there are a lot more audiovisual recordings that while they have been referred to as oral histories, do not quite fit the format of an oral history recording, and are instead better classified as an interview. With this in mind, they recommend that the 2025 review consider a possible cross-species review with Research Outputs, and whether scope could slightly change to ‘Oral Histories and Audiovisual Interviews’ or something that is more inclusive.
+They also note how have discovered over the past year that there are a lot more audiovisual recordings that while they have been referred to as oral histories, do not quite fit the format of an oral history recording, and are instead better classified as an interview. With this in mind, they recommend that the 2025 review consider a possible cross-category review with Research Outputs, and whether scope could slightly change to ‘Oral Histories and Audiovisual Interviews’ or something that is more inclusive.
