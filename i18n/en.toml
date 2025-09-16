@@ -2,6 +2,8 @@ about-tbl = "About The Bit List"
 
 contents = "Contents"
 
+since = "Since"
+
 search = "Search"
 search-tbl = "Search the Bit List"
 add-to-tbl = "Add to the Bit List"
