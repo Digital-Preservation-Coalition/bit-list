@@ -29,8 +29,8 @@ hazards: Lack of skills, commitment or policy from corporate owners; uncertainty
   reliance on always-on DRM for single player games
 mitigations: Well documented code; IPR supportive of preservation; large and
   committed user community; removal of always-on DRM for single player games
-year-added: 2023
-published: 2023-11-02
+year-added: 2019
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-always-online
