@@ -30,7 +30,7 @@ mitigations: Lack of skills, commitment or policy from corporate owners;
   support of grassroots efforts; support for preservation from game
   publishers/developers; removal of Always-Online DRM
 year-added: 2023
-published: 2025-08-22
+published: 2023-11-02
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-shut-down-discontinued-games
@@ -149,7 +149,7 @@ case-studies:
 ---
 **2023 Review**
 
-This entry was added in 2017 under the Gaming species under the title ‘Old or Non-current Offline Video Games’ and was rescoped in 2023. The 2023 Council noted that the original description and scope of the entry conflated several issues and was unclear in its purpose, referring both to games that have experienced loss and older games that are still available. The 2023 change of risk classification from Critically Endangered to Practically Extinct reflects the adjusted scope as games that fall under this entry have already experienced loss, in terms of servers, the actual game and users. Efforts to keep these games ‘alive’ or in circulation are reliant on legally dubious measures such as private servers and key reselling. It was also decided to remove reference to the age of the video game in this entry given that there has been an increase in server-reliant games shutting down within a year or two of launch that are more at risk than older games that are still being sold.
+This entry was added in 2017 under the Gaming category under the title ‘Old or Non-current Offline Video Games’ and was rescoped in 2023. The 2023 Council noted that the original description and scope of the entry conflated several issues and was unclear in its purpose, referring both to games that have experienced loss and older games that are still available. The 2023 change of risk classification from Critically Endangered to Practically Extinct reflects the adjusted scope as games that fall under this entry have already experienced loss, in terms of servers, the actual game and users. Efforts to keep these games ‘alive’ or in circulation are reliant on legally dubious measures such as private servers and key reselling. It was also decided to remove reference to the age of the video game in this entry given that there has been an increase in server-reliant games shutting down within a year or two of launch that are more at risk than older games that are still being sold.
 
 **2024 Interim Review**
 
