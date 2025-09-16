@@ -1,0 +1,22 @@
+{{ $cat_name := (.Path | path.BaseName )}}
+<div class="col-12 col-md-6 mt-3">
+
+    <div class="card h-100">
+        <div class="card-body">
+            <div class="float-end p-0">{{ .Store.Set "imageSize" "100x" }}{{ partial "cat-img" $cat_name }}</div>
+
+            <h4 class="card-title">
+                <a class="stretched-link text-primary text-decoration-none" href="{{ .RelPermalink }}">
+                    {{ .Title }}
+                </a>
+            </h4>
+            <p class="text-text">
+                {{ with .Params.description }}
+                    {{ . }}
+                {{ else }}
+                    {{ .Summary | truncate 400 }}
+                {{ end }}
+            </p>
+        </div>
+    </div>
+</div>
