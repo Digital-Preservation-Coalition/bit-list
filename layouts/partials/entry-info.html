@@ -12,7 +12,7 @@
     <p>
       {{ range .Params.categories }}
       {{ $cat := $.GetPage ( printf "categories/%s" . ) }}
-      <a class="btn btn-primary mb-1" href="{{ $cat.RelPermalink }}" role="button">
+      <a class="btn btn-primary mb-1 me-1" href="{{ $cat.RelPermalink }}" role="button">
           <strong data-pagefind-filter="{{ T "category" }}:{{ $cat.Params.title }}">{{ $cat.Params.title }}</strong>
       </a>
       {{ end }}
