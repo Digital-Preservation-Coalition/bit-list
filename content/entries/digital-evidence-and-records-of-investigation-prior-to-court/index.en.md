@@ -1,8 +1,11 @@
 ---
 id: 7w5Yup4H0n
 title: Digital Evidence and Records of Investigation Prior to Court
-description: Digital materials assessed by police and other authorities in the course of investigation and retained as evidence of due process such as case files and correspondence, including materials not submitted to court.
-examples: CCTV; Email; 3d scanning; social media interactions; police records; court records; text messages
+description: Digital materials assessed by police and other authorities in the
+  course of investigation and retained as evidence of due process such as case
+  files and correspondence, including materials not submitted to court.
+examples: CCTV; Email; 3d scanning; social media interactions; police records;
+  court records; text messages
 categories:
   - Legal Data
 threats:
@@ -17,19 +20,31 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Poor chain of custody; fragile or obsolete media; dependence on proprietary formats or products; lack or loss of documentation; inaccessible to web harvesting technologies; lack of version control; lack of integrity checks or integrity records; poor chain of custody; Uncertainty over IPR or the presence of orphaned works
+hazards: Poor chain of custody; fragile or obsolete media; dependence on
+  proprietary formats or products; lack or loss of documentation; inaccessible
+  to web harvesting technologies; lack of version control; lack of integrity
+  checks or integrity records; poor chain of custody; Uncertainty over IPR or
+  the presence of orphaned works
 mitigations: Meticulous transfer and disclosure processes
-year-added: 2014
-published: 2025-08-21
-last-updated: "2024-11-07"
+year-added: 2019
+published: 2019-11-07
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-precourt-digital-evidence
-comments: |-
-  In the International organizations realm, more and more of these investigative missions are being set up. They are collecting huge volumes of data and the same issues around chain of custody, integrity records/checks continue to be aggravating especially with respect to authenticity and admissibility. Given the potentially huge volumes of data, and the drive to keep costs low, it is debatable whether there will be sustained funding for preservation.
+comments: >-
+  In the International organizations realm, more and more of these investigative
+  missions are being set up. They are collecting huge volumes of data and the
+  same issues around chain of custody, integrity records/checks continue to be
+  aggravating especially with respect to authenticity and admissibility. Given
+  the potentially huge volumes of data, and the drive to keep costs low, it is
+  debatable whether there will be sustained funding for preservation.
+
 
   Case files and correspondence are one thing: retention of these should be clear but may differ widely between jurisdictions and levels of government. If retention is not long-term or permanent, the risk of loss may not be so critical. Retention of 'unused' or 'potential' evidence is likely a different matter altogether. Is it even a record? Certainly, it is not a record of the court. Should it be returned to the suspect or accused? Are their rights being considered here - not just in terms of preservation, but also simply disposition? There may be legal and ethical issues around this that need to be fleshed out in conjunction with assessing its preservation risk.
 
+
   Police forces tend only to have the resources to maintain forensic capability with relatively recent technology - for older technology, institutions and specialist companies are the only sources of expertise. This has an impact on cold cases.
+
 
   There have been many examples of convictions being overturned when previously unused evidence was brought to light. Therefore the retention and preservation of unused evidence can have immense value.
 ---
