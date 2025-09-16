@@ -21,8 +21,8 @@ trends:
     classification: critically-endangered
 hazards: ""
 mitigations: Offline backup documented and available for recovery
-year-added: 2012
-published: 2025-08-21
+year-added: 2017
+published: 2017-11-30
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-pre-www-videotex-and-bbs
@@ -37,7 +37,7 @@ comments: >-
   In terms of preservation, whilst there is no structured collection of this material, many individuals will have their own personal archives and a campaign of the nature of Missing Believed Wiped from the BFI might be effective in collating these disparate collections.
 
 
-  This entry can also be linked to the Community Archives species as early online forums were a place of community development and community creation.
+  This entry can also be linked to the Community Archives category as early online forums were a place of community development and community creation.
 ---
 **2023 Review**
 
