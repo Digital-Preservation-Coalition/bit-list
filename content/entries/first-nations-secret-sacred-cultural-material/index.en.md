@@ -51,7 +51,7 @@ mitigations: Improved internet accessibility (especially in rural/remote regions
   archiving, description and determination of appropriate accessibility to the
   content
 year-added: 2023
-published: 2025-08-25
+published: 2023-11-02
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/endangered/bitlist-first-nations-secret-sacred
