@@ -25,7 +25,7 @@ hazards: ""
 mitigations: Offline backup documented and available for recovery; clarity over
   IPR and no orphaned works
 year-added: 2019
-published: 2025-08-25
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/practically-extinct/bitlist-osint-older
