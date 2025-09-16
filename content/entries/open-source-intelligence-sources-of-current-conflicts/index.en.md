@@ -1,7 +1,11 @@
 ---
 id: 1LWt1p56Ae
 title: Open Source Intelligence Sources of Current Conflicts
-description: Open source intelligence produced, collected and analysed from publicly, openly available social media and web content with the purpose of answering a specific intelligence question and that supports crowd-sourced investigation and fact-checking to verify or refute claims of state agencies and rebel groups in the context of current political or military conflict.
+description: Open source intelligence produced, collected and analysed from
+  publicly, openly available social media and web content with the purpose of
+  answering a specific intelligence question and that supports crowd-sourced
+  investigation and fact-checking to verify or refute claims of state agencies
+  and rebel groups in the context of current political or military conflict.
 examples: Social media sources relating to current conflicts, such as in Yemen or Syria
 categories:
   - Legal Data
@@ -17,40 +21,62 @@ trends:
   - year: 2024
     trend: no-change
     classification: critically-endangered
-hazards: Loss of authenticity; lack of preservation agency; limited or no digital preservation capability; Uncertainty over IPR or the presence of orphaned works
+hazards: Loss of authenticity; lack of preservation agency; limited or no
+  digital preservation capability; Uncertainty over IPR or the presence of
+  orphaned works
 mitigations: Offline backup captured by the journalist or investigating authority
 year-added: 2019
-published: 2025-08-25
-last-updated: "2024-11-07"
+published: 2019-11-07
+last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-osint-current
-comments: Preservation is important for social context and may be picked up inadvertently in other ways - but is ambiguous about who has ultimate responsibility for collecting and preserving this.
+comments: Preservation is important for social context and may be picked up
+  inadvertently in other ways - but is ambiguous about who has ultimate
+  responsibility for collecting and preserving this.
 case-studies:
   - url: https://www.glanlaw.org/online-open-source-methodology
     accessed: 2023-10-24
-    comment: The Ukraine Investigations by GLAN and Bellingcat Justice & Accountability project to investigate alleged atrocity crimes taking place in Ukraine. The aim of the project is to conduct a set of open source investigations into incidents causing civilian harm occurring in Ukraine according to robust legal standards with the aim of making them available to national and international prosecutors who are gathering evidence of alleged crimes. In this case, the open source content gathered during Bellingcat’s investigations will be preserved by Mnemonic, an independent third-party organization maintaining an archive of digital content from Ukraine, as it has done for Syria, Yemen and Sudan.
+    comment: The Ukraine Investigations by GLAN and Bellingcat Justice &
+      Accountability project to investigate alleged atrocity crimes taking place
+      in Ukraine. The aim of the project is to conduct a set of open source
+      investigations into incidents causing civilian harm occurring in Ukraine
+      according to robust legal standards with the aim of making them available
+      to national and international prosecutors who are gathering evidence of
+      alleged crimes. In this case, the open source content gathered during
+      Bellingcat’s investigations will be preserved by Mnemonic, an independent
+      third-party organization maintaining an archive of digital content from
+      Ukraine, as it has done for Syria, Yemen and Sudan.
     title: Methodology for Online Open Source Investigations
     authors: Glan and Bellingcat
-  - comment: The website of the Forensic Architecture (FA) research agency, based at Goldsmiths, University of London, offers examples of OSINT.
+  - comment: The website of the Forensic Architecture (FA) research agency, based at
+      Goldsmiths, University of London, offers examples of OSINT.
     accessed: 2023-10-24
     url: https://forensic-architecture.org/methodology/osint
     title: Forensic Architecture
-  - comment: The website of the Coalition for Content Provenance and Authenticity (C2PA). The C2PA addresses the prevalence of misleading information online through the development of technical standards for certifying the source and history (or provenance) of media content. C2PA is a Joint Development Foundation project, formed through an alliance between Adobe, Arm, Intel, Microsoft and Truepic.
+  - comment: The website of the Coalition for Content Provenance and Authenticity
+      (C2PA). The C2PA addresses the prevalence of misleading information online
+      through the development of technical standards for certifying the source
+      and history (or provenance) of media content. C2PA is a Joint Development
+      Foundation project, formed through an alliance between Adobe, Arm, Intel,
+      Microsoft and Truepic.
     accessed: 2023-10-24
     url: https://c2pa.org/
     title: Coalition for Content Provenance and Authenticity
   - authors: Baumhofer, E. and Reilly, B.F.
-    title: 'Preserving Open Source Digital Evidence: A Guide for Practitioners Working on Dealing with the Past'
+    title: "Preserving Open Source Digital Evidence: A Guide for Practitioners
+      Working on Dealing with the Past"
     url: https://www.swisspeace.ch/articles/preserving-open-source-digital-evidence
     year: 2022
     accessed: 2023-10-24
-  - title: Bellingcat and beyond. The future for Bellingcat and online open source investigation
+  - title: Bellingcat and beyond. The future for Bellingcat and online open source
+      investigation
     authors: Higgins, E.
     publisher: iPres Conference 2019
     year: 2019
     url: https://www.youtube.com/watch?v=kZAb7CVGmXM
     accessed: 2023-10-24
-  - title: Outlining a Human-Rights Based Approach to Digital Open Source Investigations
+  - title: Outlining a Human-Rights Based Approach to Digital Open Source
+      Investigations
     authors: Dubberley, S., and Ivens, G.
     publisher: The Human Rights, Big Data and Technlogy Project
     year: 2022
