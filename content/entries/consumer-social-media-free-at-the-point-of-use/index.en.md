@@ -33,8 +33,8 @@ mitigations: Offline backup and documentation of media assets; Migration plan;
   Suitable export functionality; Licencing enables preservation; Preservation
   commitment from vendor; Preservation capability in vendor; Resilient to
   hacking; Selection criteria
-year-added: 2017
-published: 2017-11-30
+year-added: 2019
+published: 2019-11-07
 last-updated: 2024-11-07
 aliases:
   - /digipres/champion-digital-preservation/bit-list/critically-endangered/bitlist-free-social-media
