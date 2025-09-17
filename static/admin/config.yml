@@ -87,8 +87,9 @@ collections:
     widget: relation
     collection: "categories"
     value_field: 'title'
-    search_fields: ["title"]
-    display_fields: ["title"]
+    search_fields: ['title']
+    display_fields: ["{{title}}"]
+    options_length: 100
     hint: "The category of digital materials."
     i18n: duplicate
   - label: "Threats"
@@ -98,10 +99,11 @@ collections:
     widget: relation
     collection: "threats"
     value_field: "title"
-    search_fields: [ 'title' ] 
+    search_fields: [ 'class', 'title' ] 
     display_fields: ["{{class}} > {{title}}"]
     i18n: duplicate
     hint: "Select the threats that apply to these materials. The first one will be the one this entry appears under in the printed version."
+    options_length: 100
   - label: "Tags"
     name: tags
     widget: "select"
