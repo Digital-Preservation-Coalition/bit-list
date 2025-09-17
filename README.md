@@ -28,6 +28,26 @@ This will spin up a [local server](http://localhost:1313/) that updates when you
 
 The `./build-docx.sh` script will generate a DOCX version of the whole Bit List from the Markdown version using `pandoc`. The Markdown is the output of a special template, `./layouts/entries/list.markdown.md`, which invoked during the Hugo build process via the configuration specified in `./content/entries/_index.en.md`. The resulting `public/entries/index.md` file enumerates the contents of all the entries, in the format and order needed for the PDF version. The `pandoc` command is used to convert that to DOCX, while adopting the DPC styling as defined in the `_pandoc/custom-reference.docx` file. This can then be tuned and used as the basis for composing the DOCX version of the Bit List, which is then used to generate the PDF version.
 
+### Experimental DuckDB Workflow
+
+A DuckDB version of the data can be created as an `index.ddb` file. like this:
+
+```sh
+duckdb < _duckdb/create.sql public/entries/index.ddb
+```
+
+Which can then generate a CSV version with all the correct escaping:
+
+```sh
+duckdb < _duckdb/export_csv.sql public/entries/index.ddb
+```
+
+DuckDB can then generate a Parquet version, although `parquet-tools` seems to have problems showing the data, so there may be issues with the schema.
+
+```sh
+duckdb < _duckdb/export_parquet.sql public/entries/index.ddb
+```
+
 ## Deployment
 
 Deployment is via the GitHub Action defined in `.github/workflows/pages.yml` and the live site is served by GitHub Pages.
