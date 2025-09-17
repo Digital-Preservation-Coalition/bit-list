@@ -11,10 +11,10 @@ description: Digital materials where copyright is uncertain, disputed or
   unknowable, meaning that preservation actions are constrained or prevented.
 examples: Photographs, music recordings, literature.
 categories:
-  - orphaned-works
+  - Orphaned Works
 threats:
-  - legal-constraints
-  - out-of-band
+  - Legal Constraints
+  - Out of Band
 imminence: 4
 effort: 5
 trends:

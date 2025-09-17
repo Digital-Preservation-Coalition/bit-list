@@ -18,10 +18,9 @@ description: Music licensed and playable through corporate platforms protected
   single-track recordings.
 examples: Spotify, iTunes, Bandcamp, SoundCloud.
 categories:
-  - sound-and-vision
-  - cloud
+  - Sound and Vision
 threats:
-  - proprietary-data
+  - Proprietary Data
 tags:
   - featured
 imminence: 4
