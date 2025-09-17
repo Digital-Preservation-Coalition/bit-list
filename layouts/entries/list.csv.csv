@@ -4,5 +4,6 @@ title,link,description
 {{- $title := replace .LinkTitle "\"" "\"\"" -}}
 {{- $link := replace .Permalink "\"" "\"\"" -}}
 {{- $description := replace .Params.description "\"" "\"\"" -}}
-{{- printf "\"%s\",\"%s\",\"%s\"\n" $title $link $description -}}
+{{- $cats := replace ( .Params.categories | jsonify ) "\"" "\"\"" -}}
+{{- printf "\"%s\",\"%s\",\"%s\",\"%s\"\n" $title $link $description $cats -}}
 {{- end -}}
