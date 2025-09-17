@@ -7,9 +7,9 @@ description: "Materials saved to floppy disks, tape, portable hard disks or
   infrastructure: typically, more than five years old."
 examples: Floppy disks; tape; certain kinds of portable hard disks, zip drives.
 categories:
-  - portable-media
+  - Portable Media
 threats:
-  - obsolete-hardware-media/_index
+  - Hardware/Media
 tags:
   - featured
 classification: critically-endangered
