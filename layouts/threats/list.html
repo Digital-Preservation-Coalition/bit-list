@@ -11,16 +11,18 @@
 {{- $tax := $.Site.GetPage "taxonomyTerm" "threats" -}}
 {{- $s := newScratch -}}
 
-{{ range $threat_classes }}
+{{ range $i, $class := $threat_classes }}
 
-<h2 class="text-primary">{{ . }} {{ $.Title }}</h2>
-{{- $definition :=  (printf "%s-threats-description" (. | lower )) -}}
+{{ if $i }}<hr>{{ end }}
+<h2 class="text-primary">{{ $class }} {{ $.Title }}</h2>
+{{- $definition :=  (printf "%s-threats-description" ($class | lower )) -}}
 <p>{{ T $definition }}</p>
 <div class="row mb-3">
-    {{ range (where $tax.Pages ".Params.class" "eq" . ) }}
+    {{ range (where $tax.Pages ".Params.class" "eq" $class ) }}
         {{ partial "grouping-card" . }}
     {{ end }}
 </div>
+
 
 {{ end }}
 
