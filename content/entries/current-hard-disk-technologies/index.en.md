@@ -65,7 +65,7 @@ case-studies:
     authors: "Digital Preservation Coalition "
     publisher: Digital Preservation Handbook
     year: 2016
-    url: https://dpconline.org/handbook/organizational-activities/storage
+    url: https://dpconline.org/handbook/organisational-activities/storage
     accessed: 2023-10-24
 ---
 **2023 Review**

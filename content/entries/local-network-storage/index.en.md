@@ -39,7 +39,7 @@ last-updated: 2024-11-07
 comments: There has been a renewed interest in tape as offline storage is the
   only sure protection against advanced ransomware.
 case-studies:
-  - url: https://dpconline.org/handbook/organizational-activities/storage
+  - url: https://dpconline.org/handbook/organisational-activities/storage
     authors: Digital Preservation Coalition
     title: Storage
     year: 2016

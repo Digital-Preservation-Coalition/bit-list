@@ -10,6 +10,8 @@ categories:
   - Research Outputs
 threats:
   - Out of Band
+tags:
+  - featured
 classification: vulnerable
 imminence: 3
 effort: 2

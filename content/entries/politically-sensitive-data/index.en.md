@@ -12,6 +12,8 @@ categories:
   - Political Data
 threats:
   - Sensitive Data
+tags:
+  - featured
 classification: critically-endangered
 imminence: 5
 effort: 3

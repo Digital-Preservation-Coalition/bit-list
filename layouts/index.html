@@ -28,13 +28,18 @@
 
 
 <section class="section container mt-5">
-  <h3 class="text-center">Classifications</h3>
+  <h3 class="text-center"><a class="text-decoration-none" href="{{ ref . "/classification/" }}">Classifications</a></h3>
    <div class="row">
     {{ range (where .Site.Pages "Section" "classification") }}
       {{ range .Pages.ByWeight }}
-      <div class="col-sm-4 col-md-2 mx-auto text-center my-3">
+      <div class="col-sm-6 col-md-2 mx-auto text-center my-3">
+        <div class="d-flex justify-content-center align-items-center">
+          <h5>{{ .Title }}</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
         {{ $cd := dict "classification" .Params.id }}
         {{ page.Store.Set "imageSize" "120x" }}{{ partial "classification-img" $cd.classification }}
+        </div>
       </div>
       {{ end }}
     {{ end }}
@@ -42,13 +47,13 @@
 </section>
 
 <section class="section container my-3">
-  <h3 class="text-center">Categories</h3>
+  <h3 class="text-center"><a class="text-decoration-none" href="{{ ref . "/categories/" }}">Categories</a></h3>
    <div class="row">
     {{ range (where .Site.Pages "Section" "categories") }}
      {{ if ne .Title "Categories" }}
       {{ $cat_name := (.Path | path.BaseName )}}
       <div class="col-sm-4 col-md-2 mx-auto text-center my-3">
-            <div class="d-flex justify-content-center align-items-center">
+        <div class="d-flex justify-content-center align-items-center">
           <h5>{{ .Title }}</h5>
         </div>
         <div class="d-flex justify-content-center align-items-center">

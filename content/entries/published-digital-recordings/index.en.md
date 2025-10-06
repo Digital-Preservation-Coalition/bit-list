@@ -21,8 +21,7 @@ categories:
   - Sound and Vision
 threats:
   - Proprietary Data
-tags:
-  - featured
+tags: null
 imminence: 4
 effort: 3
 trends:

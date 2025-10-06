@@ -10,8 +10,7 @@ categories:
   - Portable Media
 threats:
   - Hardware/Media
-tags:
-  - featured
+tags: null
 classification: critically-endangered
 imminence: 4
 effort: 3
