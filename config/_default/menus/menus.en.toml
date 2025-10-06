@@ -3,11 +3,27 @@ name = "Home"
 pageRef = "/index"
 weight = 10
 
+
 [[main]]
+identifier = "about"
 name = "About"
+weight = 20
+title = "About the Bit List"
+
+[[main]]
+name = "About the Bit List"
 pageRef = "/about"
 weight = 20
 title = "About the Bit List"
+parent = "about"
+
+[[main]]
+name = "The Bit List Council"
+pageRef = "/council"
+weight = 40
+title = "About the Bit List Council"
+parent = "about"
+
 
 [[main]]
 identifier = "browse"

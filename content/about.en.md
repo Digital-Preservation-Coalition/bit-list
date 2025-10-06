@@ -16,9 +16,9 @@ The *Bit List* serves three main purposes for three key audiences:
 * **As a practical guide**, it offers a simple roadmap for tackling preservation challenges. The *Bit List* invites all contributors to the digital preservation community to address the issues raised and recognizes progress toward solutions.
 * **As a current overview**, it provides up-to-date guidance for the digital preservation community. As a resource, it aims to be especially helpful for newcomers and educators, while also supporting experienced professionals facing new challenges and those making the case for digital preservation within their organizations.
 
-The *Bit List* offers a provisional commentary with the recognition that the extent of the digital domain, the complexity of the threats, and the sophistication of emerging solutions mean that no process could ever fully capture the risks and challenges faced by digital content around the world. It is published and reviewed with the understanding that new risks are continuously arising; every day and (inevitably) between editions of the *Bit List*. Members of the *Bit List* Council recognize that differences in emphasis and subtleties of local context may well have been overlooked, and that material changes may have occurred during the process.
+The *Bit List* offers a provisional commentary with the recognition that the extent of the digital domain, the complexity of the threats, and the sophistication of emerging solutions mean that no process could ever fully capture the risks and challenges faced by digital content around the world. It is published and reviewed with the understanding that new risks are continuously arising; every day and (inevitably) between editions of the *Bit List*. Members of the [*Bit List* Council]({{< ref "/council" >}}) recognize that differences in emphasis and subtleties of local context may well have been overlooked, and that material changes may have occurred during the process.
 
-The *Bit List* is designed to be collaborative, iterative and provisional. Thus, if readers are aware of significant digital collections that do not match up with any of the broad examples given but are at material risk, they are encouraged to draw these to the attention of the *Bit List* Council through the [DPC’s Chief Community Officer](mailto:sarah.middleton@dpconline.org). These will be reviewed in time for publication of the next scheduled comprehensive review of the *Bit List*. Where digital materials face an imminent extinction event before that, their evaluation may be accelerated and an addendum published to the *Bit List* in order to provide the timely, impartial and expert advocacy that may be required. [Corrections, comments and nominations are welcome.](https://docs.google.com/forms/d/e/1FAIpQLSccvgold3yiCfwlmh6tFFh6DEfhREyWx4M4rnyfgFNZ42o66A/viewform)
+The *Bit List* is designed to be collaborative, iterative and provisional. Thus, if readers are aware of significant digital collections that do not match up with any of the broad examples given but are at material risk, they are encouraged to draw these to the attention of the [*Bit List* Council]({{< ref "/council" >}}) through the [DPC’s Chief Community Officer](mailto:sarah.middleton@dpconline.org). These will be reviewed in time for publication of the next scheduled comprehensive review of the *Bit List*. Where digital materials face an imminent extinction event before that, their evaluation may be accelerated and an addendum published to the *Bit List* in order to provide the timely, impartial and expert advocacy that may be required. [Corrections, comments and nominations are welcome.](https://docs.google.com/forms/d/e/1FAIpQLSccvgold3yiCfwlmh6tFFh6DEfhREyWx4M4rnyfgFNZ42o66A/viewform)
 
 ## Using the *Bit List*
 
@@ -34,7 +34,11 @@ The downloadable *Bit List* report contains observations about the context in wh
 
 In both formats, each entry contains the following information:
 
+<div class="text-center">
+
 ![Bit List example page](/images/bit-list-example-page.png "Bit List example page")
+
+</div>
 
 **(1) Title** – Each item on the list is given a short title to represent the digital material represented.
 
