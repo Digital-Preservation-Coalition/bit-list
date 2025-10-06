@@ -5,7 +5,7 @@
 # https://gohugo.io/templates/internal/#twitter-cards
 # https://schema.org/Thing
 # https://schema.org/Article
-longName = "The Global 'Bit List' of Endangered Digital Species"
+longName = "The Global 'Bit List' of Endangered Digital Materials"
 description = "The Bit List is a community-sourced list of at-risk digital content."
 images = ['images/logo.svg','images/bit-list-logo.svg']
 #mainMenuLogo = "images/logo-white.svg"
