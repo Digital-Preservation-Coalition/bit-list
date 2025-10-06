@@ -14,6 +14,8 @@
 {{ range $threat_classes }}
 
 <h2 class="text-primary">{{ . }} {{ $.Title }}</h2>
+{{- $definition :=  (printf "%s-threats-description" (. | lower )) -}}
+<p>{{ T $definition }}</p>
 <div class="row mb-3">
     {{ range (where $tax.Pages ".Params.class" "eq" . ) }}
         {{ partial "grouping-card" . }}
