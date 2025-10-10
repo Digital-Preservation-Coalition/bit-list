@@ -4,7 +4,7 @@ layout: single-toc
 ---
 ## What is the *Bit List*?
 
-The *Bit List* is a free, open and community-sourced advocacy tool developed by the Digital Preservation Coalition (DPC) to highlight digital materials at risk of loss. Drawing on the experience of the global digital preservation community, the *Bit List* was first released in 2017 and is reviewed every two years with updates in between. It identifies a wide range of endangered digital content across diverse organizational settings. These risks may stem from technological obsolescence, media decay, or broader issues such as accountability, policy, and business processes.
+The *Bit List* is a free, open and community-sourced advocacy tool developed by the [Digital Preservation Coalition (DPC)](https://www.dpconline.org/) to highlight digital materials at risk of loss. Drawing on the experience of the global digital preservation community, the *Bit List* was first released in 2017 and is reviewed every two years with updates in between. It identifies a wide range of endangered digital content across diverse organizational settings. These risks may stem from technological obsolescence, media decay, or broader issues such as accountability, policy, and business processes.
 
 The list is based on real-world experience from professionals who work to keep digital materials accessible over time. These experts come from various countries and sectors. The *Bit List* is not a top-down or theoretical project, and it does not serve political or commercial interests. Entries to the list are included because experienced professionals have faced challenges preserving them and believe they should be highlighted.
 
