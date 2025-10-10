@@ -14,11 +14,12 @@
 {{ range $i, $class := $threat_classes }}
 
 {{ if $i }}<hr>{{ end }}
+
 <h2 class="text-primary">{{ $class }} {{ $.Title }}</h2>
 {{- $definition :=  (printf "%s-threats-description" ($class | lower )) -}}
 <p>{{ T $definition }}</p>
 <div class="row mb-3">
-    {{ range (where $tax.Pages ".Params.class" "eq" $class ) }}
+    {{ range (where $tax.Pages.ByTitle ".Params.class" "eq" $class ) }}
         {{ partial "grouping-card" . }}
     {{ end }}
 </div>

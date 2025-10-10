@@ -34,26 +34,27 @@ weight = 40
 identifier = "entries"
 name = "All Entries"
 pageRef = "/entries"
-weight = 10
-parent = "browse"
-
-[[main]]
-name = "Classifications"
-pageRef = "/classification"
-weight = 15
-parent = "browse"
-
-[[main]]
-name = "Categories"
-pageRef = "/categories"
-weight = 20
+weight = 50
 parent = "browse"
 
 [[main]]
 name = "Threats"
 pageRef = "/threats"
+weight = 20
+parent = "browse"
+
+[[main]]
+name = "Classifications"
+pageRef = "/classification"
 weight = 30
 parent = "browse"
+
+[[main]]
+name = "Categories"
+pageRef = "/categories"
+weight = 40
+parent = "browse"
+
 
 [[social]]
   name = "GitHub"

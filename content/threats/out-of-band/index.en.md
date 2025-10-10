@@ -1,6 +1,7 @@
 ---
 id: out-of-band
 title: Out of Band
-description: Ignored because not a “recognised source of material for DP”.
+description: "Material ignored because it does not come from a ‘recognised
+  source for digital preservation.’ "
 class: Organisational
 ---

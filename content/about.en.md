@@ -24,7 +24,7 @@ The *Bit List* is designed to be collaborative, iterative and provisional. Thus,
 
 ### Accessing the List
 
-In order to best support the advocacy endeavours of the digital preservation community, the *Bit List* is offered both as an [online resource](https://www.dpconline.org/digipres/champion-digital-preservation/bit-list) and a downloadable report (this document), to facilitate the various ways in which its information is used.
+In order to best support the advocacy endeavours of the digital preservation community, the *Bit List* is offered both as this online resource and a downloadable report ([via this link](https://www.dpconline.org/digipres/champion-digital-preservation/bit-list)), to facilitate the various ways in which its information is used.
 
 Online, the *Bit List* provides a searchable set of entries and a means to browse the listing by category and risk classification, as well as offering packages of advocacy information for various organisation types and sectors.
 
